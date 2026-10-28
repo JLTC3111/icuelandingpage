@@ -1,40 +1,49 @@
-# ICUE — New React landing page
+# ICUE — React landing page
 
-A standalone Vietnamese landing page built with React 19 and Vite. The design takes its oversized typography, dark navigation rail, expansive imagery, and accordion interactions from the four supplied references.
+A standalone React 19 and Vite landing page using ICUE's existing content and imagery.
 
-## Local development
+## Development
 
 ```sh
 npm ci
 npm run dev
+npm run build
 ```
 
-The development URL is `http://127.0.0.1:5188`. Run `npm run build` for the production bundle in `dist/`.
+The dev server prefers `http://127.0.0.1:5188` and prints an alternative port if that port is busy. Production output is in `dist/`.
 
-## Content and assets
+## Content and languages
 
-The page uses a portable snapshot of the existing `../ICUE-mainsite-vn` project. The original project is not modified. Refresh the snapshot with:
+Refresh the portable snapshot from the existing Vietnamese repository:
 
 ```sh
 npm run sync:content
-# Or specify another checkout:
+# Or:
 node scripts/sync-content.mjs /absolute/path/to/ICUE-mainsite-vn
 ```
 
-Sources:
+The original project is not modified. The sync imports all six existing translations (`vi`, `en`, `de`, `fr`, `ko`, `ja`) for projects, service descriptions, profiles, FAQs, and platform links. Landing-page headings and controls are translated in `src/i18n/messages.js`. Japanese and Korean use the existing self-hosted Noto Sans subsets; Latin-script languages use Archivo.
 
-- `home-app/src/locales/vi.json`: institute name, about copy, project records, news.
-- `home-app/src/data/pastProjectsContent.js`: project IDs and years.
-- `ourwork-app/src/data/ourWorkScopes.js`: service descriptions, deliverables, and workflow.
-- `people-app/src/data/people.json`: real names, roles, biographies, and portraits.
-- `shared/faq-content/content/vi.js`: FAQ answers.
-- `contact-app/src/data/contactChannels.js`: address, telephone, and email.
-- Existing `pastProjects`, `work`, `aboutUs`, `news`, recruitment media, logo icons, and Archivo fonts.
+Language selection updates `?lang=` and the shared `icue_news_lang` storage key. Detail links preserve that language when opening the existing site. Light and dark themes follow the system preference initially and remember explicit choices under `icue-landing-theme`.
 
-The hero shows the existing Park City Xuân An project visualization. Marketing headings and the four editorial value statements are adapted from the institute's existing material. The establishment date and staff count come from the About content, rather than the inconsistent statistics in other subapps.
+Content sources include:
 
-## Interactions
+- `home-app/src/locales/*.json` and `home-app/src/data/pastProjectsContent.js`
+- `ourwork-app/src/data/ourWorkScopes.js`
+- `people-app/src/data/people.json`
+- `shared/faq-content/content/*.js`
+- `shared/app-switcher/appLinks.js`
+- `contact-app/src/data/contactChannels.js`
+- The existing project, office, community, service, portrait, logo, and font assets
 
-The page includes accessible service and value accordions, a project selector, team filters with profile dialogs, FAQ accordions, and a keyboard-accessible menu. Detail links lead to existing pages on `icue.vn`; email and phone links use the institute's actual contact details. There is no placeholder submission form.
+The hero uses the Park City Xuân An visualization. Project 6B uses a drawing from its own gallery. Establishment date and staff count come from the original About content.
 
-The original `icue.vn` deployment is separate from this project. Sites configuration, when present, publishes a private review copy.
+## Menu and interactions
+
+The hamburger opens [React Bits' Staggered Menu](https://reactbits.dev/components/staggered-menu), adapted from its JavaScript/CSS source. The original layered slide and staggered text animation use GSAP. ICUE additions include the external rail trigger, native dialog focus containment, Escape and backdrop dismissal, closing on navigation, reduced-motion support, localized controls, and theme styling. The upstream copyright and permission notice is retained in [licenses/react-bits.md](licenses/react-bits.md).
+
+The page retains service and value accordions, project selection, team filters and profile dialogs, and FAQs. The news section and large closing contact callout have been removed. Actual contact information is available in the compact footer.
+
+The three adjacent platform panels follow the additional reference design and link to the existing Mainsite, HR, and Contract platforms. Labels and URLs come from the existing ICUE app switcher; the main-site link follows the original English-host routing. Staff portals retain their existing sign-in requirements.
+
+Sites configuration publishes the separate private review copy. It does not replace the current `icue.vn` deployment.
