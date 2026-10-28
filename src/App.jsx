@@ -10,12 +10,12 @@ import HeroImageComparison from './components/HeroImageComparison.jsx'
 import ValueGallery from './components/ValueGallery.jsx'
 import PlatformVideo from './components/PlatformVideo.jsx'
 import StarBorder from './components/StarBorder.jsx'
+import RailScrollCue from './components/RailScrollCue.jsx'
 import './components/NavigationRail.css'
 
 const navigationTargets = ['/', '#services', '#projects', '#people', '/newsroom']
 const valueIcons = [FlaskConical, Users, Network, Leaf]
 const platformMedia = ['/media/park-city.jpg', '/media/office.webp', '/media/service-2.webp']
-const platformBrands = ['Mainsite', 'HR', 'Contract']
 const format = (text, key, value) => text.replace(`{${key}}`, value)
 
 function Lines({ lines }) {
@@ -117,7 +117,7 @@ function Platforms() {
   const videoLocale = locale === 'vi' ? 'vi' : 'en'
   const videoFiles = videoLocale === 'vi' ? ['icue-vn.mp4', 'hr_vn.mp4', 'contract_vi.mp4'] : ['icue-en.mp4', 'hr_en.mp4', 'contract_en.mp4']
   return <section id="platforms" className="platforms-section"><div className="section-heading"><div><Eyebrow number="07">{copy.platforms.eyebrow}</Eyebrow><h2><Lines lines={copy.platforms.title} /></h2></div><div className="platform-section-links"><p className="section-lead">{copy.platforms.lead}</p><a className="text-link" href={site('/newsroom')}>{copy.nav[4]}<ArrowUpRight size={18} /></a></div></div><div className="platform-grid">{apps.map((app, i) => <article className={`platform-card platform-card-${app.id}`} key={app.id}>
-    <img src={platformMedia[i]} alt="" loading="lazy" width="700" height="800" /><PlatformVideo key={videoLocale} src={`/videos/${videoLocale}/${videoFiles[i]}`} poster={platformMedia[i]} label={app.label} labels={copy.platforms} /><div className="platform-overlay" /><span className="platform-index">ICUE / 0{i + 1}<ArrowUpRight size={19} /></span><div className="platform-copy"><span className="platform-label">{app.label}</span><h3>{platformBrands[i]}</h3><p>{app.description}</p><span className="platform-button">{copy.platforms.open}<ArrowUpRight size={16} /></span></div><span className="platform-domain">{new URL(app.href).hostname}</span><a className="platform-card-link" href={app.href} target="_blank" rel="noopener noreferrer" aria-label={`${app.label} · ${content.platforms.newTab}`} />
+    <img src={platformMedia[i]} alt="" loading="lazy" width="700" height="800" /><PlatformVideo key={videoLocale} src={`/videos/${videoLocale}/${videoFiles[i]}`} poster={platformMedia[i]} label={app.label} labels={copy.platforms} /><div className="platform-overlay" /><span className="platform-index">ICUE / 0{i + 1}<ArrowUpRight size={19} /></span><div className="platform-copy"><span className="platform-label">{app.label}</span><h3>{copy.platforms.brands[i]}</h3><p>{app.description}</p><span className="platform-button">{copy.platforms.open}<ArrowUpRight size={16} /></span></div><span className="platform-domain">{new URL(app.href).hostname}</span><a className="platform-card-link" href={app.href} target="_blank" rel="noopener noreferrer" aria-label={`${app.label} · ${content.platforms.newTab}`} />
   </article>)}</div></section>
 }
 
@@ -161,6 +161,7 @@ function LandingPage() {
     <StarBorder as="aside" className="side-rail" aria-label={copy.ui.quickNav} radius={18} duration={9} thickness={1.3} stars={2} trailLength={.18} glow={.55} hover="brighten" clickPulse={false} theme="dark" color={theme === 'dark' ? '#99d8ce' : '#61d2c0'} trailColor="#2b9dce" backgroundColor="var(--rail-bg)" textColor="var(--rail-ink)" borderColor="var(--rail-border)">
       <button ref={menuTrigger} className="menu-button" aria-label={menuOpen ? copy.ui.closeMenu : copy.ui.openMenu} aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls="staggered-menu-panel" onClick={() => setMenuOpen((value) => !value)}><MenuToggleIcon open={menuOpen} /></button>
       <a className={`rail-brand${brandHidden ? ' is-suppressed' : ''}`} href={site('/')} aria-label={copy.ui.home} aria-hidden={brandHidden} inert={brandHidden}><img src={mark} alt="" width="38" height="38" /><span>ICUE VIETNAM</span></a>
+      <RailScrollCue visible={brandHidden} />
       <LocaleControls className="rail-controls" />
       <div className="rail-links"><a href={contact.facebook} aria-label={copy.ui.facebook}><span className="facebook-glyph" aria-hidden="true">f</span></a><a href={`mailto:${contact.email}`} aria-label={copy.ui.email}><Mail size={18} strokeWidth={1.5} /></a><a href={`tel:${contact.tel}`} aria-label={copy.ui.call}><Phone size={17} strokeWidth={1.5} /></a><span className="rail-section">{sectionIndex}</span></div>
     </StarBorder>

@@ -19,7 +19,7 @@ const messages = {
       { title: 'Hướng tới bền vững', text: 'Phát triển đô thị xanh, thích ứng với biến đổi khí hậu và bảo vệ môi trường tự nhiên là định hướng xuyên suốt trong nghiên cứu và tư vấn của ICUE.', alt: 'Cán bộ ICUE khảo sát thực địa' },
     ] },
     faq: { eyebrow: 'CÂU HỎI THƯỜNG GẶP', title: ['BẠN MUỐN', 'BIẾT THÊM?'], all: 'Tất cả câu hỏi' },
-    platforms: { eyebrow: 'HỆ SINH THÁI ICUE', title: ['MỘT KẾT NỐI.', 'BA NỀN TẢNG.'], lead: 'Khám phá ICUE và truy cập các nền tảng làm việc của chúng tôi.', open: 'Truy cập nền tảng', playPreview: 'Phát video xem trước {platform}', pausePreview: 'Tạm dừng video xem trước {platform}', previewLabel: 'Video xem trước {platform}' },
+    platforms: { eyebrow: 'HỆ SINH THÁI ICUE', title: ['MỘT KẾT NỐI.', 'BA NỀN TẢNG.'], lead: 'Khám phá ICUE và truy cập các nền tảng làm việc của chúng tôi.', brands: ['Trang chính', 'Nhân sự', 'Hợp đồng'], open: 'Truy cập nền tảng', playPreview: 'Phát video xem trước {platform}', pausePreview: 'Tạm dừng video xem trước {platform}', previewLabel: 'Video xem trước {platform}' },
     footer: { addressLabel: 'GHÉ THĂM CHÚNG TÔI', phoneLabel: 'GỌI CHO ICUE', contactLabel: 'LIÊN HỆ ICUE', contactCta: 'Trao đổi về dự án', rights: 'ICUE. Kiến tạo giá trị bền vững.', privacy: 'Quyền riêng tư', careers: 'Tuyển dụng' },
   },
   en: {
@@ -42,7 +42,7 @@ const messages = {
       { title: 'A sustainable outlook', text: 'Green urban development, climate adaptation and protection of the natural environment guide ICUE’s research and consultancy.', alt: 'ICUE staff conducting a field survey' },
     ] },
     faq: { eyebrow: 'FREQUENTLY ASKED QUESTIONS', title: ['WANT TO', 'KNOW MORE?'], all: 'All questions' },
-    platforms: { eyebrow: 'THE ICUE ECOSYSTEM', title: ['ONE CONNECTION.', 'THREE PLATFORMS.'], lead: 'Discover ICUE and access the platforms that support our work.', open: 'Visit platform', playPreview: 'Play {platform} preview', pausePreview: 'Pause {platform} preview', previewLabel: '{platform} video preview' },
+    platforms: { eyebrow: 'THE ICUE ECOSYSTEM', title: ['ONE CONNECTION.', 'THREE PLATFORMS.'], lead: 'Discover ICUE and access the platforms that support our work.', brands: ['Mainsite', 'HR', 'Contract'], open: 'Visit platform', playPreview: 'Play {platform} preview', pausePreview: 'Pause {platform} preview', previewLabel: '{platform} video preview' },
     footer: { addressLabel: 'VISIT US', phoneLabel: 'CALL ICUE', contactLabel: 'CONTACT ICUE', contactCta: 'Discuss a project', rights: 'ICUE. Creating lasting value.', privacy: 'Privacy', careers: 'Careers' },
   },
   de: {
@@ -65,7 +65,7 @@ const messages = {
       { title: 'Nachhaltig denken', text: 'Grüne Stadtentwicklung, Anpassung an den Klimawandel und Schutz der natürlichen Umwelt prägen die Forschung und Beratung von ICUE.', alt: 'ICUE-Mitarbeitende bei einer Geländeaufnahme' },
     ] },
     faq: { eyebrow: 'HÄUFIGE FRAGEN', title: ['MEHR', 'ERFAHREN?'], all: 'Alle Fragen' },
-    platforms: { eyebrow: 'DAS ICUE-ÖKOSYSTEM', title: ['EINE VERBINDUNG.', 'DREI PLATTFORMEN.'], lead: 'Entdecken Sie ICUE und die Plattformen für unsere tägliche Arbeit.', open: 'Plattform öffnen', playPreview: 'Vorschau für {platform} abspielen', pausePreview: 'Vorschau für {platform} pausieren', previewLabel: 'Videovorschau für {platform}' },
+    platforms: { eyebrow: 'DAS ICUE-ÖKOSYSTEM', title: ['EINE VERBINDUNG.', 'DREI PLATTFORMEN.'], lead: 'Entdecken Sie ICUE und die Plattformen für unsere tägliche Arbeit.', brands: ['Hauptseite', 'Personal', 'Vertrag'], open: 'Plattform öffnen', playPreview: 'Vorschau für {platform} abspielen', pausePreview: 'Vorschau für {platform} pausieren', previewLabel: 'Videovorschau für {platform}' },
     footer: { addressLabel: 'BESUCHEN SIE UNS', phoneLabel: 'ICUE ANRUFEN', contactLabel: 'KONTAKT ZU ICUE', contactCta: 'Ein Projekt besprechen', rights: 'ICUE. Bleibende Werte schaffen.', privacy: 'Datenschutz', careers: 'Karriere' },
   },
   fr: {
@@ -88,7 +88,7 @@ const messages = {
       { title: 'Un avenir durable', text: 'Développement urbain vert, adaptation climatique et protection de l’environnement naturel guident les recherches et les conseils d’ICUE.', alt: 'L’équipe ICUE lors d’une étude de terrain' },
     ] },
     faq: { eyebrow: 'QUESTIONS FRÉQUENTES', title: ['ENVIE D’EN', 'SAVOIR PLUS ?'], all: 'Toutes les questions' },
-    platforms: { eyebrow: 'L’ÉCOSYSTÈME ICUE', title: ['UN LIEN.', 'TROIS PLATEFORMES.'], lead: 'Découvrez ICUE et accédez aux plateformes qui accompagnent notre travail.', open: 'Accéder à la plateforme', playPreview: 'Lire l’aperçu de {platform}', pausePreview: 'Mettre en pause l’aperçu de {platform}', previewLabel: 'Aperçu vidéo de {platform}' },
+    platforms: { eyebrow: 'L’ÉCOSYSTÈME ICUE', title: ['UN LIEN.', 'TROIS PLATEFORMES.'], lead: 'Découvrez ICUE et accédez aux plateformes qui accompagnent notre travail.', brands: ['Site principal', 'RH', 'Contrat'], open: 'Accéder à la plateforme', playPreview: 'Lire l’aperçu de {platform}', pausePreview: 'Mettre en pause l’aperçu de {platform}', previewLabel: 'Aperçu vidéo de {platform}' },
     footer: { addressLabel: 'NOUS RENDRE VISITE', phoneLabel: 'APPELER ICUE', contactLabel: 'CONTACTER ICUE', contactCta: 'Parlons de votre projet', rights: 'ICUE. Créer une valeur durable.', privacy: 'Confidentialité', careers: 'Carrières' },
   },
   ko: {
@@ -111,7 +111,7 @@ const messages = {
       { title: '지속 가능한 미래로', text: '녹색 도시개발, 기후변화 적응, 자연환경 보호는 ICUE의 연구와 자문을 이끄는 방향입니다.', alt: '현장 조사를 수행하는 ICUE 직원' },
     ] },
     faq: { eyebrow: '자주 묻는 질문', title: ['더 알고', '싶으신가요?'], all: '모든 질문' },
-    platforms: { eyebrow: 'ICUE 생태계', title: ['하나의 연결.', '세 가지 플랫폼.'], lead: 'ICUE를 둘러보고 업무를 지원하는 플랫폼에 접속하세요.', open: '플랫폼 방문', playPreview: '{platform} 미리보기 재생', pausePreview: '{platform} 미리보기 일시정지', previewLabel: '{platform} 동영상 미리보기' },
+    platforms: { eyebrow: 'ICUE 생태계', title: ['하나의 연결.', '세 가지 플랫폼.'], lead: 'ICUE를 둘러보고 업무를 지원하는 플랫폼에 접속하세요.', brands: ['메인사이트', '인사', '계약'], open: '플랫폼 방문', playPreview: '{platform} 미리보기 재생', pausePreview: '{platform} 미리보기 일시정지', previewLabel: '{platform} 동영상 미리보기' },
     footer: { addressLabel: '오시는 길', phoneLabel: '전화 문의', contactLabel: 'ICUE 문의', contactCta: '프로젝트 상담', rights: 'ICUE. 지속 가능한 가치를 만듭니다.', privacy: '개인정보 보호', careers: '채용' },
   },
   ja: {
@@ -134,7 +134,7 @@ const messages = {
       { title: '持続可能な未来へ', text: '緑の都市開発、気候変動への適応、自然環境の保護が、ICUEの研究とコンサルティングの指針です。', alt: '現地調査を行うICUE職員' },
     ] },
     faq: { eyebrow: 'よくあるご質問', title: ['もっと', '知りたいですか？'], all: 'すべての質問' },
-    platforms: { eyebrow: 'ICUEのエコシステム', title: ['一つのつながり。', '3つのプラットフォーム。'], lead: 'ICUEを知り、日々の業務を支えるプラットフォームにアクセスできます。', open: 'プラットフォームを開く', playPreview: '{platform}のプレビューを再生', pausePreview: '{platform}のプレビューを一時停止', previewLabel: '{platform}の動画プレビュー' },
+    platforms: { eyebrow: 'ICUEのエコシステム', title: ['一つのつながり。', '3つのプラットフォーム。'], lead: 'ICUEを知り、日々の業務を支えるプラットフォームにアクセスできます。', brands: ['メインサイト', '人事', '契約'], open: 'プラットフォームを開く', playPreview: '{platform}のプレビューを再生', pausePreview: '{platform}のプレビューを一時停止', previewLabel: '{platform}の動画プレビュー' },
     footer: { addressLabel: 'アクセス', phoneLabel: '電話でのお問い合わせ', contactLabel: 'ICUEへのお問い合わせ', contactCta: 'プロジェクトのご相談', rights: 'ICUE. 持続する価値をつくる。', privacy: 'プライバシー', careers: '採用情報' },
   },
 }

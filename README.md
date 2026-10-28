@@ -56,7 +56,7 @@ The three adjacent platform panels follow the additional reference design and li
 
 Each platform card plays its supplied local MP4 preview, muted, looping and inline. Vietnamese uses `public/videos/vi`; English, German, French, Korean and Japanese use `public/videos/en`. The play/pause button appears on hover or keyboard focus, and remains available on touch devices. Playback pauses offscreen or in a background tab and remembers an explicit pause until the reader resumes it. The video control and platform link are separate elements.
 
-The navigation rail reuses the mainsite's canvas-based Star Border, including its reduced-motion and background-tab handling. An IntersectionObserver fades and hides the rail logo and text whenever either the header or footer logo is visible; the rail brand returns between those two positions.
+The navigation rail reuses the mainsite's canvas-based Star Border, including its reduced-motion and background-tab handling. An IntersectionObserver fades and hides the rail logo and text whenever either the header or footer logo is visible; the rail brand returns between those two positions. The hidden branding is replaced by a localized scroll cue with a circular reading-progress indicator. At the footer it becomes a back-to-top link; on compact screens it uses a horizontal layout.
 
 Sites configuration publishes the separate private review copy. It does not replace the current `icue.vn` deployment.
 # icuelandingpage
