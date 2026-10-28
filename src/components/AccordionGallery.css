@@ -1,0 +1,331 @@
+.accordion-gallery {
+  --ag-accent: var(--accent);
+  --ag-overlay: var(--inverse-surface);
+  --ag-text: var(--photo-caption);
+  --ag-gap: 10px;
+  --ag-radius: 16px;
+  --ag-media-size: 320px;
+
+  display: flex;
+  flex-direction: row;
+  gap: var(--ag-gap);
+  width: 100%;
+  max-width: 100%;
+  perspective: 1400px;
+  perspective-origin: 50% 50%;
+}
+
+.accordion-gallery--vertical {
+  flex-direction: column;
+}
+
+.ag-panel {
+  --ag-dim: .35;
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: var(--ag-radius);
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  outline: none;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  background: var(--photo-surface);
+  box-shadow: 0 10px 30px -18px var(--shadow);
+  will-change: flex-grow, transform;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ag-panel:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--ag-accent),
+    0 10px 30px -18px var(--shadow);
+}
+
+.ag-panel__frame {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.ag-panel__media {
+  --ag-gray: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--ag-media-size);
+  height: 100%;
+  filter: grayscale(var(--ag-gray));
+  will-change: transform, filter;
+
+  /* `background-image` is the 24px blur-up thumbnail of this very photograph,
+     set inline from `item.blur`. It sits on the media box rather than on the
+     frame so it is cropped, drifted and de-saturated exactly like the <img>
+     that fades in over it. Where there is no thumbnail, the flat tile shows. */
+  background-color: var(--photo-surface);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.accordion-gallery--vertical .ag-panel__media {
+  width: 100%;
+  height: var(--ag-media-size);
+}
+
+.ag-panel__media img,
+.ag-panel__media picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ag-panel__media img {
+  object-fit: cover;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Held back until the browser reports the file decoded, so a photograph never
+   appears half-painted and never lands mid-way through the GSAP timeline. */
+.ag-panel__img {
+  opacity: 0;
+  transition: opacity 420ms ease;
+}
+
+.ag-panel__img.is-ready {
+  opacity: 1;
+}
+
+.ag-panel--expandable {
+  cursor: zoom-in;
+}
+
+.ag-panel__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 45%, color-mix(in srgb, var(--ag-overlay) 78%, transparent) 100%),
+    color-mix(in srgb, var(--ag-overlay) calc(var(--ag-dim, 0.35) * 100%), transparent);
+}
+
+.ag-panel__label {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.ag-panel__bar {
+  flex: 0 0 auto;
+  width: 3px;
+  height: 26px;
+  border-radius: 3px;
+  background: var(--ag-accent);
+  opacity: 0;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--ag-accent) 60%, transparent);
+}
+
+.ag-panel__text {
+  color: var(--ag-text);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: clamp(1rem, 1.4vw, 1.4rem);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  text-shadow: 0 2px 14px var(--photo-scrim);
+}
+
+@media (max-width: 520px) {
+  /* No `height: auto` here: it beat the inline height, left the column with no
+     free space to distribute, and pinned every panel to the 84px minimum below
+     — the active panel could not open. The component sets the column height
+     from COMPACT_ACTIVE + COMPACT_STRIP, which these values mirror. */
+  .accordion-gallery {
+    flex-direction: column;
+    perspective: none;
+  }
+  .ag-panel {
+    min-height: 84px;
+    transform: none !important;
+  }
+  .accordion-gallery .ag-panel__media {
+    width: 100%;
+    height: var(--ag-media-size);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ag-panel,
+  .ag-panel__media {
+    will-change: auto;
+  }
+  .ag-panel__img,
+  .ag-lightbox__image {
+    transition: none;
+  }
+}
+
+/* Full-size photo viewer */
+.ag-lightbox {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100svh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(12px, 3vw, 28px);
+  background: var(--backdrop);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.ag-lightbox__panel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(96vw, 1280px);
+  max-height: 92vh;
+}
+
+.ag-lightbox__figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-height: 92vh;
+}
+
+.ag-lightbox__image {
+  display: block;
+  opacity: 0;
+  transition: opacity 260ms ease;
+  max-width: min(96vw, 1280px);
+  max-height: calc(92vh - 3rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px var(--shadow);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.ag-lightbox__image.is-ready {
+  opacity: 1;
+}
+
+.ag-lightbox__count {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.82em;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  opacity: 0.72;
+}
+
+.ag-lightbox__caption {
+  margin: 0;
+  max-width: min(96vw, 720px);
+  text-align: center;
+  color: var(--photo-caption);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-shadow: 0 2px 12px var(--photo-scrim);
+}
+
+.ag-lightbox__close,
+.ag-lightbox__nav {
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--inverse-ink);
+  /* Dark and bordered, not 12% white: these are `fixed` at the screen edges,
+     which on a phone puts them on top of a photograph filling 96vw. A pale
+     wash over a pale picture is an invisible control. */
+  background: var(--inverse-surface);
+  border: 1px solid var(--control-border);
+  box-shadow: 0 2px 16px var(--shadow);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 10002;
+}
+
+.ag-lightbox__close:hover,
+.ag-lightbox__nav:hover {
+  background: var(--inverse-line);
+  border-color: var(--inverse-muted);
+}
+
+.ag-lightbox__close:focus-visible,
+.ag-lightbox__nav:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.ag-lightbox__close {
+  top: clamp(12px, 3vw, 24px);
+  right: clamp(12px, 3vw, 24px);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.ag-lightbox__nav {
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  font-size: 2rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.ag-lightbox__nav--prev {
+  left: clamp(8px, 2vw, 20px);
+}
+
+.ag-lightbox__nav--next {
+  right: clamp(8px, 2vw, 20px);
+}
+
+@media (max-width: 640px) {
+  .ag-lightbox__nav {
+    width: 44px;
+    height: 44px;
+    font-size: 1.65rem;
+  }
+}
+
+.ag-lightbox:not([open]){display:none}
+.ag-lightbox::backdrop{background:transparent;backdrop-filter:none}

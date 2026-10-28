@@ -1,0 +1,13 @@
+.platform-preview-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.platform-preview-video.has-error{opacity:0}
+.platform-card-link{position:absolute;inset:0;z-index:1;border-radius:inherit}
+.platform-card-link:focus-visible{outline:2px solid currentColor;outline-offset:-7px}
+.platform-card:has(.platform-preview-video) .platform-overlay{opacity:.84;transition:opacity .35s}
+.platform-card:has(.platform-preview-video):is(:hover,:focus-within) .platform-overlay{opacity:.7}
+.platform-video-control{position:absolute;z-index:3;bottom:18px;right:18px;display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--control-border);border-radius:50%;background:var(--surface-raised);color:var(--ink);box-shadow:0 3px 12px var(--shadow);opacity:0;pointer-events:none;transform:translateY(4px);transition:opacity .2s,transform .2s,background .2s}
+.platform-card:is(:hover,:focus-within) .platform-video-control{opacity:1;transform:none;pointer-events:auto}
+.platform-video-control:hover{background:var(--control-hover)}
+.platform-video-control:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.platform-video-control:disabled{opacity:.5;cursor:default}
+@media(hover:none){.platform-video-control{opacity:1;transform:none;pointer-events:auto}}
+@media(prefers-reduced-motion:reduce){.platform-video-control,.platform-card .platform-overlay{transition:none}}

@@ -6,14 +6,14 @@ import {
 import { LANGUAGES, LocaleProvider, useLocale } from './i18n/LocaleProvider.jsx'
 import StaggeredMenu from './components/StaggeredMenu.jsx'
 import MenuToggleIcon from './components/MenuToggleIcon.jsx'
+import HeroImageComparison from './components/HeroImageComparison.jsx'
+import ValueGallery from './components/ValueGallery.jsx'
+import PlatformVideo from './components/PlatformVideo.jsx'
+import StarBorder from './components/StarBorder.jsx'
+import './components/NavigationRail.css'
 
 const navigationTargets = ['/', '#services', '#projects', '#people', '/newsroom']
-const valueMedia = [
-  { icon: FlaskConical, image: '/media/office.webp' },
-  { icon: Users, image: '/media/community.webp' },
-  { icon: Network, image: '/media/collaboration.webp' },
-  { icon: Leaf, image: '/media/survey.webp' },
-]
+const valueIcons = [FlaskConical, Users, Network, Leaf]
 const platformMedia = ['/media/park-city.jpg', '/media/office.webp', '/media/service-2.webp']
 const platformBrands = ['Mainsite', 'HR', 'Contract']
 const format = (text, key, value) => text.replace(`{${key}}`, value)
@@ -77,7 +77,7 @@ function Projects() {
   return <section id="projects" className="projects section-shell">
     <div className="section-heading"><div><Eyebrow number="03">{copy.projects.eyebrow}</Eyebrow><h2><Lines lines={copy.projects.title} /></h2></div><a href={site('/past-projects')} className="text-link">{copy.projects.all}<ArrowUpRight size={20} /></a></div>
     <div className="project-showcase"><div className="project-media">
-      <a href={site(`/past-projects/${selected.id}`)} className={`project-image-link${selected.id === '3' ? ' project-map' : ''}`} aria-label={format(copy.projects.open, 'title', selected.title)}><img key={selected.id} src={selected.image} alt={selected.imageAlt} loading="lazy" width="900" height="750" /><span className="project-year">{selected.year}<ArrowUpRight size={17} /></span></a>
+      <a href={site(`/past-projects/${selected.id}`)} className={`project-image-link${selected.id === '5' ? ' project-board' : ''}`} aria-label={format(copy.projects.open, 'title', selected.title)}><img key={selected.id} src={selected.image} alt={selected.imageAlt} loading="lazy" width="900" height="750" /><span className="project-year">{selected.year}<ArrowUpRight size={17} /></span></a>
       <div className="project-media-caption" aria-live="polite"><span>{selected.location}</span><div className="project-controls"><button onClick={() => nextProject(-1)} aria-label={copy.projects.previous}><ChevronLeft size={19} /></button><span>0{active + 1}<i>/ 03</i></span><button onClick={() => nextProject(1)} aria-label={copy.projects.next}><ChevronRight size={19} /></button></div></div>
     </div><div className="project-options" aria-label={copy.projects.choose}>{content.projects.map((project, i) => <div className={`project-option${i === active ? ' is-active' : ''}`} key={project.id}>
       <h3><button onClick={() => setActive(i)} aria-expanded={i === active} aria-controls={`project-description-${project.id}`}><span className="row-number">0{i + 1}</span><span>{project.title}</span><ArrowUpRight size={23} strokeWidth={1.4} /></button></h3>
@@ -89,7 +89,7 @@ function Projects() {
 function People({ onSelect }) {
   const { copy, content, site } = useLocale()
   const [group, setGroup] = useState('experts')
-  const people = content.people.filter((person) => person.group === group)
+  const people = content.people.filter((person) => person.group === group).sort((a, b) => Number(a.id === 'tran-quoc-toan') - Number(b.id === 'tran-quoc-toan'))
   return <section id="people" className="people-section"><div className="people-intro"><ArchitecturalLines /><Eyebrow number="04" light>{copy.people.eyebrow}</Eyebrow><h2>{copy.people.title[0]}<br />{copy.people.title[1]}<br /><span>{copy.people.title[2]}</span></h2><p>{copy.people.lead}</p><a className="text-link" href={site(group === 'experts' ? '/people/experts' : '/people/core-team')}>{copy.people.all}<ArrowUpRight size={19} /></a><span className="people-signature">{copy.people.signature}</span></div>
     <div className="people-directory"><div className="people-directory-head"><h3>{copy.people.directory}</h3><div className="people-filters" aria-label={copy.people.groupsLabel}><button aria-pressed={group === 'experts'} onClick={() => setGroup('experts')}>{copy.people.experts}</button><button aria-pressed={group === 'core'} onClick={() => setGroup('core')}>{copy.people.staff}</button></div></div><div className="people-grid">{people.map((person) => <button className="person-card" key={person.id} onClick={() => onSelect(person.id)} aria-label={format(copy.ui.viewProfile, 'name', person.name)}><span className="person-photo"><img src={person.photo} alt={person.name} loading="lazy" width="400" height="440" /><span className="person-photo-cta"><ArrowUpRight size={22} /></span></span><span className="person-name">{person.name}</span><span className="person-role">{person.id === 'nguyen-hong-hanh' ? copy.people.directorRole : `${person.honorific ? person.honorific + ' · ' : ''}${person.title}`}</span></button>)}</div><p className="directory-hint"><span />{copy.people.hint}</p></div>
   </section>
@@ -99,10 +99,10 @@ function Values() {
   const { copy, site } = useLocale()
   const [active, setActive] = useState(0)
   return <section className="values section-shell" id="approach"><div className="section-heading"><div><Eyebrow number="05">{copy.values.eyebrow}</Eyebrow><h2><Lines lines={copy.values.title} /></h2></div><p className="section-lead">{copy.values.lead}</p></div><div className="values-layout"><div className="values-list">{copy.values.items.map((value, i) => {
-    const Icon = valueMedia[i].icon
+    const Icon = valueIcons[i]
     const open = active === i
     return <article className={`value${open ? ' is-open' : ''}`} key={i}><h3><button aria-expanded={open} aria-controls={`value-${i}`} onClick={() => setActive(i)}><Icon size={30} strokeWidth={1.4} /><span>{value.title}</span><Plus size={17} strokeWidth={1.5} className="value-plus" /></button></h3><div className="accordion-panel" id={`value-${i}`} aria-hidden={!open} inert={!open}><div className="accordion-panel-inner"><p>{value.text}</p></div></div></article>
-  })}<a className="text-link values-careers" href={site('/structure/')}>{copy.links.structure}<ArrowUpRight size={18} /></a></div><figure className="value-image"><img key={active} src={valueMedia[active].image} alt={copy.values.items[active].alt} loading="lazy" width="700" height="800" /><figcaption><span>{copy.values.caption}</span><span>0{active + 1} / 04</span></figcaption></figure></div></section>
+  })}<a className="text-link values-careers" href={site('/structure/')}>{copy.links.structure}<ArrowUpRight size={18} /></a></div><ValueGallery key={active} index={active} /></div></section>
 }
 
 function Faq() {
@@ -112,21 +112,25 @@ function Faq() {
 }
 
 function Platforms() {
-  const { copy, content, site } = useLocale()
+  const { copy, content, site, locale } = useLocale()
   const apps = content.platforms.apps.map((app) => app.id === 'website' ? { ...app, href: site('/') } : app)
-  return <section id="platforms" className="platforms-section"><div className="section-heading"><div><Eyebrow number="07">{copy.platforms.eyebrow}</Eyebrow><h2><Lines lines={copy.platforms.title} /></h2></div><div className="platform-section-links"><p className="section-lead">{copy.platforms.lead}</p><a className="text-link" href={site('/newsroom')}>{copy.nav[4]}<ArrowUpRight size={18} /></a></div></div><div className="platform-grid">{apps.map((app, i) => <a className={`platform-card platform-card-${app.id}`} key={app.id} href={app.href} target="_blank" rel="noopener noreferrer" aria-label={`${app.label} · ${content.platforms.newTab}`}>
-    <img src={platformMedia[i]} alt="" loading="lazy" width="700" height="800" /><div className="platform-overlay" /><span className="platform-index">ICUE / 0{i + 1}<ArrowUpRight size={19} /></span><div className="platform-copy"><span className="platform-label">{app.label}</span><h3>{platformBrands[i]}</h3><p>{app.description}</p><span className="platform-button">{copy.platforms.open}<ArrowUpRight size={16} /></span></div><span className="platform-domain">{new URL(app.href).hostname}</span>
-  </a>)}</div></section>
+  const videoLocale = locale === 'vi' ? 'vi' : 'en'
+  const videoFiles = videoLocale === 'vi' ? ['icue-vn.mp4', 'hr_vn.mp4', 'contract_vi.mp4'] : ['icue-en.mp4', 'hr_en.mp4', 'contract_en.mp4']
+  return <section id="platforms" className="platforms-section"><div className="section-heading"><div><Eyebrow number="07">{copy.platforms.eyebrow}</Eyebrow><h2><Lines lines={copy.platforms.title} /></h2></div><div className="platform-section-links"><p className="section-lead">{copy.platforms.lead}</p><a className="text-link" href={site('/newsroom')}>{copy.nav[4]}<ArrowUpRight size={18} /></a></div></div><div className="platform-grid">{apps.map((app, i) => <article className={`platform-card platform-card-${app.id}`} key={app.id}>
+    <img src={platformMedia[i]} alt="" loading="lazy" width="700" height="800" /><PlatformVideo key={videoLocale} src={`/videos/${videoLocale}/${videoFiles[i]}`} poster={platformMedia[i]} label={app.label} labels={copy.platforms} /><div className="platform-overlay" /><span className="platform-index">ICUE / 0{i + 1}<ArrowUpRight size={19} /></span><div className="platform-copy"><span className="platform-label">{app.label}</span><h3>{platformBrands[i]}</h3><p>{app.description}</p><span className="platform-button">{copy.platforms.open}<ArrowUpRight size={16} /></span></div><span className="platform-domain">{new URL(app.href).hostname}</span><a className="platform-card-link" href={app.href} target="_blank" rel="noopener noreferrer" aria-label={`${app.label} · ${content.platforms.newTab}`} />
+  </article>)}</div></section>
 }
 
 function LandingPage() {
-  const { copy, content, contact, site } = useLocale()
+  const { copy, content, contact, site, theme } = useLocale()
   const personDialog = useRef(null)
   const menuTrigger = useRef(null)
   const [personId, setPersonId] = useState(null)
   const [currentSection, setCurrentSection] = useState('home')
   const [menuOpen, setMenuOpen] = useState(false)
+  const [brandHidden, setBrandHidden] = useState(true)
   const person = content.people.find((p) => p.id === personId)
+  const heroPortraits = content.people.filter((expert) => expert.group === 'experts').slice(0, 5).map((expert) => expert.id === 'do-bao-long' ? { ...expert, photo: '/media/longdoorgstructure_prev.png' } : expert)
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => { for (const entry of entries) if (entry.isIntersecting) setCurrentSection(entry.target.id) }, { rootMargin: '-15% 0px -60% 0px', threshold: 0 })
@@ -134,19 +138,34 @@ function LandingPage() {
     return () => observer.disconnect()
   }, [])
   useEffect(() => { if (personId && !personDialog.current.open) personDialog.current.showModal() }, [personId])
+  useEffect(() => {
+    const visibility = new Map()
+    const logos = [...document.querySelectorAll('.wordmark img, .footer-brand img')]
+    const sync = () => setBrandHidden(logos.some((logo) => {
+      const style = getComputedStyle(logo)
+      return visibility.get(logo) && style.visibility !== 'hidden' && style.display !== 'none'
+    }))
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) visibility.set(entry.target, entry.isIntersecting)
+      sync()
+    }, { threshold: 0 })
+    logos.forEach((logo) => observer.observe(logo))
+    window.addEventListener('resize', sync)
+    return () => { observer.disconnect(); window.removeEventListener('resize', sync) }
+  }, [])
   const sectionIndex = { home: '00', about: '01', services: '02', projects: '03', people: '04', approach: '05', faq: '06', platforms: '07', contact: '08' }[currentSection] || '00'
   const mark = '/media/original-logo.png'
 
   return <>
     <a className="skip-link" href="#main-content">{copy.ui.skip}</a>
-    <aside className="side-rail" aria-label={copy.ui.quickNav}>
+    <StarBorder as="aside" className="side-rail" aria-label={copy.ui.quickNav} radius={18} duration={9} thickness={1.3} stars={2} trailLength={.18} glow={.55} hover="brighten" clickPulse={false} theme="dark" color={theme === 'dark' ? '#99d8ce' : '#61d2c0'} trailColor="#2b9dce" backgroundColor="var(--rail-bg)" textColor="var(--rail-ink)" borderColor="var(--rail-border)">
       <button ref={menuTrigger} className="menu-button" aria-label={menuOpen ? copy.ui.closeMenu : copy.ui.openMenu} aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls="staggered-menu-panel" onClick={() => setMenuOpen((value) => !value)}><MenuToggleIcon open={menuOpen} /></button>
-      <a className="rail-brand" href={site('/')} aria-label={copy.ui.home}><img src={mark} alt="" width="38" height="38" /><span>ICUE VIETNAM</span></a>
+      <a className={`rail-brand${brandHidden ? ' is-suppressed' : ''}`} href={site('/')} aria-label={copy.ui.home} aria-hidden={brandHidden} inert={brandHidden}><img src={mark} alt="" width="38" height="38" /><span>ICUE VIETNAM</span></a>
       <LocaleControls className="rail-controls" />
       <div className="rail-links"><a href={contact.facebook} aria-label={copy.ui.facebook}><span className="facebook-glyph" aria-hidden="true">f</span></a><a href={`mailto:${contact.email}`} aria-label={copy.ui.email}><Mail size={18} strokeWidth={1.5} /></a><a href={`tel:${contact.tel}`} aria-label={copy.ui.call}><Phone size={17} strokeWidth={1.5} /></a><span className="rail-section">{sectionIndex}</span></div>
-    </aside>
-    <div className="page-wrap"><header className="site-header"><a href={site("/")} className="wordmark" aria-label={copy.ui.home}><img src={mark} alt="" width="43" height="43" /><span>ICUE</span></a><span className="header-institute">{content.institute}</span><nav className="header-nav" aria-label={copy.ui.primaryNav}><a href={site("/")}>{copy.nav[0]}</a><a href={site("/past-projects")}>{copy.header.projects}</a><a href={site("/contact")} className="header-contact"><span />{copy.header.contact}<ArrowUpRight size={17} /></a></nav><LocaleControls className="header-controls" /></header>
-      <main id="main-content"><section id="home" className="hero" aria-labelledby="hero-title"><div className="hero-visual"><img src="/media/park-city.jpg" alt={copy.hero.imageAlt} width="2560" height="1440" fetchPriority="high" /><div className="hero-image-tag"><span />{copy.hero.tag}</div><OrbitStamp /><div className="hero-image-caption"><span>PARK CITY XUÂN AN</span><p><Lines lines={copy.hero.caption} /></p></div></div><div className="hero-copy"><p className="hero-kicker"><span />{copy.hero.kicker}</p><h1 id="hero-title"><Lines lines={copy.hero.title} /><span className="accent">.</span></h1><p className="hero-description">{copy.hero.description}</p><a className="hero-cta" href={site("/past-projects")}>{copy.hero.projectCta}<RoundArrow direction="right" /></a><a className="team-teaser" href={site("/people/experts")}><span className="avatar-stack">{content.people.slice(0, 4).map((p) => <img src={p.photo} key={p.id} alt="" width="48" height="48" />)}</span><span>{copy.hero.teamBefore}<br /><strong>{copy.hero.teamAfter}<ArrowUpRight size={15} /></strong></span></a></div></section>
+    </StarBorder>
+    <div className="page-wrap"><header className="site-header"><a href={site("/")} className="wordmark" aria-label={copy.ui.home}><img src={mark} alt="" width="43" height="43" /><span>ICUE</span></a><span className="header-institute">{content.institute}</span><nav className="header-nav" aria-label={copy.ui.primaryNav}><a href={site("/past-projects")}>{copy.header.projects}</a><a href={site("/contact")} className="header-contact"><span />{copy.header.contact}<ArrowUpRight size={17} /></a></nav><LocaleControls className="header-controls" /></header>
+      <main id="main-content"><section id="home" className="hero" aria-labelledby="hero-title"><div className="hero-visual"><HeroImageComparison /><div className="hero-image-tag"><span />{copy.hero.tag}</div><OrbitStamp /><div className="hero-image-caption"><span>{copy.hero.comparison.caption}</span><p><Lines lines={copy.hero.caption} /></p></div></div><div className="hero-copy"><p className="hero-kicker"><span />{copy.hero.kicker}</p><h1 id="hero-title"><Lines lines={copy.hero.title} /><span className="accent">.</span></h1><p className="hero-description">{copy.hero.description}</p><a className="hero-cta" href={site("/past-projects")}>{copy.hero.projectCta}<RoundArrow direction="right" /></a><a className="team-teaser" href={site("/people/experts")}><span className="avatar-stack">{heroPortraits.map((p) => <img src={p.photo} key={p.id} alt="" width="48" height="48" />)}</span><span>{copy.hero.teamBefore}<br /><strong>{copy.hero.teamAfter}<ArrowUpRight size={15} /></strong></span></a></div></section>
         <div className="hero-bottom"><a href="#about"><ArrowDown size={14} />{copy.hero.scroll}</a><span>{copy.hero.fields.map((field, i) => <Fragment key={i}>{i > 0 && <i>/</i>}{field}</Fragment>)}</span><span>{copy.hero.location}</span></div>
         <section id="about" className="about section-shell"><Eyebrow number="01">{copy.about.eyebrow}</Eyebrow><div className="about-layout"><h2>{copy.about.title[0]}<br /><span>{copy.about.title[1]}</span></h2><div className="about-copy"><p>{copy.about.lead}</p><p>{copy.about.body}</p><a href={site('/about-us')} className="text-link">{copy.about.link}<ArrowUpRight size={18} /></a></div></div><div className="about-facts"><div><strong>2013<span>↗</span></strong><span>{copy.about.facts[0]}</span></div><div><strong>20<span>+</span></strong><span>{copy.about.facts[1]}</span></div><div><strong>04<span>↗</span></strong><span>{copy.about.facts[2]}</span></div><div className="about-compass"><Compass size={68} strokeWidth={0.8} /><span><Lines lines={copy.about.compass} /></span></div></div></section>
         <Services /><Projects /><People onSelect={setPersonId} /><Values /><Faq /><Platforms />

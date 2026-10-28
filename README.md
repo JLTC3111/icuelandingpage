@@ -38,7 +38,9 @@ Content sources include:
 - `contact-app/src/data/contactChannels.js`
 - The existing project, office, community, service, portrait, logo, and font assets
 
-The hero uses the Park City Xuân An visualization. Project 6B uses a drawing from its own gallery. Establishment date and staff count come from the original About content.
+The hero uses existing planning and fieldwork imagery from ICUE. Projects use images from their corresponding galleries. Establishment date and staff count come from the original About content.
+
+The cover displays the current planning and fieldwork images through the newsroom's `motion-primitives/ImageComparison` component. The landing adaptation keeps pointer hover, click-to-hold, and touch dragging, and adds an accessible keyboard slider. Labels and instructions are translated into all six languages, controls follow the active theme, and reduced-motion preference disables hover scrubbing. Cover links and the caption remain accessible above the comparison.
 
 ## Menu and interactions
 
@@ -48,6 +50,12 @@ The menu has five links in every language: Discover (the main website), Expertis
 
 The page retains service and value accordions, project selection, team filters and profile dialogs, and FAQs. The news section and large closing contact callout have been removed. Actual contact information is available in the compact footer.
 
+All four values use the About page's optimized Accordion Gallery: four event photos for “Grounded in science” and three assigned photos each for “People at the centre,” “Connected for progress,” and “A sustainable outlook.” Originals are copied from the mainsite without changing the source files. The component retains responsive measurement, serial background prefetch, available blur placeholders, hover/focus animation, and the full-size viewer. Every assigned photo remains available on compact screens. The landing adaptation adds localized captions, alt text and viewer controls, native dialog focus containment, and a wider layout on laptops. Photo assignments and the additional captions live in `scripts/value-gallery-content.mjs`.
+
 The three adjacent platform panels follow the additional reference design and link to Mainsite, HR, and Contract. Hovering or keyboard-focusing a panel expands its grid track while the other two contract together over the same eased transition. Mobile keeps three stacked cards. Labels and portal URLs come from the existing ICUE app switcher; the main-site link uses `vi.icue.vn` in every language. Staff portals retain their existing sign-in requirements.
+
+Each platform card plays its supplied local MP4 preview, muted, looping and inline. Vietnamese uses `public/videos/vi`; English, German, French, Korean and Japanese use `public/videos/en`. The play/pause button appears on hover or keyboard focus, and remains available on touch devices. Playback pauses offscreen or in a background tab and remembers an explicit pause until the reader resumes it. The video control and platform link are separate elements.
+
+The navigation rail reuses the mainsite's canvas-based Star Border, including its reduced-motion and background-tab handling. An IntersectionObserver fades and hides the rail logo and text whenever either the header or footer logo is visible; the rail brand returns between those two positions.
 
 Sites configuration publishes the separate private review copy. It does not replace the current `icue.vn` deployment.

@@ -1,0 +1,12 @@
+.hero-comparison{position:absolute;inset:0;width:100%;height:100%;border-radius:inherit;z-index:0;isolation:isolate}
+.hero-visual:has(.hero-comparison)::after{display:none}
+.hero-comparison::after{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,var(--hero-fade-start),var(--hero-fade-mid) 45%,transparent);pointer-events:none}
+.hero-comparison .image-comparison__image{object-position:53% 50%;filter:saturate(.68)}
+.hero-comparison .hero-comparison-plan{object-position:50% 50%}
+.hero-comparison-label{position:absolute;top:85px;z-index:1;border-radius:20px;padding:7px 10px;background:var(--hero-badge);color:var(--ink);font-size:8px;font-weight:500;letter-spacing:.06em;line-height:1.5;pointer-events:none}
+.hero-comparison-label-plan{left:20px}
+.hero-comparison-label-render{right:20px}
+.hero-comparison-hint{position:absolute;top:calc(50% + 31px);left:50%;transform:translateX(-50%);width:max-content;max-width:170px;padding:7px 10px;border-radius:20px;background:var(--hero-badge);color:var(--ink);font-size:8px;line-height:1.5;letter-spacing:.05em;text-align:center;pointer-events:none}
+html[data-theme=dark] .hero-comparison .image-comparison__image{filter:saturate(.62) brightness(.75)}
+@media(max-width:960px){.hero-comparison-label{top:72px;font-size:7px;padding:6px 8px}.hero-comparison-label-plan{left:14px}.hero-comparison-label-render{right:14px}.hero-comparison-hint{font-size:7px;max-width:140px}}
+@media(max-width:640px){.hero-comparison-label{top:57px;font-size:7px}.hero-comparison-label-plan{left:17px}.hero-comparison-label-render{right:17px}.hero-comparison-hint{max-width:125px}.hero-comparison .image-comparison__image{object-position:50% 53%}.hero-comparison::after{background:linear-gradient(180deg,color-mix(in srgb,var(--surface) 22%,transparent),transparent 35%)}}

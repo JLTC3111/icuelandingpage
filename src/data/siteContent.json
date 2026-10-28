@@ -81,14 +81,14 @@
           "body": "Tổng diện tích quy hoạch lên đến 28.162,64 ha, với mục tiêu hoàn thành vào năm 2045. Đây là một chiến lược phát triển dài hạn, hướng đến việc tái cấu trúc không gian đô thị một cách hiệu quả, nhằm tận dụng tối đa tiềm năng sử dụng đất theo hướng linh hoạt, bền vững và thích ứng với biến đổi khí hậu. Kế hoạch đặt trọng tâm vào việc tối ưu hóa sử dụng đất đai, từ đất ở, đất thương mại, công nghiệp cho đến không gian công cộng và mảng xanh – tất cả được phân bổ khoa học, phục vụ cho sự phát triển cân bằng giữa kinh tế, xã hội và môi trường. Bên cạnh đó, quy hoạch cũng bao gồm các giải pháp cải thiện và mở rộng hệ thống hạ tầng giao thông, cấp thoát nước, năng lượng và công nghệ thông tin, tạo nền tảng vững chắc cho sự tăng trưởng bền vững. Đồng thời, kế hoạch cũng định hướng rõ ràng cho sự tăng trưởng dân số và phát triển các khu dân cư mới, phù hợp với nhu cầu về nhà ở, việc làm và dịch vụ đô thị. Mục tiêu cuối cùng là nâng cao vai trò và vị thế của thành phố như một trung tâm kinh tế – giao thông chiến lược trong khu vực, kết nối hiệu quả với các địa phương lân cận và hành lang kinh tế trọng điểm."
         },
         {
-          "id": "3",
-          "year": "2025",
-          "image": "/media/project-3.jpg",
-          "title": "Quy hoạch phân khu 6B (phường Nguyễn Ái Quốc)",
-          "location": "Thành phố Hải Dương",
-          "scale": "Quy mô: 1.159 ha",
-          "imageAlt": "Quy hoạch phân khu 6B, phường Nguyễn Ái Quốc",
-          "body": "Phân khu 6B đánh dấu một bước tiến chiến lược trong việc tái cấu trúc đô thị Hải Dương, nằm tại phường Nguyễn Ái Quốc. Với diện tích rộng lớn hơn 1.100 ha, quy hoạch này hướng đến phát triển đồng bộ hạ tầng kỹ thuật, mở rộng không gian sinh thái – đô thị và tạo lập các khu chức năng hiện đại. Dự án không chỉ góp phần thúc đẩy tăng trưởng đô thị bền vững mà còn định hình bộ mặt mới cho thành phố trong giai đoạn hậu 2025."
+          "id": "5",
+          "year": "2024",
+          "image": "/media/project-5.jpg",
+          "title": "Quy hoạch chung đô thị Đông Yên, huyện Bắc Quang",
+          "location": "Xã Đồng Yên, thành phố Hà Giang",
+          "scale": "Quy mô: 4.407,9 ha; đến năm 2035, định hướng đến năm 2050",
+          "imageAlt": "Quy hoạch chung đô thị Đông Yên",
+          "body": "Đô thị Đông Yên là một quy hoạch tổng thể đầy tham vọng với quy mô gần 4.500 ha, mang trong mình tầm nhìn dài hạn đến năm 2050. Dự án nhắm đến việc xây dựng một đô thị vệ tinh thông minh, hội tụ đầy đủ các chức năng sống – làm việc – vui chơi. Với định hướng quy hoạch bài bản, Đông Yên kỳ vọng trở thành điểm đến hấp dẫn cho đầu tư, nơi khởi nguồn cho các mô hình đô thị hiện đại bền vững tại khu vực phía Bắc."
         },
         {
           "id": "9",
@@ -163,7 +163,7 @@
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdo__nobg.png",
+          "photo": "/media/longdoorgstructure_prev.png",
           "name": "Đỗ Bảo Long",
           "honorific": "",
           "title": "Quản Lý Dự Án",
@@ -233,6 +233,121 @@
           ]
         }
       ],
+      "valuesGallery": {
+        "labels": {
+          "viewer": "Trình xem ảnh",
+          "close": "Đóng ảnh",
+          "previous": "Ảnh trước",
+          "next": "Ảnh tiếp theo",
+          "fullSize": "Xem kích thước đầy đủ"
+        },
+        "groups": [
+          [
+            {
+              "image": "/media/conference_nov5_2025.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
+              "label": "Diễn Đàn Đô Thị Việt Nam 2025",
+              "alt": "Phiên toàn thể Diễn đàn Đô thị Việt Nam 2025 – Phát triển thông minh, bền vững và bao trùm, ngày 08/11/2025"
+            },
+            {
+              "image": "/media/dubai_2025_2.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
+              "label": "Sân Khấu Đại Hội, UAE 2025",
+              "alt": "Sân khấu toàn thể với hình ảnh cảnh quan tại Đại hội Bảo tồn Thế giới IUCN, Abu Dhabi, 2025"
+            },
+            {
+              "image": "/media/dubai_2025_3.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
+              "label": "Hội Trường Toàn Thể, 2025",
+              "alt": "Hội trường toàn thể trong Đại hội Bảo tồn Thế giới IUCN Abu Dhabi 2025"
+            },
+            {
+              "image": "/media/dubai_2025_4.webp",
+              "width": 960,
+              "height": 540,
+              "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
+              "label": "Ảnh Tập Thể ICUE, 2025",
+              "alt": "Ảnh chụp tập thể đoàn ICUE tại Đại hội Bảo tồn Thế giới IUCN Abu Dhabi 2025"
+            }
+          ],
+          [
+            {
+              "image": "/media/people-play-together.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Niềm vui cùng nhau",
+              "alt": "Trẻ em cùng vui chơi bên cây và mô hình bằng lốp xe."
+            },
+            {
+              "image": "/media/people-room-to-play.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Không gian vui chơi và khám phá",
+              "alt": "Trẻ em leo trèo trên mô hình vui chơi bằng lốp xe cạnh một cây lớn."
+            },
+            {
+              "image": "/media/people-community-childhood.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Tuổi thơ trong cộng đồng",
+              "alt": "Trẻ em cười đùa tại một bãi cỏ trong khu dân cư."
+            }
+          ],
+          [
+            {
+              "image": "/media/connected-anniversary.jpg",
+              "width": 1276,
+              "height": 956,
+              "label": "Kỷ niệm 10 năm thành lập ICUE",
+              "alt": "Đại biểu nhận cờ tại lễ kỷ niệm 10 năm thành lập ICUE."
+            },
+            {
+              "image": "/media/connected-urban-economy.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Kinh tế đô thị và phát triển bền vững",
+              "alt": "Ảnh tập thể tại hội thảo kinh tế đô thị, quy hoạch, xây dựng và phát triển bền vững ở Hà Nội."
+            },
+            {
+              "image": "/media/connected-international-partners.jpg",
+              "width": 1280,
+              "height": 720,
+              "label": "Kết nối với đối tác quốc tế",
+              "alt": "Các đại biểu quốc tế chụp ảnh tập thể trên bậc thềm bên ngoài một tòa nhà."
+            }
+          ],
+          [
+            {
+              "image": "/media/outlook-office-exchange.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Trao đổi ý tưởng tại ICUE",
+              "alt": "Ba người tham gia buổi gặp gỡ tại văn phòng ICUE."
+            },
+            {
+              "image": "/media/outlook-industry-visit.jpg",
+              "width": 1280,
+              "height": 719,
+              "label": "Học hỏi từ thực tiễn sản xuất",
+              "alt": "Ba người đội mũ bảo hộ trong chuyến thăm một nhà máy."
+            },
+            {
+              "image": "/media/dubai_2025_1.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
+              "label": "Đoàn ICUE Tại Dubai, 2025",
+              "alt": "Cán bộ ICUE tại phiên làm việc trong Đại hội Bảo tồn Thế giới IUCN, Abu Dhabi, 2025"
+            }
+          ]
+        ]
+      },
       "faq": [
         {
           "q": "Bạn cung cấp những loại dịch vụ tư vấn nào?",
@@ -361,14 +476,14 @@
           "body": "The planning area covers 28,162.64 ha, with completion targeted for 2045. It is a long-term strategy for restructuring urban space so land can be used flexibly, sustainably and in ways that adapt to climate change. The plan balances housing, commercial and industrial land with public space and green areas, and expands transport, water, energy and digital infrastructure. It also sets a clear path for population growth and new residential districts, strengthening Lào Cai as a regional economic and transport hub."
         },
         {
-          "id": "3",
-          "year": "2025",
-          "image": "/media/project-3.jpg",
-          "title": "Subdivision plan 6B (Nguyễn Ái Quốc Ward)",
-          "location": "Hải Dương City",
-          "scale": "Scale: 1,159 ha",
-          "imageAlt": "Subdivision plan 6B, Nguyễn Ái Quốc Ward",
-          "body": "Subdivision 6B is a strategic step in restructuring Hải Dương, covering more than 1,100 ha in Nguyễn Ái Quốc Ward. The plan coordinates technical infrastructure, expands the city’s ecological urban space and establishes modern functional districts, shaping the city’s form after 2025."
+          "id": "5",
+          "year": "2024",
+          "image": "/media/project-5.jpg",
+          "title": "Đông Yên urban master plan, Bắc Quang District",
+          "location": "Đồng Yên commune, Hà Giang City",
+          "scale": "Scale: 4,407.9 ha; to 2035, oriented to 2050",
+          "imageAlt": "Đông Yên urban master plan",
+          "body": "Đông Yên is an ambitious master plan of nearly 4,500 ha with a horizon to 2050. It sets out a smart satellite town that brings living, working and leisure together, and is intended as an investment destination and a model for sustainable modern urbanism in the northern uplands."
         },
         {
           "id": "9",
@@ -443,7 +558,7 @@
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdo__nobg.png",
+          "photo": "/media/longdoorgstructure_prev.png",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "Project Manager",
@@ -513,6 +628,121 @@
           ]
         }
       ],
+      "valuesGallery": {
+        "labels": {
+          "viewer": "Photo viewer",
+          "close": "Close photo viewer",
+          "previous": "Previous photo",
+          "next": "Next photo",
+          "fullSize": "View full size"
+        },
+        "groups": [
+          [
+            {
+              "image": "/media/conference_nov5_2025.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
+              "label": "Vietnam Urban Summit 2025",
+              "alt": "The plenary session of Vietnam Urban Summit 2025 — Smart, Sustainable and Inclusive Development, 8 November 2025"
+            },
+            {
+              "image": "/media/dubai_2025_2.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
+              "label": "Congress Stage, UAE 2025",
+              "alt": "A plenary stage with landscape imagery during the IUCN World Conservation Congress, Abu Dhabi, 2025"
+            },
+            {
+              "image": "/media/dubai_2025_3.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
+              "label": "Plenary Hall, 2025",
+              "alt": "The plenary hall during the IUCN World Conservation Congress Abu Dhabi 2025"
+            },
+            {
+              "image": "/media/dubai_2025_4.webp",
+              "width": 960,
+              "height": 540,
+              "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
+              "label": "ICUE Group Photo, 2025",
+              "alt": "ICUE delegation group photograph at the IUCN World Conservation Congress Abu Dhabi 2025"
+            }
+          ],
+          [
+            {
+              "image": "/media/people-play-together.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "The joy of playing together",
+              "alt": "Children playing together around a tree and a structure made from tyres."
+            },
+            {
+              "image": "/media/people-room-to-play.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Room to play and explore",
+              "alt": "Children climbing a tyre play structure beside a large tree."
+            },
+            {
+              "image": "/media/people-community-childhood.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Childhood in the community",
+              "alt": "Children smiling and playing in a grassy neighbourhood space."
+            }
+          ],
+          [
+            {
+              "image": "/media/connected-anniversary.jpg",
+              "width": 1276,
+              "height": 956,
+              "label": "Celebrating ten years of ICUE",
+              "alt": "Delegates receiving a commemorative flag at ICUE’s tenth anniversary celebration."
+            },
+            {
+              "image": "/media/connected-urban-economy.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Urban economy and sustainable development",
+              "alt": "Group photograph at an urban economy, planning, construction and sustainable development event in Hanoi."
+            },
+            {
+              "image": "/media/connected-international-partners.jpg",
+              "width": 1280,
+              "height": 720,
+              "label": "Connecting with international partners",
+              "alt": "International delegates posing together on the steps outside a building."
+            }
+          ],
+          [
+            {
+              "image": "/media/outlook-office-exchange.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Exchanging ideas at ICUE",
+              "alt": "Three participants meeting at the ICUE office."
+            },
+            {
+              "image": "/media/outlook-industry-visit.jpg",
+              "width": 1280,
+              "height": 719,
+              "label": "Learning from industry",
+              "alt": "Three people wearing safety helmets during a factory visit."
+            },
+            {
+              "image": "/media/dubai_2025_1.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
+              "label": "ICUE Delegation In Dubai, 2025",
+              "alt": "ICUE staff seated at a working session during the IUCN World Conservation Congress, Abu Dhabi, 2025"
+            }
+          ]
+        ]
+      },
       "faq": [
         {
           "q": "What types of consulting services do you provide?",
@@ -641,14 +871,14 @@
           "body": "Das Plangebiet umfasst 28.162,64 ha und soll bis 2045 umgesetzt werden. Es ist eine langfristige Strategie zur Neuordnung des Stadtraums, damit Flächen flexibel, nachhaltig und klimaanpassungsfähig genutzt werden können. Wohnen, Gewerbe, Industrie, öffentliche Räume und Grünflächen werden ausbalanciert, Verkehr, Wasser, Energie und digitale Netze ausgebaut. Zugleich wird das Wachstum der Bevölkerung und neuer Wohnquartiere gesteuert, damit Lào Cai als regionales Wirtschafts- und Verkehrszentrum gestärkt wird."
         },
         {
-          "id": "3",
-          "year": "2025",
-          "image": "/media/project-3.jpg",
-          "title": "Teilbebauungsplan 6B (Stadtteil Nguyễn Ái Quốc)",
-          "location": "Stadt Hải Dương",
-          "scale": "Umfang: 1.159 ha",
-          "imageAlt": "Teilbebauungsplan 6B, Stadtteil Nguyễn Ái Quốc",
-          "body": "Teilgebiet 6B ist ein strategischer Schritt zur Neuordnung von Hải Dương auf mehr als 1.100 ha im Stadtteil Nguyễn Ái Quốc. Der Plan stimmt die technische Infrastruktur ab, erweitert den ökologischen Stadtraum und legt moderne Funktionsquartiere fest."
+          "id": "5",
+          "year": "2024",
+          "image": "/media/project-5.jpg",
+          "title": "Städtebaulicher Rahmenplan Đông Yên, Kreis Bắc Quang",
+          "location": "Gemeinde Đồng Yên, Stadt Hà Giang",
+          "scale": "Umfang: 4.407,9 ha; bis 2035, Orientierung 2050",
+          "imageAlt": "Rahmenplan Đông Yên",
+          "body": "Đông Yên ist ein ambitionierter Gesamtplan von fast 4.500 ha mit Horizont 2050. Geplant ist eine intelligente Satellitenstadt, die Wohnen, Arbeiten und Freizeit verbindet und als Investitionsstandort sowie Modell für nachhaltige Urbanität im Norden dienen soll."
         },
         {
           "id": "9",
@@ -723,7 +953,7 @@
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdo__nobg.png",
+          "photo": "/media/longdoorgstructure_prev.png",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "Projektmanager",
@@ -793,6 +1023,121 @@
           ]
         }
       ],
+      "valuesGallery": {
+        "labels": {
+          "viewer": "Fotoansicht",
+          "close": "Fotoansicht schließen",
+          "previous": "Vorheriges Foto",
+          "next": "Nächstes Foto",
+          "fullSize": "In voller Größe ansehen"
+        },
+        "groups": [
+          [
+            {
+              "image": "/media/conference_nov5_2025.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
+              "label": "Vietnam Urban Summit 2025",
+              "alt": "Die Plenarsitzung des Vietnam Urban Summit 2025 – Intelligente, nachhaltige und inklusive Entwicklung, 8. November 2025"
+            },
+            {
+              "image": "/media/dubai_2025_2.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
+              "label": "Kongressbühne, VAE 2025",
+              "alt": "Eine Plenarbühne mit Landschaftsbildern beim IUCN-Weltnaturschutzkongress, Abu Dhabi, 2025"
+            },
+            {
+              "image": "/media/dubai_2025_3.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
+              "label": "Plenarsaal, 2025",
+              "alt": "Der Plenarsaal beim IUCN World Conservation Congress Abu Dhabi 2025"
+            },
+            {
+              "image": "/media/dubai_2025_4.webp",
+              "width": 960,
+              "height": 540,
+              "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
+              "label": "ICUE-Gruppenfoto, 2025",
+              "alt": "Gruppenfoto der ICUE-Delegation beim IUCN World Conservation Congress Abu Dhabi 2025"
+            }
+          ],
+          [
+            {
+              "image": "/media/people-play-together.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Die Freude am gemeinsamen Spielen",
+              "alt": "Kinder spielen gemeinsam an einem Baum und einem Spielgerät aus Reifen."
+            },
+            {
+              "image": "/media/people-room-to-play.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Raum zum Spielen und Entdecken",
+              "alt": "Kinder klettern auf einem Spielgerät aus Reifen neben einem großen Baum."
+            },
+            {
+              "image": "/media/people-community-childhood.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Kindheit in der Gemeinschaft",
+              "alt": "Kinder lachen und spielen auf einer Grünfläche im Wohnviertel."
+            }
+          ],
+          [
+            {
+              "image": "/media/connected-anniversary.jpg",
+              "width": 1276,
+              "height": 956,
+              "label": "Zehn Jahre ICUE feiern",
+              "alt": "Delegierte erhalten eine Erinnerungsfahne beim zehnjährigen Jubiläum von ICUE."
+            },
+            {
+              "image": "/media/connected-urban-economy.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Stadtwirtschaft und nachhaltige Entwicklung",
+              "alt": "Gruppenfoto bei einer Veranstaltung zu Stadtwirtschaft, Planung, Bauwesen und nachhaltiger Entwicklung in Hanoi."
+            },
+            {
+              "image": "/media/connected-international-partners.jpg",
+              "width": 1280,
+              "height": 720,
+              "label": "Austausch mit internationalen Partnern",
+              "alt": "Internationale Delegierte stehen gemeinsam auf den Stufen vor einem Gebäude."
+            }
+          ],
+          [
+            {
+              "image": "/media/outlook-office-exchange.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Ideenaustausch bei ICUE",
+              "alt": "Drei Teilnehmende bei einem Treffen im Büro von ICUE."
+            },
+            {
+              "image": "/media/outlook-industry-visit.jpg",
+              "width": 1280,
+              "height": 719,
+              "label": "Aus der industriellen Praxis lernen",
+              "alt": "Drei Personen mit Schutzhelmen bei einem Fabrikbesuch."
+            },
+            {
+              "image": "/media/dubai_2025_1.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
+              "label": "ICUE-Delegation In Dubai, 2025",
+              "alt": "Mitarbeitende von ICUE bei einer Arbeitssitzung während des IUCN-Weltnaturschutzkongresses, Abu Dhabi, 2025"
+            }
+          ]
+        ]
+      },
       "faq": [
         {
           "q": "Welche Beratungsleistungen bieten Sie an?",
@@ -921,14 +1266,14 @@
           "body": "Le périmètre couvre 28 162,64 ha, avec un achèvement visé en 2045. Il s'agit d'une stratégie de long terme pour restructurer l'espace urbain afin d'utiliser le foncier de façon souple, durable et adaptée au climat. Le plan équilibre logements, activités, espaces publics et trame verte, et développe les réseaux de transport, d'eau, d'énergie et numériques, tout en préparant la croissance démographique et de nouveaux quartiers."
         },
         {
-          "id": "3",
-          "year": "2025",
-          "image": "/media/project-3.jpg",
-          "title": "Plan de secteur 6B (quartier Nguyễn Ái Quốc)",
-          "location": "Ville de Hải Dương",
-          "scale": "Échelle : 1 159 ha",
-          "imageAlt": "Plan de secteur 6B, quartier Nguyễn Ái Quốc",
-          "body": "Le secteur 6B marque une étape stratégique dans la restructuration de Hải Dương, sur plus de 1 100 ha dans le quartier Nguyễn Ái Quốc. Le plan coordonne les infrastructures, élargit l'espace écologique urbain et définit des quartiers fonctionnels modernes."
+          "id": "5",
+          "year": "2024",
+          "image": "/media/project-5.jpg",
+          "title": "Plan directeur urbain de Đông Yên, district de Bắc Quang",
+          "location": "Commune de Đồng Yên, ville de Hà Giang",
+          "scale": "Échelle : 4 407,9 ha ; jusqu'en 2035, orientation 2050",
+          "imageAlt": "Plan directeur urbain de Đông Yên",
+          "body": "Đông Yên est un plan d'ensemble ambitieux de près de 4 500 ha, avec un horizon 2050. Il dessine une ville satellite intelligente qui réunit habitat, travail et loisirs, et vise à devenir un pôle d'investissement et un modèle d'urbanisme durable dans le Nord."
         },
         {
           "id": "9",
@@ -1003,7 +1348,7 @@
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdo__nobg.png",
+          "photo": "/media/longdoorgstructure_prev.png",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "Chef de projet",
@@ -1073,6 +1418,121 @@
           ]
         }
       ],
+      "valuesGallery": {
+        "labels": {
+          "viewer": "Visionneuse de photos",
+          "close": "Fermer la photo",
+          "previous": "Photo précédente",
+          "next": "Photo suivante",
+          "fullSize": "Voir en grand"
+        },
+        "groups": [
+          [
+            {
+              "image": "/media/conference_nov5_2025.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
+              "label": "Forum Urbain Du Vietnam 2025",
+              "alt": "La séance plénière du Forum urbain du Vietnam 2025 – Développement intelligent, durable et inclusif, 8 novembre 2025"
+            },
+            {
+              "image": "/media/dubai_2025_2.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
+              "label": "Scène Du Congrès, EAU 2025",
+              "alt": "La scène plénière avec des images de paysages au Congrès mondial de la nature de l'UICN, Abu Dhabi, 2025"
+            },
+            {
+              "image": "/media/dubai_2025_3.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
+              "label": "Salle Plénière, 2025",
+              "alt": "La salle plénière du Congrès mondial de la nature de l'UICN Abu Dhabi 2025"
+            },
+            {
+              "image": "/media/dubai_2025_4.webp",
+              "width": 960,
+              "height": 540,
+              "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
+              "label": "Photo De Groupe ICUE, 2025",
+              "alt": "Photographie de groupe de la délégation ICUE au Congrès mondial de la nature de l'UICN Abu Dhabi 2025"
+            }
+          ],
+          [
+            {
+              "image": "/media/people-play-together.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Le plaisir de jouer ensemble",
+              "alt": "Des enfants jouent ensemble autour d’un arbre et d’une structure en pneus."
+            },
+            {
+              "image": "/media/people-room-to-play.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Un espace pour jouer et explorer",
+              "alt": "Des enfants grimpent sur une structure de jeu en pneus près d’un grand arbre."
+            },
+            {
+              "image": "/media/people-community-childhood.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "L’enfance au cœur du quartier",
+              "alt": "Des enfants sourient et jouent dans un espace herbeux du quartier."
+            }
+          ],
+          [
+            {
+              "image": "/media/connected-anniversary.jpg",
+              "width": 1276,
+              "height": 956,
+              "label": "Célébrer les dix ans d’ICUE",
+              "alt": "Des délégués reçoivent un drapeau commémoratif lors du dixième anniversaire d’ICUE."
+            },
+            {
+              "image": "/media/connected-urban-economy.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Économie urbaine et développement durable",
+              "alt": "Photo de groupe lors d’un événement sur l’économie urbaine, l’aménagement, la construction et le développement durable à Hanoï."
+            },
+            {
+              "image": "/media/connected-international-partners.jpg",
+              "width": 1280,
+              "height": 720,
+              "label": "Échanger avec nos partenaires internationaux",
+              "alt": "Des délégués internationaux posent ensemble sur les marches devant un bâtiment."
+            }
+          ],
+          [
+            {
+              "image": "/media/outlook-office-exchange.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "Partager des idées chez ICUE",
+              "alt": "Trois personnes réunies au bureau d’ICUE."
+            },
+            {
+              "image": "/media/outlook-industry-visit.jpg",
+              "width": 1280,
+              "height": 719,
+              "label": "Apprendre des pratiques industrielles",
+              "alt": "Trois personnes portant des casques de sécurité lors d’une visite d’usine."
+            },
+            {
+              "image": "/media/dubai_2025_1.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
+              "label": "Délégation ICUE À Dubaï, 2025",
+              "alt": "Des collaborateurs d'ICUE lors d'une séance de travail au Congrès mondial de la nature de l'UICN, Abu Dhabi, 2025"
+            }
+          ]
+        ]
+      },
       "faq": [
         {
           "q": "Quels types de conseil proposez-vous ?",
@@ -1201,14 +1661,14 @@
           "body": "계획 면적은 28,162.64ha이며 목표는 2045년 완료입니다. 기후변화에 적응하면서 토지를 유연하고 지속가능하게 쓰도록 도시 공간을 재구성하는 장기 전략입니다. 주거·상업·산업·공공공간·녹지를 균형 있게 배분하고 교통·상하수도·에너지·정보통신 기반을 확충하며, 인구 증가와 신규 주거지를 계획해 라오까이를 지역 경제·교통 거점으로 높입니다."
         },
         {
-          "id": "3",
-          "year": "2025",
-          "image": "/media/project-3.jpg",
-          "title": "6B 지구 계획 (응우옌아이꾸옥 동)",
-          "location": "하이즈엉시",
-          "scale": "규모: 1,159ha",
-          "imageAlt": "6B 지구 계획, 응우옌아이꾸옥 동",
-          "body": "6B 지구는 하이즈엉 도시 재편의 전략적 단계로, 응우옌아이꾸옥 동 1,100ha 이상에 걸쳐 기술 기반을 정비하고 생태 도시 공간을 넓히며 현대적 기능 지구를 만듭니다."
+          "id": "5",
+          "year": "2024",
+          "image": "/media/project-5.jpg",
+          "title": "동옌 도시기본계획, 박꽝 현",
+          "location": "하장시 동옌 사",
+          "scale": "규모: 4,407.9ha, 2035년까지, 2050년 지향",
+          "imageAlt": "동옌 도시기본계획",
+          "body": "동옌은 약 4,500ha, 2050년을 내다본 종합계획입니다. 주거·일·여가가 모인 스마트 위성도시를 목표로 하며, 북부 지역의 지속가능한 현대 도시 모형이 되고자 합니다."
         },
         {
           "id": "9",
@@ -1283,7 +1743,7 @@
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdo__nobg.png",
+          "photo": "/media/longdoorgstructure_prev.png",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "프로젝트 매니저",
@@ -1353,6 +1813,121 @@
           ]
         }
       ],
+      "valuesGallery": {
+        "labels": {
+          "viewer": "사진 뷰어",
+          "close": "사진 닫기",
+          "previous": "이전 사진",
+          "next": "다음 사진",
+          "fullSize": "원본 크기로 보기"
+        },
+        "groups": [
+          [
+            {
+              "image": "/media/conference_nov5_2025.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
+              "label": "베트남 도시 포럼 2025",
+              "alt": "베트남 도시 포럼 2025 – 스마트하고 지속가능하며 포용적인 발전 전체 회의, 2025년 11월 8일"
+            },
+            {
+              "image": "/media/dubai_2025_2.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
+              "label": "대회 무대, UAE 2025",
+              "alt": "IUCN 세계자연보호대회(아부다비, 2025)의 풍경 영상이 비치는 전체 무대"
+            },
+            {
+              "image": "/media/dubai_2025_3.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
+              "label": "전체 회의장, 2025",
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025 전체 회의장"
+            },
+            {
+              "image": "/media/dubai_2025_4.webp",
+              "width": 960,
+              "height": 540,
+              "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
+              "label": "ICUE 단체 사진, 2025",
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025에서 ICUE 대표단 단체 사진"
+            }
+          ],
+          [
+            {
+              "image": "/media/people-play-together.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "함께 노는 즐거움",
+              "alt": "나무와 타이어 놀이 구조물 주변에서 함께 노는 아이들."
+            },
+            {
+              "image": "/media/people-room-to-play.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "놀고 탐험할 수 있는 공간",
+              "alt": "큰 나무 옆 타이어 놀이 구조물에 오르는 아이들."
+            },
+            {
+              "image": "/media/people-community-childhood.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "지역사회 속 어린 시절",
+              "alt": "동네의 풀밭에서 웃으며 노는 아이들."
+            }
+          ],
+          [
+            {
+              "image": "/media/connected-anniversary.jpg",
+              "width": 1276,
+              "height": 956,
+              "label": "ICUE 창립 10주년 기념",
+              "alt": "ICUE 창립 10주년 행사에서 기념 깃발을 받는 참석자들."
+            },
+            {
+              "image": "/media/connected-urban-economy.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "도시 경제와 지속가능한 발전",
+              "alt": "하노이의 도시 경제, 계획, 건설 및 지속가능한 발전 행사에서 촬영한 단체 사진."
+            },
+            {
+              "image": "/media/connected-international-partners.jpg",
+              "width": 1280,
+              "height": 720,
+              "label": "국제 파트너와의 교류",
+              "alt": "건물 앞 계단에서 함께 기념 촬영을 하는 국제 대표단."
+            }
+          ],
+          [
+            {
+              "image": "/media/outlook-office-exchange.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "ICUE에서 나누는 아이디어",
+              "alt": "ICUE 사무실에서 만난 세 명의 참석자."
+            },
+            {
+              "image": "/media/outlook-industry-visit.jpg",
+              "width": 1280,
+              "height": 719,
+              "label": "산업 현장에서 배우다",
+              "alt": "공장 방문 중 안전모를 쓴 세 사람."
+            },
+            {
+              "image": "/media/dubai_2025_1.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
+              "label": "두바이 ICUE 대표단, 2025",
+              "alt": "IUCN 세계자연보호대회(아부다비, 2025)에서 ICUE 직원들의 실무 세션"
+            }
+          ]
+        ]
+      },
       "faq": [
         {
           "q": "어떤 자문 서비스를 제공하나요?",
@@ -1481,14 +2056,14 @@
           "body": "計画面積は28,162.64ha、完成目標は2045年です。気候変動に適応しつつ、土地を柔軟かつ持続的に使うための長期的な都市再編です。住宅・商業・工業・公共空間・緑地の配分を整え、交通・上下水・エネルギー・情報通信を拡充し、人口増と新しい居住地を見据えてラオカイを広域の経済・交通拠点へと高めます。"
         },
         {
-          "id": "3",
-          "year": "2025",
-          "image": "/media/project-3.jpg",
-          "title": "分区計画6B（グエンアイクオック坊）",
-          "location": "ハイズオン市",
-          "scale": "規模：1,159ha",
-          "imageAlt": "分区計画6B、グエンアイクオック坊",
-          "body": "分区6Bはハイズオン再編の戦略的段階で、グエンアイクオック坊の1,100ha超にわたり技術インフラを整え、生態的な都市空間を広げ、現代的な機能地区を定めます。"
+          "id": "5",
+          "year": "2024",
+          "image": "/media/project-5.jpg",
+          "title": "ドンイエン都市総合計画、バククアン県",
+          "location": "ハザン市ドンイエン社",
+          "scale": "規模：4,407.9ha、2035年まで、2050年を見据える",
+          "imageAlt": "ドンイエン都市総合計画",
+          "body": "ドンイエンは約4,500ha、2050年を見据えた総合計画です。住む・働く・楽しむを備えたスマート衛星都市を目指し、北部における持続可能で現代的な都市モデルとなることを狙っています。"
         },
         {
           "id": "9",
@@ -1563,7 +2138,7 @@
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdo__nobg.png",
+          "photo": "/media/longdoorgstructure_prev.png",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "プロジェクトマネージャー",
@@ -1633,6 +2208,121 @@
           ]
         }
       ],
+      "valuesGallery": {
+        "labels": {
+          "viewer": "写真ビューアー",
+          "close": "写真を閉じる",
+          "previous": "前の写真",
+          "next": "次の写真",
+          "fullSize": "大きく表示"
+        },
+        "groups": [
+          [
+            {
+              "image": "/media/conference_nov5_2025.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
+              "label": "ベトナム都市フォーラム2025",
+              "alt": "ベトナム都市フォーラム2025「スマート・持続可能・包摂的な発展」の全体会合、2025年11月8日"
+            },
+            {
+              "image": "/media/dubai_2025_2.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
+              "label": "総会ステージ、UAE 2025年",
+              "alt": "IUCN世界自然保護連合総会（アブダビ、2025年）の全体ステージと風景映像"
+            },
+            {
+              "image": "/media/dubai_2025_3.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
+              "label": "全体ホール、2025年",
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025の全体ホール"
+            },
+            {
+              "image": "/media/dubai_2025_4.webp",
+              "width": 960,
+              "height": 540,
+              "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
+              "label": "ICUE集合写真、2025年",
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025でのICUE代表団の集合写真"
+            }
+          ],
+          [
+            {
+              "image": "/media/people-play-together.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "一緒に遊ぶ喜び",
+              "alt": "木とタイヤでできた遊具の周りで一緒に遊ぶ子どもたち。"
+            },
+            {
+              "image": "/media/people-room-to-play.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "遊び、探求するための空間",
+              "alt": "大きな木のそばにあるタイヤの遊具に登る子どもたち。"
+            },
+            {
+              "image": "/media/people-community-childhood.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "地域で育む子ども時代",
+              "alt": "地域の草地で笑顔を見せながら遊ぶ子どもたち。"
+            }
+          ],
+          [
+            {
+              "image": "/media/connected-anniversary.jpg",
+              "width": 1276,
+              "height": 956,
+              "label": "ICUE設立10周年を祝う",
+              "alt": "ICUE設立10周年の式典で記念旗を受け取る出席者たち。"
+            },
+            {
+              "image": "/media/connected-urban-economy.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "都市経済と持続可能な発展",
+              "alt": "ハノイで開催された都市経済、計画、建設、持続可能な発展に関する催しでの集合写真。"
+            },
+            {
+              "image": "/media/connected-international-partners.jpg",
+              "width": 1280,
+              "height": 720,
+              "label": "国際的なパートナーとの交流",
+              "alt": "建物の前の階段で記念撮影をする各国の代表者たち。"
+            }
+          ],
+          [
+            {
+              "image": "/media/outlook-office-exchange.jpg",
+              "width": 1280,
+              "height": 960,
+              "label": "ICUEでアイデアを交わす",
+              "alt": "ICUEのオフィスで交流する3人の出席者。"
+            },
+            {
+              "image": "/media/outlook-industry-visit.jpg",
+              "width": 1280,
+              "height": 719,
+              "label": "産業の現場から学ぶ",
+              "alt": "工場訪問中に安全ヘルメットを着用した3人。"
+            },
+            {
+              "image": "/media/dubai_2025_1.webp",
+              "width": 960,
+              "height": 720,
+              "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
+              "label": "ドバイのICUE代表団、2025年",
+              "alt": "IUCN世界自然保護連合総会（アブダビ、2025年）でのICUE職員の実務セッション"
+            }
+          ]
+        ]
+      },
       "faq": [
         {
           "q": "どのようなコンサルティングを提供していますか。",
