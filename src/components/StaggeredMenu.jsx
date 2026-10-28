@@ -6,10 +6,11 @@
  */
 import { useLayoutEffect, useRef } from 'react'
 import { gsap } from 'gsap'
-import { ArrowUpRight, X } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
+import MenuToggleIcon from './MenuToggleIcon.jsx'
 import './StaggeredMenu.css'
 
-export default function StaggeredMenu({ open, onClose, triggerRef, labels, items, socialItems, controls, theme }) {
+export default function StaggeredMenu({ open, onClose, triggerRef, labels, items, socialItems, controls, homeHref }) {
   const dialogRef = useRef(null)
   const panelRef = useRef(null)
   const layersRef = useRef(null)
@@ -62,7 +63,7 @@ export default function StaggeredMenu({ open, onClose, triggerRef, labels, items
   return <dialog ref={dialogRef} className="staggered-menu-dialog" aria-labelledby="staggered-menu-title" data-open={open || undefined} onCancel={(e) => { e.preventDefault(); onClose() }} onClick={(e) => { if (e.target === e.currentTarget) onClose() }}>
     <div ref={layersRef} className="sm-prelayers" aria-hidden="true"><div className="sm-prelayer sm-prelayer-one" /><div className="sm-prelayer sm-prelayer-two" /></div>
     <div ref={panelRef} id="staggered-menu-panel" className="staggered-menu-panel">
-      <div className="sm-panel-inner"><div className="sm-panel-header"><a href="#home" className="wordmark" onClick={onClose} aria-label="ICUE"><img src={theme === 'dark' ? '/media/icue-mark-light.svg' : '/media/icue-mark.svg'} alt="" width="39" height="39" />ICUE<span className="accent">.</span></a><button ref={closeButtonRef} className="dialog-close sm-close" aria-label={labels.close} onClick={onClose} autoFocus><X size={25} strokeWidth={1.3} /></button></div>
+      <div className="sm-panel-inner"><div className="sm-panel-header"><a href={homeHref} className="wordmark" onClick={onClose} aria-label="ICUE"><img src="/media/original-logo.png" alt="" width="39" height="39" />ICUE</a><button ref={closeButtonRef} className="dialog-close sm-close" aria-label={labels.close} onClick={onClose} autoFocus><MenuToggleIcon open={open} /></button></div>
         <div className="sm-intro"><h2 id="staggered-menu-title" className="sm-panel-title">{labels.eyebrow}</h2><p>{labels.lead}</p></div>
         <nav aria-label={labels.title}><ul className="sm-panel-list" data-numbering>{items.map((item, i) => <li className="sm-panel-itemWrap" key={item.link}><a className="sm-panel-item" href={item.link} onClick={onClose} data-index={i + 1}><span className="sm-panel-itemLabel">{item.label}</span><ArrowUpRight size={24} strokeWidth={1.2} aria-hidden="true" /></a></li>)}</ul></nav>
         <div className="sm-socials"><span className="sm-socials-title">{labels.socials}</span><ul className="sm-socials-list">{socialItems.map((item) => <li key={item.link}><a href={item.link} className="sm-socials-link" target={item.link.startsWith('http') ? '_blank' : undefined} rel={item.link.startsWith('http') ? 'noopener noreferrer' : undefined}>{item.label}<ArrowUpRight size={14} /></a></li>)}</ul></div>

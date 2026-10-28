@@ -9,6 +9,7 @@ export const LANGUAGES = [
 ]
 export const LANGUAGE_KEY = 'icue_news_lang'
 export const THEME_KEY = 'icue-landing-theme'
+export const MAIN_SITE_ORIGIN = 'https://vi.icue.vn'
 const LocaleContext = createContext(null)
 const aliases = { vn: 'vi', gb: 'en', uk: 'en', kr: 'ko', jp: 'ja' }
 
@@ -70,7 +71,7 @@ export function LocaleProvider({ children, initialLocale, initialTheme }) {
     window.history.replaceState(window.history.state, '', url)
   }
   const site = (path) => {
-    const url = new URL(path, 'https://icue.vn')
+    const url = new URL(path, MAIN_SITE_ORIGIN)
     url.searchParams.set('lang', locale)
     return url.href
   }

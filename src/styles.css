@@ -23,7 +23,7 @@ button h3{font:inherit}
 .accent{color:var(--accent)}
 .side-rail{position:fixed;z-index:15;left:18px;top:18px;bottom:18px;width:var(--rail-width);background:var(--rail-bg);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;color:var(--rail-ink);padding:20px 0 16px}
 .menu-button{width:43px;height:43px;border-radius:50%;background:var(--rail-button);color:var(--rail-button-ink);display:grid;place-items:center;transition:background .2s,transform .2s}
-.menu-button:hover{background:var(--rail-button-hover);transform:rotate(6deg);color:var(--rail-button-hover-ink)}
+.menu-button:hover{background:var(--rail-button-hover);color:var(--rail-button-hover-ink)}
 .rail-brand{position:absolute;top:48%;display:flex;align-items:center;gap:9px;transform:rotate(-90deg);white-space:nowrap;font-size:12px;letter-spacing:.11em;font-weight:600}
 .rail-brand img{width:34px;height:34px;transform:rotate(90deg)}
 .rail-links{display:flex;flex-direction:column;align-items:center;gap:23px}

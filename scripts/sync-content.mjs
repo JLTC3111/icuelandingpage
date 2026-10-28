@@ -13,7 +13,7 @@ const contactSource = await readFile(path.join(source, 'contact-app/src/data/con
 const contactValue = (name) => contactSource.match(new RegExp(`(?:export )?const ${name} = '([^']+)'`))?.[1]
 
 const selectedPeople = people.filter((p) => p.group === 'core').slice(0, 4)
-selectedPeople.unshift(...people.filter((p) => p.group === 'experts').slice(0, 4))
+selectedPeople.unshift(...people.filter((p) => p.group === 'experts').slice(0, 5))
 
 const work = getOurWorkContent('vi')
 const output = {
@@ -56,8 +56,7 @@ const files = [
   ['recruitment-app/public/media/survey.webp', 'survey.webp'],
   ['aboutUs/UN-Habitat-HealthBridge.webp', 'collaboration.webp'],
   ['aboutUs/kids2.webp', 'community.webp'],
-  ['logoIcons/ICUE_Simplified_Geometry_v2.svg', 'icue-mark.svg'],
-  ['logoIcons/ICUE_Simplified_Geometry_v2_Near_White_Spokes.svg', 'icue-mark-light.svg'],
+  ['logoIcons/original_logo.png', 'original-logo.png'],
   ['logoIcons/favicon.png', 'favicon.png'],
   ...work.scopes.map((s, i) => [s.img.slice(1), `service-${i + 1}.webp`]),
   ...selectedPeople.map((p) => [`public/${p.photo}`, path.basename(p.photo)]),

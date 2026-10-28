@@ -161,6 +161,21 @@
           ]
         },
         {
+          "id": "do-bao-long",
+          "group": "experts",
+          "photo": "/media/longdo__nobg.png",
+          "name": "Đỗ Bảo Long",
+          "honorific": "",
+          "title": "Quản Lý Dự Án",
+          "bio": "Một cán bộ dự án tận tụy với bằng Thạc sỹ-Quản Lý Dự Án từ đại học Salford, vương quốc Anh, cùng với chứng chỉ CCNA và An ninh mạng. Có hơn 5 năm kinh nghiệm trong lĩnh vực ngân hàng, bán lẻ, quản lý hợp đồng (thông minh) và tài chính. Có thể quản lý các dự án phức tạp và mang lại kết quả hiệu quả. Kết hợp các kỹ năng kỹ thuật mạnh mẽ với thực hiện thực tế, đảm bảo sự phối hợp nhịp nhàng giữa các nhóm và các bên liên quan.",
+          "highlights": [
+            "quản lý dự án",
+            "quản lý hợp đồng",
+            "thiết kế",
+            "giải quyết vấn đề sáng tạo"
+          ]
+        },
+        {
           "id": "nguyen-thi-ly",
           "group": "core",
           "photo": "/media/lyly.png",
@@ -248,7 +263,7 @@
             "id": "website",
             "label": "Website ICUE",
             "description": "Giới thiệu, nghiên cứu & tin tức",
-            "href": "https://icue.vn/"
+            "href": "https://vi.icue.vn/"
           },
           {
             "id": "hr",
@@ -423,6 +438,21 @@
             "urban planning",
             "public administration",
             "spatial development"
+          ]
+        },
+        {
+          "id": "do-bao-long",
+          "group": "experts",
+          "photo": "/media/longdo__nobg.png",
+          "name": "Do Bao Long",
+          "honorific": "",
+          "title": "Project Manager",
+          "bio": "A dedicated project officer with an MSc in Project Management from the University of Salford, UK, plus CCNA and cybersecurity certifications. Over five years of experience in banking, retail, smart contract management, and finance. Delivers complex projects effectively, combining strong technical skills with hands-on execution and smooth coordination across teams and stakeholders.",
+          "highlights": [
+            "project management",
+            "contract management",
+            "design",
+            "creative problem-solving"
           ]
         },
         {
@@ -691,6 +721,21 @@
           ]
         },
         {
+          "id": "do-bao-long",
+          "group": "experts",
+          "photo": "/media/longdo__nobg.png",
+          "name": "Do Bao Long",
+          "honorific": "",
+          "title": "Projektmanager",
+          "bio": "Engagierter Projektmanager mit MSc in Projektmanagement von der University of Salford, UK, sowie CCNA- und Cybersicherheitszertifizierungen. Über fünf Jahre Erfahrung in Banking, Einzelhandel, Smart-Contract-Management und Finanzen. Führt komplexe Projekte effektiv durch und verbindet starke technische Fähigkeiten mit praktischer Umsetzung und reibungsloser Koordination zwischen Teams und Stakeholdern.",
+          "highlights": [
+            "Projektmanagement",
+            "Vertragsmanagement",
+            "Design",
+            "kreative Problemlösung"
+          ]
+        },
+        {
           "id": "nguyen-thi-ly",
           "group": "core",
           "photo": "/media/lyly.png",
@@ -778,7 +823,7 @@
             "id": "website",
             "label": "ICUE Website",
             "description": "Über ICUE, Forschung & Nachrichten",
-            "href": "https://icue.vn/?lang=de"
+            "href": "https://vi.icue.vn/?lang=de"
           },
           {
             "id": "hr",
@@ -956,6 +1001,21 @@
           ]
         },
         {
+          "id": "do-bao-long",
+          "group": "experts",
+          "photo": "/media/longdo__nobg.png",
+          "name": "Do Bao Long",
+          "honorific": "",
+          "title": "Chef de projet",
+          "bio": "Responsable de projet dévoué, titulaire d'un MSc en gestion de projet de l'Université de Salford (Royaume-Uni), avec certifications CCNA et cybersécurité. Plus de cinq ans d'expérience dans la banque, le commerce de détail, la gestion de contrats intelligents et la finance. Mène efficacement des projets complexes en combinant de solides compétences techniques, une exécution pratique et une coordination fluide entre équipes et parties prenantes.",
+          "highlights": [
+            "gestion de projet",
+            "gestion des contrats",
+            "design",
+            "résolution créative de problèmes"
+          ]
+        },
+        {
           "id": "nguyen-thi-ly",
           "group": "core",
           "photo": "/media/lyly.png",
@@ -1043,7 +1103,7 @@
             "id": "website",
             "label": "Site ICUE",
             "description": "ICUE, recherche et actualités",
-            "href": "https://icue.vn/?lang=fr"
+            "href": "https://vi.icue.vn/?lang=fr"
           },
           {
             "id": "hr",
@@ -1221,6 +1281,21 @@
           ]
         },
         {
+          "id": "do-bao-long",
+          "group": "experts",
+          "photo": "/media/longdo__nobg.png",
+          "name": "Do Bao Long",
+          "honorific": "",
+          "title": "프로젝트 매니저",
+          "bio": "영국 Salford 대학교 프로젝트 관리 석사 학위와 CCNA 및 사이버 보안 자격증을 보유한 헌신적인 프로젝트 담당자입니다. 은행, 소매, 스마트 계약 관리, 금융 분야에서 5년 이상의 경험을 갖추고 있습니다. 강력한 기술 역량과 실무 실행력을 바탕으로 복잡한 프로젝트를 효과적으로 수행하며 팀과 이해관계자 간 원활한 협업을 이끕니다.",
+          "highlights": [
+            "프로젝트 관리",
+            "계약 관리",
+            "디자인",
+            "창의적 문제 해결"
+          ]
+        },
+        {
           "id": "nguyen-thi-ly",
           "group": "core",
           "photo": "/media/lyly.png",
@@ -1308,7 +1383,7 @@
             "id": "website",
             "label": "ICUE 웹사이트",
             "description": "ICUE 소개, 연구 및 소식",
-            "href": "https://icue.vn/?lang=ko"
+            "href": "https://vi.icue.vn/?lang=ko"
           },
           {
             "id": "hr",
@@ -1486,6 +1561,21 @@
           ]
         },
         {
+          "id": "do-bao-long",
+          "group": "experts",
+          "photo": "/media/longdo__nobg.png",
+          "name": "Do Bao Long",
+          "honorific": "",
+          "title": "プロジェクトマネージャー",
+          "bio": "英国サルフォード大学プロジェクト管理修士号、CCNAおよびサイバーセキュリティ認定を持つ献身的なプロジェクト担当者。銀行、小売、スマート契約管理、金融分野で5年以上の経験。強い技術力と実践的な実行力を組み合わせ、チームとステークホルダー間のスムーズな連携のもと複雑なプロジェクトを効果的に推進します。",
+          "highlights": [
+            "プロジェクト管理",
+            "契約管理",
+            "デザイン",
+            "創造的問題解決"
+          ]
+        },
+        {
           "id": "nguyen-thi-ly",
           "group": "core",
           "photo": "/media/lyly.png",
@@ -1573,7 +1663,7 @@
             "id": "website",
             "label": "ICUE ウェブサイト",
             "description": "ICUE・研究・ニュース",
-            "href": "https://icue.vn/?lang=ja"
+            "href": "https://vi.icue.vn/?lang=ja"
           },
           {
             "id": "hr",
