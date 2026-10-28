@@ -26,6 +26,8 @@ The original project is not modified. The sync imports all six existing translat
 
 Language selection updates `?lang=` and the shared `icue_news_lang` storage key. Detail links preserve that language when opening the existing site. Light and dark themes follow the system preference initially and remember explicit choices under `icue-landing-theme`.
 
+The palettes live in `src/theme-tokens.css`. Text, surfaces, icons, borders, button states, dialogs, the navigation rail, and the platform tiles use semantic colors for both themes.
+
 Content sources include:
 
 - `home-app/src/locales/*.json` and `home-app/src/data/pastProjectsContent.js`
@@ -41,6 +43,8 @@ The hero uses the Park City Xuân An visualization. Project 6B uses a drawing fr
 ## Menu and interactions
 
 The hamburger opens [React Bits' Staggered Menu](https://reactbits.dev/components/staggered-menu), adapted from its JavaScript/CSS source. The original layered slide and staggered text animation use GSAP. ICUE additions include the external rail trigger, native dialog focus containment, Escape and backdrop dismissal, closing on navigation, reduced-motion support, localized controls, and theme styling. The upstream copyright and permission notice is retained in [licenses/react-bits.md](licenses/react-bits.md).
+
+The menu has five section links in every language: About ICUE, Expertise, Projects, Our people, and Platforms.
 
 The page retains service and value accordions, project selection, team filters and profile dialogs, and FAQs. The news section and large closing contact callout have been removed. Actual contact information is available in the compact footer.
 

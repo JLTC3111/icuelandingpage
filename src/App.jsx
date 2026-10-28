@@ -6,7 +6,7 @@ import {
 import { LANGUAGES, LocaleProvider, useLocale } from './i18n/LocaleProvider.jsx'
 import StaggeredMenu from './components/StaggeredMenu.jsx'
 
-const navigationIds = ['about', 'services', 'projects', 'people', 'approach', 'platforms', 'contact']
+const navigationIds = ['about', 'services', 'projects', 'people', 'platforms']
 const valueMedia = [
   { icon: FlaskConical, image: '/media/office.webp' },
   { icon: Users, image: '/media/community.webp' },
