@@ -59,3 +59,4 @@ Each platform card plays its supplied local MP4 preview, muted, looping and inli
 The navigation rail reuses the mainsite's canvas-based Star Border, including its reduced-motion and background-tab handling. An IntersectionObserver fades and hides the rail logo and text whenever either the header or footer logo is visible; the rail brand returns between those two positions.
 
 Sites configuration publishes the separate private review copy. It does not replace the current `icue.vn` deployment.
+# icuelandingpage
