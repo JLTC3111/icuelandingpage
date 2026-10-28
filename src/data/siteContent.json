@@ -1,0 +1,297 @@
+{
+  "institute": "Viện Nghiên Cứu Kinh Tế, Xây Dựng và Đô Thị",
+  "tagline": "Sáng kiến cộng đồng và các giải pháp thực tiễn vì một tương lai tốt đẹp hơn.",
+  "about": [
+    "Viện Nghiên cứu Kinh tế Xây dựng và Đô thị (sau đây gọi tắt là viện)  được thành lập theo Quyết định số 29/QĐ/THXDVN ngày 16/4/2013 của Đoàn Chủ tịch Tổng hội Xây dựng Việt Nam",
+    "Hơn 10 năm kinh nghiệm, hơn 20 cán bộ, chuyên viên trẻ, xuất sắc và nhiều chuyên gia đầu nghành trong lĩnh vực quy hoạch, phát triển đô thị, kinh tế đô thị - chúng tôi đã thiết kế những thành phố thông minh - xanh thân thiện môi trường - cân bằng giữa chức năng - khả năng phục hồi và nhu cầu cộng đồng",
+    "Nghiên cứu khoa học, nghiên cứu ứng dụng và phát triển công nghệ trong lĩnh vực xây dựng, tư vấn, lập quy hoạch phát triển đô thị, kinh tế đô thị, kinh tế xây dựng và bảo vệ môi trường.",
+    "Chuyển giao công nghệ khoa học, chuyển đổi xanh. Thực hiện các dịch vụ thông tin, tổ chức hội nghị, hội thảo trong nước và quốc tế. Hợp tác và liên kết với các tổ chức trong nước và quốc tế về các lĩnh vực quy hoạch, phát triển đô thị và bảo vệ môi trường  hiệu quả , khả năng kết nối — xây dựng các thành phố  sẵn sàng cho tương lai .",
+    "Lãnh đạo sáng kiến quy hoạch toàn thành phố Đà Nẵng cho thành phố loại 1 và loại 2 — một dự án chuyển đổi phản ánh sự tận tâm của chúng tôi đối với  chiến lược toàn cảnh  và  kết quả thực tế.",
+    "Nghiên cứu lập đề án, dự án quy hoạch, quy hoạch đô thị nông thôn; Chương trình phát triển nhà ở; Kinh tế đô thị, Môi trường đô thị; Đầu tư xây dựng; Thông tin thị trường bất động sản; Công tác đấu thầu..."
+  ],
+  "services": [
+    {
+      "num": "01",
+      "code": "AS",
+      "count": "04 hạng mục",
+      "title": "Đánh giá & báo cáo công trình",
+      "sub": "Đánh giá & lập báo cáo",
+      "desc": "Khảo sát hiện trạng, đánh giá mức độ an toàn và lập báo cáo kỹ thuật cho công trình đang khai thác hoặc chuẩn bị cải tạo.",
+      "items": [
+        "Khảo sát hiện trạng và ghi nhận khuyết tật",
+        "Đánh giá mức độ an toàn kết cấu",
+        "Báo cáo kỹ thuật kèm khuyến nghị xử lý",
+        "Hồ sơ đối chiếu tiêu chuẩn hiện hành"
+      ],
+      "std": "TCVN 9381:2012 · ISO 9001:2015",
+      "img": "/media/service-1.webp"
+    },
+    {
+      "num": "02",
+      "code": "SV",
+      "count": "04 hạng mục",
+      "title": "Khảo sát đo lường & kỹ thuật kết cấu",
+      "sub": "Đo đạc & kỹ thuật kết cấu",
+      "desc": "Đo đạc hiện trường, bóc tách khối lượng và dựng mô hình BIM làm cơ sở cho thiết kế, dự toán và thi công.",
+      "items": [
+        "Đo đạc và định vị công trình",
+        "Bóc tách khối lượng (QS)",
+        "Mô hình BIM và bản vẽ kỹ thuật",
+        "Tính toán kiểm tra kết cấu"
+      ],
+      "std": "TCVN 9398:2012 · ISO 19650",
+      "img": "/media/service-2.webp"
+    },
+    {
+      "num": "03",
+      "code": "PM",
+      "count": "04 hạng mục",
+      "title": "Phân tích hạ tầng & quản lý dự án",
+      "sub": "Hạ tầng & quản lý dự án",
+      "desc": "Phân tích khoảng trống hạ tầng, dự toán chi phí và kiểm soát ngân sách từ giai đoạn lập kế hoạch đến khi nghiệm thu.",
+      "items": [
+        "Phân tích khoảng trống hạ tầng",
+        "Dự toán chi phí và kiểm soát ngân sách",
+        "Tiến độ và quản lý hợp đồng",
+        "Báo cáo giám sát theo giai đoạn"
+      ],
+      "std": "TCVN 4419:1987 · ISO 21500",
+      "img": "/media/service-3.webp"
+    },
+    {
+      "num": "04",
+      "code": "AE",
+      "count": "04 hạng mục",
+      "title": "Chụp ảnh & tư liệu không gian",
+      "sub": "Không ảnh & tư liệu không gian",
+      "desc": "Bay chụp drone, lập bản đồ trực ảnh và tư liệu hoá công trình phục vụ đánh giá đất đai, giám sát và hồ sơ dự án.",
+      "items": [
+        "Bay chụp drone và ảnh trên không",
+        "Bản đồ trực ảnh và mô hình địa hình",
+        "Giám sát tiến độ theo chu kỳ",
+        "Ảnh kiến trúc và tư liệu dự án"
+      ],
+      "std": "ISO 21384-3 · ISO 9001:2015",
+      "img": "/media/service-4.webp"
+    }
+  ],
+  "process": [
+    {
+      "k": "01",
+      "t": "Khảo sát hiện trường",
+      "d": "Đo đạc, ghi nhận hiện trạng và thu thập dữ liệu gốc tại công trường."
+    },
+    {
+      "k": "02",
+      "t": "Mô hình & dữ liệu",
+      "d": "Dựng mô hình BIM, bản vẽ và bộ dữ liệu chuẩn hoá cho dự án."
+    },
+    {
+      "k": "03",
+      "t": "Phân tích & dự toán",
+      "d": "Bóc tách khối lượng, tính toán kết cấu và lập dự toán chi phí."
+    },
+    {
+      "k": "04",
+      "t": "Hồ sơ & báo cáo",
+      "d": "Bàn giao báo cáo kỹ thuật và hồ sơ phục vụ nghiệm thu."
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "year": "2024",
+      "image": "/media/project-1.jpg",
+      "title": "Điều chỉnh quy hoạch chung thành phố Lào Cai",
+      "location": "Thành phố Lào Cai",
+      "scale": "Quy mô: 28.162,64 ha, đến năm 2045",
+      "imageAlt": "Quy hoạch chung thành phố Lào Cai",
+      "body": "Tổng diện tích quy hoạch lên đến 28.162,64 ha, với mục tiêu hoàn thành vào năm 2045. Đây là một chiến lược phát triển dài hạn, hướng đến việc tái cấu trúc không gian đô thị một cách hiệu quả, nhằm tận dụng tối đa tiềm năng sử dụng đất theo hướng linh hoạt, bền vững và thích ứng với biến đổi khí hậu. Kế hoạch đặt trọng tâm vào việc tối ưu hóa sử dụng đất đai, từ đất ở, đất thương mại, công nghiệp cho đến không gian công cộng và mảng xanh – tất cả được phân bổ khoa học, phục vụ cho sự phát triển cân bằng giữa kinh tế, xã hội và môi trường. Bên cạnh đó, quy hoạch cũng bao gồm các giải pháp cải thiện và mở rộng hệ thống hạ tầng giao thông, cấp thoát nước, năng lượng và công nghệ thông tin, tạo nền tảng vững chắc cho sự tăng trưởng bền vững. Đồng thời, kế hoạch cũng định hướng rõ ràng cho sự tăng trưởng dân số và phát triển các khu dân cư mới, phù hợp với nhu cầu về nhà ở, việc làm và dịch vụ đô thị. Mục tiêu cuối cùng là nâng cao vai trò và vị thế của thành phố như một trung tâm kinh tế – giao thông chiến lược trong khu vực, kết nối hiệu quả với các địa phương lân cận và hành lang kinh tế trọng điểm."
+    },
+    {
+      "id": "3",
+      "year": "2025",
+      "image": "/media/project-3.jpg",
+      "title": "Quy hoạch phân khu 6B (phường Nguyễn Ái Quốc)",
+      "location": "Thành phố Hải Dương",
+      "scale": "Quy mô: 1.159 ha",
+      "imageAlt": "Quy hoạch phân khu 6B, phường Nguyễn Ái Quốc",
+      "body": "Phân khu 6B đánh dấu một bước tiến chiến lược trong việc tái cấu trúc đô thị Hải Dương, nằm tại phường Nguyễn Ái Quốc. Với diện tích rộng lớn hơn 1.100 ha, quy hoạch này hướng đến phát triển đồng bộ hạ tầng kỹ thuật, mở rộng không gian sinh thái – đô thị và tạo lập các khu chức năng hiện đại. Dự án không chỉ góp phần thúc đẩy tăng trưởng đô thị bền vững mà còn định hình bộ mặt mới cho thành phố trong giai đoạn hậu 2025."
+    },
+    {
+      "id": "9",
+      "year": "2024",
+      "image": "/media/park-city.jpg",
+      "title": "Quy hoạch chi tiết khu đô thị sinh thái Park City Xuân An",
+      "location": "Thị trấn Xuân An, huyện Nghi Xuân, tỉnh Hà Tĩnh",
+      "scale": "Quy mô: 27,7 ha, tỷ lệ 1/500",
+      "imageAlt": "Khu đô thị sinh thái Park City Xuân An",
+      "body": "Park City Xuân An là một khu đô thị sinh thái cao cấp với thiết kế tinh tế, diện tích gần 28 ha và mật độ phát triển hợp lý. Với định hướng \"sống xanh, sống khỏe\", dự án tích hợp không gian xanh rộng lớn, các tiện ích thương mại – dịch vụ hiện đại và hạ tầng đồng bộ. Đây là một điểm sáng mới của thị trường bất động sản Hà Tĩnh, hứa hẹn tạo nên làn sóng đô thị hóa cao cấp và bền vững tại khu vực miền Trung."
+    }
+  ],
+  "people": [
+    {
+      "id": "nguyen-hong-hanh",
+      "group": "experts",
+      "photo": "/media/hanhnguyen__nobg.png",
+      "name": "Nguyễn Hồng Hạnh",
+      "honorific": "Tiến Sỹ",
+      "title": "Viện trưởng Viện Nghiên cứu Kinh tế Xây Dựng và Đô thị thuộc Tổng Hội Xây Dựng Việt Nam",
+      "bio": "Là chuyên gia về tư vấn quy hoạch, phát triển đô thị và quản lý xây dựng. Nguyên là phó cục trưởng Cục Phát Triển Đô thị thuộc Bộ Xây Dựng (2008-2013); Phó Viện Trưởng thường trực Viện Nghiên Cứu Kinh Tế Xây Dựng và Đô Thị (2013-2018); Viện Trưởng Viện Nghiên Cứu Kinh Tế Xây Dựng và Đô Thị (3/2018 - nay). Có những sáng kiến lớn về phát triển đô thị xanh, biến đổi khí hậu và đa dạng sinh học; chuyển giao ứng dụng khoa học công nghệ vào chuyển đổi xanh trong kinh tế nông nghiệp và đô thị; tư vấn pháp luật, chính sách cho quy hoạch quốc gia và khu vực.",
+      "highlights": [
+        "quy hoạch",
+        "phát triển đô thị xanh",
+        "biến đổi khí hậu",
+        "chính sách"
+      ]
+    },
+    {
+      "id": "tran-thi-lan-anh",
+      "group": "experts",
+      "photo": "/media/tranthilananh__nobg.png",
+      "name": "Trần Thị Lan Anh",
+      "honorific": "TS.KTS",
+      "title": "Phó Viện Trưởng",
+      "bio": "Chuyên gia quy hoạch và phát triển đô thị; xây dựng chiến lược, hoạch định chính sách và phát triển bền vững. Tiến Sỹ và Thạc Sỹ từ Đại học Tokyo, nền tảng vững chắc về thích ứng với biến đổi khí hậu, phân lại đô thị và chiến lược phát triển quốc gia. Nguyên Phó cục trưởng Cục Phát triển Đô thị-Bộ xây dựng, tham gia các chương trình lớn về phát triển đô thị và quy hoạch đô thị.",
+      "highlights": [
+        "quy hoạch",
+        "bền vững",
+        "chính sách",
+        "biến đổi khí hậu"
+      ]
+    },
+    {
+      "id": "tran-quoc-toan",
+      "group": "experts",
+      "photo": "/media/tranquoctoan__nobg.png",
+      "name": "Trần Quốc Toản",
+      "honorific": "KS.",
+      "title": "Phó Viện Trưởng",
+      "bio": "Kinh nghiệm trong lĩnh vực Hạ tầng kỹ thuật giao thông. Phó cục trưởng Cục giám định-Bộ Giao thông vận tải và các hiệp hội kỹ thuật. Tư vấn chính sách, quy hoạch thông minh và phát triển chiến lược tăng trưởng xanh, các dự án quốc gia lớn.",
+      "highlights": [
+        "hạ tầng giao thông",
+        "quy hoạch thông minh",
+        "tăng trưởng xanh"
+      ]
+    },
+    {
+      "id": "nguyen-thanh-tam",
+      "group": "experts",
+      "photo": "/media/tam.png",
+      "name": "Nguyễn Thanh Tâm",
+      "honorific": "KTS.",
+      "title": "Phó Viện Trưởng",
+      "bio": "Công tác trong lĩnh vực quy hoạch đô thị, tham gia nghiên cứu và quản lý các đồ án quy hoạch, phục vụ công tác quản lý nhà nước và định hướng phát triển không gian đô thị theo quy định.",
+      "highlights": [
+        "quy hoạch đô thị",
+        "quản lý nhà nước",
+        "phát triển không gian"
+      ]
+    },
+    {
+      "id": "nguyen-thi-ly",
+      "group": "core",
+      "photo": "/media/lyly.png",
+      "name": "Nguyễn Thị Ly",
+      "honorific": "",
+      "title": "Cán bộ nghiên cứu",
+      "bio": "Có nền tảng học thuật vững chắc về quy hoạch đô thị, phát triển đô thị bền vững, quản lý cơ sở hạ tầng và thiết kế không gian công cộng. Đóng góp vào nhiều dự án nghiên cứu và hỗ trợ kỹ thuật tập trung vào không gian công cộng, phát triển cộng đồng và các chương trình phát triển đô thị. Thể hiện tinh thần làm việc nhóm tuyệt vời, kỹ năng tổ chức rõ ràng và tinh thần trách nhiệm cao.",
+      "highlights": [
+        "quy hoạch đô thị",
+        "phát triển bền vững",
+        "không gian công cộng"
+      ]
+    },
+    {
+      "id": "dinh-tung-duong",
+      "group": "core",
+      "photo": "/media/duong.png",
+      "name": "Đinh Tùng Dương",
+      "honorific": "",
+      "title": "Cán bộ nghiên cứu",
+      "bio": "Tôi có bằng Quản lý Đô thị của Đại học Kiến trúc Hà Nội, nơi tôi vinh dự được vinh danh là Thủ khoa của Hà Nội năm 2023. Trong hai năm qua, tôi đã tích cực đóng góp vào các dự án phát triển đô thị tập trung vào quy hoạch không gian, cải thiện cảnh quan và cuộc sống đô thị bền vững. Tôi có khả năng phân tích và tổ chức mạnh mẽ, cùng với sự thành thạo trong cả phần mềm văn phòng và phần mềm kỹ thuật.",
+      "highlights": [
+        "Quản lý Đô thị",
+        "Thủ khoa",
+        "quy hoạch không gian",
+        "bền vững"
+      ]
+    },
+    {
+      "id": "trinh-thi-tinh",
+      "group": "core",
+      "photo": "/media/tinh.png",
+      "name": "Trịnh Thị Tình",
+      "honorific": "",
+      "title": "Cán bộ hành chính",
+      "bio": "Tốt nghiệp chuyên ngành Quản trị kinh doanh tại trường Cao đẳng Du lịch Hà Nội. Ngoài việc quản lý các công việc hành chính văn phòng, tôi còn đóng góp và hỗ trợ nhiều dự án nghiên cứu khoa học khác nhau. Tôi là một cá nhân năng động và có trách nhiệm, luôn khao khát học hỏi và phát triển.",
+      "highlights": [
+        "Quản trị kinh doanh",
+        "trách nhiệm",
+        "làm việc nhóm"
+      ]
+    },
+    {
+      "id": "nguyen-quynh-ly",
+      "group": "core",
+      "photo": "/media/nguyenquynhly.png",
+      "name": "Nguyễn Quỳnh Ly",
+      "honorific": "",
+      "title": "Cán bộ nghiên cứu",
+      "bio": "Tôi tốt nghiệp Đại học Kinh tế Quốc dân, được đào tạo bài bản và có tinh thần trách nhiệm cao trong công việc. Tôi có kinh nghiệm đấu thầu các dự án máy móc thiết bị, cũng như các dự án liên quan đến quy hoạch đô thị. Ngoài ra, tôi có khả năng xử lý nhiều công việc hành chính khác nhau.",
+      "highlights": [
+        "Đại học Kinh tế Quốc dân",
+        "đấu thầu",
+        "quy hoạch đô thị"
+      ]
+    }
+  ],
+  "news": [
+    {
+      "title": "Lễ Khánh Thành, Bàn Giao Công Viên Âu Cơ",
+      "description": "Viện Nghiên Cứu Kinh tế Xây dựng và Đô thị (ICUE), phối hợp cùng UBND thành phố Hội An. Với Sự Tham Dự Của Chủ Tịch UBND Tỉnh Quảng Nam - Ông Lê Văn Dũng",
+      "imageAlt": "Lễ khánh thành và bàn giao công viên Âu Cơ",
+      "id": "1",
+      "image": "/media/news-1.webp"
+    },
+    {
+      "title": "Diễn đàn Bảo tồn Khu vực Châu Á",
+      "description": "Liên minh Bảo tồn Thiên nhiên Quốc tế (IUCN) đã khai mạc tại Bangkok, Thái Lan. Sự kiện quy tụ gần 600 nhà lãnh đạo trong lĩnh vực bảo tồn từ khắp khu vực, bao gồm đại diện chính phủ, tổ chức phi chính phủ, nhà tài trợ và đối tác, học viện và khu vực tư nhân, cùng nhiều bên liên quan.",
+      "imageAlt": "Diễn đàn Bảo tồn Khu vực Châu Á tại Bangkok",
+      "id": "2",
+      "image": "/media/news-2.webp"
+    },
+    {
+      "title": "Giúp đỡ đồng bào ảnh hưởng do bão Yagi",
+      "description": "Làm theo lời kêu gọi của Uỷ ban Trung ương Mặt trận Tổ quốc Việt Nam, Viện NCKTXD&ĐT đã có thông báo kêu gọi cán bộ và các đối tác cùng các nhà hảo tâm chung tay đóng góp, giúp đỡ đồng bào bị ảnh hưởng bởi bão Yagi.",
+      "imageAlt": "Hoạt động hỗ trợ đồng bào chịu ảnh hưởng bởi bão Yagi",
+      "id": "3",
+      "image": "/media/news-3.jpg"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Bạn cung cấp những loại dịch vụ tư vấn nào?",
+      "a": "Chúng tôi cung cấp tư vấn về lập kế hoạch, thiết kế, quản lý dự án, giám sát và hỗ trợ thủ tục pháp lý."
+    },
+    {
+      "q": "Quy trình hợp tác như thế nào?",
+      "a": "Quy trình gồm: tư vấn ban đầu → khảo sát hiện trường → thiết kế sơ bộ → hoàn thiện bản vẽ → hỗ trợ thi công."
+    },
+    {
+      "q": "Bạn có sử dụng công nghệ BIM không?",
+      "a": "Có, chúng tôi sử dụng BIM và mô hình 3D để giúp khách hàng hình dung thiết kế rõ ràng."
+    },
+    {
+      "q": "Phí dịch vụ được tính như thế nào?",
+      "a": "Phí có thể tính theo gói, theo % tổng vốn đầu tư hoặc theo giờ tùy loại dự án."
+    }
+  ],
+  "contact": {
+    "email": "info@icue.vn",
+    "phone": "+84 (24) 3772 8485",
+    "tel": "+842437728485",
+    "address": "Số 20, Ngõ 114, Hoàng Ngân, Trung Hoà, Cầu Giấy, Hà Nội",
+    "facebook": "https://www.facebook.com/profile.php?id=100075982245583"
+  }
+}
