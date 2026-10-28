@@ -5,7 +5,7 @@
 .rail-scroll-cue.is-visible{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,-50%);transition:opacity .28s,transform .28s,visibility 0s}
 .rail-scroll-cue-icon{position:relative;width:40px;height:40px;display:grid;place-items:center;color:var(--rail-ink);flex-shrink:0}
 .rail-scroll-ring{position:absolute;inset:0;width:40px;height:40px;fill:none;stroke-width:1;transform:rotate(-90deg)}
-.rail-scroll-track{stroke:var(--rail-border);opacity:.55}
+.rail-scroll-track{stroke:var(--rail-accent);stroke-width:1.5}
 .rail-scroll-progress{stroke:var(--rail-accent);stroke-width:1.5;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:var(--rail-reading-offset,100)}
 .rail-scroll-cue-text{writing-mode:vertical-rl;transform:rotate(180deg);font-size:8px;font-weight:500;line-height:1.5;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
 .rail-scroll-cue:hover{color:var(--rail-accent)}
