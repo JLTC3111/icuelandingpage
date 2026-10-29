@@ -44,13 +44,27 @@ Content sources include:
 
 The hero uses existing planning and fieldwork imagery from ICUE. Projects use images from their corresponding galleries. Establishment date and staff count come from the original About content.
 
+The dedicated `#founder` section closes the main page, after the platforms and before the footer. It presents Dr. Phạm Sỹ Liêm (1931–2018), founder and first director of ICUE, through an eight-chapter biography based on `public/docs/drphamsyliem.md`. The chapters cover his origins, engineering education, public service and federation leadership, both research institutes, urban policy contributions, Người Đô Thị and editorial work, his final scholarly book, and colleagues’ personal recollections. The full narrative in all six languages lives in `src/data/founderBiography.js`; identity and photograph metadata live in `src/data/founderContent.js`. A link opens the complete supplied biographical notes.
+
+`src/components/Stepper.jsx` implements the supplied `Stepper` / `Step` interface as a vertical accordion reader: numbered sections, clickable chapter headings, Back and Continue controls, completion callbacks, animated expansion, keyboard heading navigation, inactive-panel focus exclusion and reduced-motion support. The final action keeps the last chapter available. The component uses the React Bits Stepper interface and existing license notice, with ICUE theme colors and responsive reading typography.
+
+The section starts with text only. In the policy chapter, opening the 2017 event reveals the VTV1 television interview (`dr.phamsyliem_1.jpg`, retained as `pham-sy-liem-portrait.jpg`). In the editorial chapter, opening the 2018 event reveals a meeting with editorial colleagues, one of his final documented editorial meetings (`dr.phamsyliem_2.jpg`, retained as `pham-sy-liem-meeting.jpg`). Photos mount only for the active chapter and an explicitly opened event; changing chapters closes the photo. Dates and contexts were confirmed by the user and are included in all six languages. The supplied images are preserved, including the user's later image updates.
+
+Leadership additions live in `src/data/leadershipContent.js`, separately from the imported snapshot so `sync:content` preserves them. The people section shows the 2022–2027 appointments announced on 14 March 2024, including Dr. Nguyễn Hồng Hạnh’s reappointment under Decision 19/QĐ-THXDVN and the three deputy directors named in that announcement. The existing directory is retained; the dated announcement is not treated as an exhaustive later staff roster. Hạnh’s profile adds her research perspective from the 20 October 2020 interview; her profile and the existing profiles of Trần Quốc Toản and Trần Thị Lan Anh include linked appointment details. Both additions support all six languages and the light and dark palettes.
+
+Leadership sources:
+
+- [Tổng hội Xây dựng Việt Nam — appointment announcement, 14 March 2024](https://tonghoixaydung.vn/bo-nhiem-ts-nguyen-hong-hanh-giu-chuc-vien-truong-vien-nghien-cuu-kinh-te-xay-dung-va-do-thi.html)
+- [Kinh tế xanh — interview with Dr. Nguyễn Hồng Hạnh, 20 October 2020](https://kinhtexanh.vn/ts-nguyen-hong-hanh-phu-nu-la-dong-luc-lon-cho-su-phat-trien-14752.html)
+
+
 The cover displays the current planning and fieldwork images through the newsroom's `motion-primitives/ImageComparison` component. The landing adaptation keeps pointer hover, click-to-hold, and touch dragging, and adds an accessible keyboard slider. Labels and instructions are translated into all six languages, controls follow the active theme, and reduced-motion preference disables hover scrubbing. Cover links and the caption remain accessible above the comparison.
 
 ## Menu and interactions
 
 The hamburger opens [React Bits' Staggered Menu](https://reactbits.dev/components/staggered-menu), adapted from its JavaScript/CSS source. The original layered slide and staggered text animation use GSAP. ICUE additions include the external rail trigger, native dialog focus containment, Escape and backdrop dismissal, closing on navigation, reduced-motion support, localized controls, and theme styling. The upstream copyright and permission notice is retained in [licenses/react-bits.md](licenses/react-bits.md).
 
-The menu has five links in every language: Discover (the main website), Expertise, Projects, Our people, and Newsroom. Its two-line icon morphs into an X and reverses on dismissal, with reduced-motion support.
+The menu has six links in every language: Discover (the main website), Expertise, Projects, Our people, Newsroom, and Our founder. Its two-line icon morphs into an X and reverses on dismissal, with reduced-motion support.
 
 The page retains service and value accordions, project selection, team filters and profile dialogs, and FAQs. The news section and large closing contact callout have been removed. Actual contact information is available in the compact footer.
 

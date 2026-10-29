@@ -1,0 +1,76 @@
+// Editorial additions are kept separate from the imported main-site snapshot.
+export const leadershipSources = {
+  appointment: 'https://tonghoixaydung.vn/bo-nhiem-ts-nguyen-hong-hanh-giu-chuc-vien-truong-vien-nghien-cuu-kinh-te-xay-dung-va-do-thi.html',
+  interview: 'https://kinhtexanh.vn/ts-nguyen-hong-hanh-phu-nu-la-dong-luc-lon-cho-su-phat-trien-14752.html',
+}
+
+const leadershipContent = {
+  vi: {
+    heading: 'BAN LÃNH ĐẠO', term: 'Nhiệm kỳ 2022–2027',
+    announced: 'Công bố ngày 14.03.2024 · Quyết định 19/QĐ-THXDVN',
+    directorLabel: 'Viện trưởng', directorName: 'TS. Nguyễn Hồng Hạnh',
+    deputiesLabel: 'Các Phó Viện trưởng được công bố cùng nhiệm kỳ',
+    deputies: ['KS. Trần Quốc Toản', 'TS. Nguyễn Thị Nga', 'TS.KTS. Trần Thị Lan Anh'],
+    directorNote: 'Ngày 14/3/2024, Tổng hội Xây dựng Việt Nam công bố quyết định bổ nhiệm lại TS. Nguyễn Hồng Hạnh giữ chức Viện trưởng nhiệm kỳ 2022–2027 theo Quyết định 19/QĐ-THXDVN. Thông báo cũng ghi nhận bà là Ủy viên Ban Chấp hành khóa IX của Tổng hội.',
+    deputyNote: 'Việc bổ nhiệm chức danh Phó Viện trưởng nhiệm kỳ 2022–2027 được Tổng hội Xây dựng Việt Nam công bố ngày 14/3/2024.',
+    researchNote: 'Trong cuộc phỏng vấn năm 2020, bà chia sẻ niềm đam mê nghiên cứu khoa học, đề cao quy hoạch dài hạn, giao thông xanh, sản xuất sạch và vai trò của phụ nữ trong phát triển.',
+    sourcesLabel: 'Tìm hiểu thêm', appointmentLabel: 'Thông báo bổ nhiệm · 14.03.2024', interviewLabel: 'Phỏng vấn TS. Hạnh · 20.10.2020',
+  },
+  en: {
+    heading: 'INSTITUTE LEADERSHIP', term: '2022–2027 term',
+    announced: 'Announced 14.03.2024 · Decision 19/QĐ-THXDVN',
+    directorLabel: 'Director', directorName: 'Dr. Nguyễn Hồng Hạnh',
+    deputiesLabel: 'Deputy directors named for the same term',
+    deputies: ['Eng. Trần Quốc Toản', 'Dr. Nguyễn Thị Nga', 'Dr., Architect Trần Thị Lan Anh'],
+    directorNote: 'On 14 March 2024, the Vietnam Federation of Civil Engineering Associations announced Dr. Nguyễn Hồng Hạnh’s reappointment as Director for 2022–2027 under Decision 19/QĐ-THXDVN. The announcement also identifies her as a member of its ninth Executive Committee.',
+    deputyNote: 'The Vietnam Federation of Civil Engineering Associations announced this appointment as Deputy Director for the 2022–2027 term on 14 March 2024.',
+    researchNote: 'In her 2020 interview, she describes her passion for scientific research and advocates long-term planning, green transport, cleaner production and women’s participation in development.',
+    sourcesLabel: 'Further reading', appointmentLabel: 'Appointment announcement · 14.03.2024', interviewLabel: 'Interview with Dr. Hạnh · 20.10.2020',
+  },
+  de: {
+    heading: 'INSTITUTSLEITUNG', term: 'Amtszeit 2022–2027',
+    announced: 'Bekanntgabe am 14.03.2024 · Beschluss 19/QĐ-THXDVN',
+    directorLabel: 'Direktorin', directorName: 'Dr. Nguyễn Hồng Hạnh',
+    deputiesLabel: 'Für dieselbe Amtszeit ernannte stellvertretende Leitung',
+    deputies: ['Ing. Trần Quốc Toản', 'Dr. Nguyễn Thị Nga', 'Dr., Architektin Trần Thị Lan Anh'],
+    directorNote: 'Am 14. März 2024 gab der vietnamesische Verband der Bauingenieurvereinigungen die Wiederernennung von Dr. Nguyễn Hồng Hạnh zur Direktorin für 2022–2027 gemäß Beschluss 19/QĐ-THXDVN bekannt. Die Mitteilung nennt sie auch als Mitglied des neunten Exekutivkomitees.',
+    deputyNote: 'Der vietnamesische Verband der Bauingenieurvereinigungen gab diese Ernennung zur stellvertretenden Institutsleitung für 2022–2027 am 14. März 2024 bekannt.',
+    researchNote: 'Im Interview von 2020 erläutert sie ihre Begeisterung für wissenschaftliche Forschung und setzt sich für langfristige Planung, umweltfreundlichen Verkehr, saubere Produktion und die Beteiligung von Frauen an der Entwicklung ein.',
+    sourcesLabel: 'Weiterlesen', appointmentLabel: 'Ernennungsmitteilung · 14.03.2024', interviewLabel: 'Interview mit Dr. Hạnh · 20.10.2020',
+  },
+  fr: {
+    heading: 'DIRECTION DE L’INSTITUT', term: 'Mandat 2022–2027',
+    announced: 'Annonce du 14.03.2024 · Décision 19/QĐ-THXDVN',
+    directorLabel: 'Directrice', directorName: 'Dr Nguyễn Hồng Hạnh',
+    deputiesLabel: 'Direction adjointe nommée pour le même mandat',
+    deputies: ['Ing. Trần Quốc Toản', 'Dr Nguyễn Thị Nga', 'Dr, architecte Trần Thị Lan Anh'],
+    directorNote: 'Le 14 mars 2024, la Fédération vietnamienne des associations de génie civil a annoncé le renouvellement du mandat de directrice du Dr Nguyễn Hồng Hạnh pour 2022–2027, par la décision 19/QĐ-THXDVN. L’annonce la présente aussi comme membre de son neuvième comité exécutif.',
+    deputyNote: 'La Fédération vietnamienne des associations de génie civil a annoncé cette nomination à la direction adjointe pour le mandat 2022–2027 le 14 mars 2024.',
+    researchNote: 'Dans son entretien de 2020, elle exprime sa passion pour la recherche scientifique et défend la planification à long terme, les transports verts, une production plus propre et la participation des femmes au développement.',
+    sourcesLabel: 'Pour en savoir plus', appointmentLabel: 'Annonce des nominations · 14.03.2024', interviewLabel: 'Entretien avec le Dr Hạnh · 20.10.2020',
+  },
+  ko: {
+    heading: '연구원 지도부', term: '임기 2022–2027',
+    announced: '2024.03.14 발표 · 결정 19/QĐ-THXDVN',
+    directorLabel: '원장', directorName: 'Nguyễn Hồng Hạnh 박사',
+    deputiesLabel: '같은 임기로 임명 발표된 부원장',
+    deputies: ['Trần Quốc Toản 엔지니어', 'Nguyễn Thị Nga 박사', 'Trần Thị Lan Anh 박사·건축가'],
+    directorNote: '베트남 토목공학협회연합회는 2024년 3월 14일 결정 19/QĐ-THXDVN에 따라 Nguyễn Hồng Hạnh 박사의 2022–2027년 임기 원장 재임명을 발표했습니다. 발표문에는 연합회 제9기 집행위원회 위원으로도 소개되어 있습니다.',
+    deputyNote: '베트남 토목공학협회연합회는 2024년 3월 14일 2022–2027년 임기 부원장 임명을 발표했습니다.',
+    researchNote: '2020년 인터뷰에서 과학 연구에 대한 열정을 밝히고 장기 도시계획, 친환경 교통, 청정 생산과 발전 과정에서 여성의 참여를 강조했습니다.',
+    sourcesLabel: '더 읽기', appointmentLabel: '임명 발표 · 2024.03.14', interviewLabel: 'Hạnh 박사 인터뷰 · 2020.10.20',
+  },
+  ja: {
+    heading: '研究所の指導部', term: '任期 2022–2027',
+    announced: '2024.03.14発表 · 決定19/QĐ-THXDVN',
+    directorLabel: '所長', directorName: 'Nguyễn Hồng Hạnh博士',
+    deputiesLabel: '同じ任期で任命が発表された副所長',
+    deputies: ['Trần Quốc Toản技師', 'Nguyễn Thị Nga博士', 'Trần Thị Lan Anh博士・建築家'],
+    directorNote: 'ベトナム土木工学協会連合は2024年3月14日、決定19/QĐ-THXDVNに基づき、Nguyễn Hồng Hạnh博士を任期2022–2027年の所長に再任すると発表しました。同発表では第9期執行委員会委員としても紹介されています。',
+    deputyNote: 'ベトナム土木工学協会連合は2024年3月14日、任期2022–2027年の副所長への任命を発表しました。',
+    researchNote: '2020年のインタビューでは、科学研究への情熱を語り、長期的な都市計画、環境に配慮した交通、クリーンな生産、発展における女性の参画を重視しています。',
+    sourcesLabel: '詳しく読む', appointmentLabel: '任命の発表 · 2024.03.14', interviewLabel: 'Hạnh博士インタビュー · 2020.10.20',
+  },
+}
+
+export default leadershipContent

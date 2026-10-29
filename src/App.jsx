@@ -11,6 +11,9 @@ import ValueGallery from './components/ValueGallery.jsx'
 import PlatformVideo from './components/PlatformVideo.jsx'
 import StarBorder from './components/StarBorder.jsx'
 import RailScrollCue from './components/RailScrollCue.jsx'
+import Founder from './components/Founder.jsx'
+import InstitutionLeadership, { LeadershipProfileNote } from './components/InstitutionLeadership.jsx'
+import founderContent from './data/founderContent.js'
 import './components/NavigationRail.css'
 
 const navigationTargets = ['/', '#services', '#projects', '#people', '/newsroom']
@@ -90,7 +93,7 @@ function People({ onSelect }) {
   const { copy, content, site } = useLocale()
   const [group, setGroup] = useState('experts')
   const people = content.people.filter((person) => person.group === group).sort((a, b) => Number(a.id === 'tran-quoc-toan') - Number(b.id === 'tran-quoc-toan'))
-  return <section id="people" className="people-section"><div className="people-intro"><ArchitecturalLines /><Eyebrow number="04" light>{copy.people.eyebrow}</Eyebrow><h2>{copy.people.title[0]}<br />{copy.people.title[1]}<br /><span>{copy.people.title[2]}</span></h2><p>{copy.people.lead}</p><a className="text-link" href={site(group === 'experts' ? '/people/experts' : '/people/core-team')}>{copy.people.all}<ArrowUpRight size={19} /></a><span className="people-signature">{copy.people.signature}</span></div>
+  return <section id="people" className="people-section"><div className="people-intro"><ArchitecturalLines /><Eyebrow number="04" light>{copy.people.eyebrow}</Eyebrow><h2>{copy.people.title[0]}<br />{copy.people.title[1]}<br /><span>{copy.people.title[2]}</span></h2><p>{copy.people.lead}</p><InstitutionLeadership onSelect={onSelect} /><a className="text-link" href={site(group === 'experts' ? '/people/experts' : '/people/core-team')}>{copy.people.all}<ArrowUpRight size={19} /></a><span className="people-signature">{copy.people.signature}</span></div>
     <div className="people-directory"><div className="people-directory-head"><h3>{copy.people.directory}</h3><div className="people-filters" aria-label={copy.people.groupsLabel}><button aria-pressed={group === 'experts'} onClick={() => setGroup('experts')}>{copy.people.experts}</button><button aria-pressed={group === 'core'} onClick={() => setGroup('core')}>{copy.people.staff}</button></div></div><div className="people-grid">{people.map((person) => <button className="person-card" key={person.id} onClick={() => onSelect(person.id)} aria-label={format(copy.ui.viewProfile, 'name', person.name)}><span className="person-photo"><img src={person.photo} alt={person.name} loading="lazy" width="400" height="440" /><span className="person-photo-cta"><ArrowUpRight size={22} /></span></span><span className="person-name">{person.name}</span><span className="person-role">{person.id === 'nguyen-hong-hanh' ? copy.people.directorRole : `${person.honorific ? person.honorific + ' · ' : ''}${person.title}`}</span></button>)}</div><p className="directory-hint"><span />{copy.people.hint}</p></div>
   </section>
 }
@@ -122,7 +125,7 @@ function Platforms() {
 }
 
 function LandingPage() {
-  const { copy, content, contact, site, theme } = useLocale()
+  const { copy, content, contact, site, theme, locale } = useLocale()
   const personDialog = useRef(null)
   const menuTrigger = useRef(null)
   const [personId, setPersonId] = useState(null)
@@ -153,8 +156,10 @@ function LandingPage() {
     window.addEventListener('resize', sync)
     return () => { observer.disconnect(); window.removeEventListener('resize', sync) }
   }, [])
-  const sectionIndex = { home: '00', about: '01', services: '02', projects: '03', people: '04', approach: '05', faq: '06', platforms: '07', contact: '08' }[currentSection] || '00'
+  const sectionIndex = { home: '00', about: '01', services: '02', projects: '03', people: '04', approach: '05', faq: '06', platforms: '07', founder: '08', contact: '09' }[currentSection] || '00'
   const mark = '/media/original-logo.png'
+  const menuItems = navigationTargets.map((target, i) => ({ label: copy.nav[i], link: target.startsWith('#') ? target : site(target) }))
+  menuItems.push({ label: founderContent[locale].navLabel, link: '#founder' })
 
   return <>
     <a className="skip-link" href="#main-content">{copy.ui.skip}</a>
@@ -169,12 +174,12 @@ function LandingPage() {
       <main id="main-content"><section id="home" className="hero" aria-labelledby="hero-title"><div className="hero-visual"><HeroImageComparison /><div className="hero-image-tag"><span />{copy.hero.tag}</div><OrbitStamp /><div className="hero-image-caption"><span>{copy.hero.comparison.caption}</span><p><Lines lines={copy.hero.caption} /></p></div></div><div className="hero-copy"><p className="hero-kicker"><span />{copy.hero.kicker}</p><h1 id="hero-title"><Lines lines={copy.hero.title} /><span className="accent">.</span></h1><p className="hero-description">{copy.hero.description}</p><a className="hero-cta" href={site("/past-projects")}>{copy.hero.projectCta}<RoundArrow direction="right" /></a><a className="team-teaser" href={site("/people/experts")}><span className="avatar-stack">{heroPortraits.map((p) => <img src={p.photo} key={p.id} alt="" width="48" height="48" />)}</span><span>{copy.hero.teamBefore}<br /><strong>{copy.hero.teamAfter}<ArrowUpRight size={15} /></strong></span></a></div></section>
         <div className="hero-bottom"><a href="#about"><ArrowDown size={14} />{copy.hero.scroll}</a><span>{copy.hero.fields.map((field, i) => <Fragment key={i}>{i > 0 && <i>/</i>}{field}</Fragment>)}</span><span>{copy.hero.location}</span></div>
         <section id="about" className="about section-shell"><Eyebrow number="01">{copy.about.eyebrow}</Eyebrow><div className="about-layout"><h2>{copy.about.title[0]}<br /><span>{copy.about.title[1]}</span></h2><div className="about-copy"><p>{copy.about.lead}</p><p>{copy.about.body}</p><a href={site('/about-us')} className="text-link">{copy.about.link}<ArrowUpRight size={18} /></a></div></div><div className="about-facts"><div><strong>2013<span>↗</span></strong><span>{copy.about.facts[0]}</span></div><div><strong>20<span>+</span></strong><span>{copy.about.facts[1]}</span></div><div><strong>04<span>↗</span></strong><span>{copy.about.facts[2]}</span></div><div className="about-compass"><Compass size={68} strokeWidth={0.8} /><span><Lines lines={copy.about.compass} /></span></div></div></section>
-        <Services /><Projects /><People onSelect={setPersonId} /><Values /><Faq /><Platforms />
+        <Services /><Projects /><People onSelect={setPersonId} /><Values /><Faq /><Platforms /><Founder />
       </main>
       <footer id="contact" className="footer-wrap"><div className="footer-contact-grid"><a href={`mailto:${contact.email}`} className="footer-email"><span>{copy.footer.contactLabel}</span><strong>{contact.email}<ArrowUpRight size={23} /></strong></a><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`} target="_blank" rel="noreferrer"><span>{copy.footer.addressLabel}</span><p>{contact.address}</p></a><a href={`tel:${contact.tel}`}><span>{copy.footer.phoneLabel}</span><p>{contact.phone}</p></a></div><div className="site-footer"><a href="#home" className="footer-brand" aria-label={copy.ui.home}><img src={mark} alt="" width="29" height="29" />ICUE</a><span>© {new Date().getFullYear()} {copy.footer.rights}</span><nav aria-label={copy.ui.legalNav}><a href={site('/news-archive')}>{copy.links.archive}</a><a href={site('/legal/privacy')}>{copy.footer.privacy}</a><a href={site('/recruitment')}>{copy.footer.careers}<ArrowUpRight size={13} /></a><a href={site('/contact')}>{copy.footer.contactCta}<ArrowUpRight size={13} /></a></nav><a href="#home" className="back-to-top" aria-label={copy.ui.backTop}><ArrowUp size={18} /></a></div></footer>
     </div>
-    <StaggeredMenu open={menuOpen} onClose={() => setMenuOpen(false)} triggerRef={menuTrigger} homeHref={site('/')} labels={{ title: copy.ui.menuTitle, close: copy.ui.closeMenu, eyebrow: copy.menu.eyebrow, lead: copy.menu.lead, socials: copy.menu.socials, place: copy.menu.place }} items={navigationTargets.map((target, i) => ({ label: copy.nav[i], link: target.startsWith('#') ? target : site(target) }))} socialItems={[{ label: contact.email, link: `mailto:${contact.email}` }, { label: 'Facebook', link: contact.facebook }]} controls={<LocaleControls />} />
-    <dialog ref={personDialog} className="person-dialog" onClose={() => setPersonId(null)} onClick={(e) => { if (e.target === e.currentTarget) personDialog.current.close() }} aria-labelledby={person ? 'person-dialog-name' : undefined}>{person && <div className="person-dialog-content"><button className="dialog-close" aria-label={copy.ui.closeProfile} onClick={() => personDialog.current.close()} autoFocus><X size={24} strokeWidth={1.3} /></button><div className="person-dialog-image"><img src={person.photo} alt={person.name} width="400" height="500" /></div><div className="person-dialog-copy"><Eyebrow>{copy.people.eyebrow}</Eyebrow><span className="person-honorific">{person.honorific}</span><h2 id="person-dialog-name">{person.name}</h2><p className="person-dialog-role">{person.title}</p><p className="person-bio">{person.bio}</p><div className="person-tags">{person.highlights.map((h) => <span key={h}>{h}</span>)}</div><a className="text-link" href={site(person.group === 'experts' ? '/people/experts' : '/people/core-team')}>{copy.people.all}<ArrowUpRight size={17} /></a></div></div>}</dialog>
+    <StaggeredMenu open={menuOpen} onClose={() => setMenuOpen(false)} triggerRef={menuTrigger} homeHref={site('/')} labels={{ title: copy.ui.menuTitle, close: copy.ui.closeMenu, eyebrow: copy.menu.eyebrow, lead: copy.menu.lead, socials: copy.menu.socials, place: copy.menu.place }} items={menuItems} socialItems={[{ label: contact.email, link: `mailto:${contact.email}` }, { label: 'Facebook', link: contact.facebook }]} controls={<LocaleControls />} />
+    <dialog ref={personDialog} className="person-dialog" onClose={() => setPersonId(null)} onClick={(e) => { if (e.target === e.currentTarget) personDialog.current.close() }} aria-labelledby={person ? 'person-dialog-name' : undefined}>{person && <div className="person-dialog-content"><button className="dialog-close" aria-label={copy.ui.closeProfile} onClick={() => personDialog.current.close()} autoFocus><X size={24} strokeWidth={1.3} /></button><div className="person-dialog-image"><img src={person.photo} alt={person.name} width="400" height="500" /></div><div className="person-dialog-copy"><Eyebrow>{copy.people.eyebrow}</Eyebrow><span className="person-honorific">{person.honorific}</span><h2 id="person-dialog-name">{person.name}</h2><p className="person-dialog-role">{person.title}</p><p className="person-bio">{person.bio}</p><LeadershipProfileNote personId={person.id} /><div className="person-tags">{person.highlights.map((h) => <span key={h}>{h}</span>)}</div><a className="text-link" href={site(person.group === 'experts' ? '/people/experts' : '/people/core-team')}>{copy.people.all}<ArrowUpRight size={17} /></a></div></div>}</dialog>
   </>
 }
 

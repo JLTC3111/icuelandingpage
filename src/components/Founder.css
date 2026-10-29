@@ -1,0 +1,36 @@
+.founder{border-top:1px solid var(--line);padding-top:65px;padding-bottom:80px}
+.founder-heading{display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.founder-heading .eyebrow{margin-bottom:22px}
+.founder-lifespan{font-size:12px;letter-spacing:.08em;color:var(--muted);white-space:nowrap}
+.founder>h2{max-width:900px;font-size:clamp(30px,3.25vw,52px);line-height:1.2;text-wrap:balance}
+.founder-layout{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(30px,4vw,65px);align-items:start;margin-top:38px}
+.founder-honorific{display:block;font-size:11px;line-height:1.5;color:var(--muted);margin-bottom:8px}
+.founder-identity h3{font-size:clamp(30px,3.35vw,54px);font-weight:500;letter-spacing:-.055em;line-height:1.2}
+.founder-role{font-size:11px;line-height:1.7;color:var(--accent-text);margin-top:12px;max-width:300px}
+.founder-story>p{font-size:13px;line-height:1.9;color:var(--muted)}
+.founder-story>p+p{margin-top:15px}
+.founder-story .founder-lead{font-size:15px;line-height:1.8;color:var(--ink)}
+.founder-reader{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:clamp(30px,4vw,65px);border-top:1px solid var(--line);padding-top:30px;margin-top:35px;align-items:start}
+.founder-reader-intro{padding-top:24px}
+.founder-reader-intro h3{font-size:16px;font-weight:500;letter-spacing:-.025em;line-height:1.6;color:var(--ink)}
+.founder-reader-intro>p{font-size:11px;line-height:1.9;color:var(--muted);margin-top:12px;max-width:230px}
+.founder-reader-intro .founder-source{font-size:10px;gap:9px;margin-top:23px;line-height:1.8}
+.founder-chapter{max-width:760px}
+.founder-chapter h5{font-size:clamp(19px,1.7vw,26px);font-weight:500;line-height:1.45;letter-spacing:-.025em;margin:0 0 20px;color:var(--ink);text-wrap:balance}
+.founder-chapter>p{font-size:14px;line-height:1.95;color:var(--muted);overflow-wrap:anywhere;hyphens:auto}
+.founder-chapter>p+p{margin-top:17px}
+.founder-photo-event{margin-top:25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.founder-event-trigger{width:100%;display:grid;grid-template-columns:49px minmax(0,1fr) 28px;gap:15px;align-items:center;text-align:left;padding:18px 0}
+.founder-event-year{font-size:22px;font-weight:500;letter-spacing:-.04em;color:var(--accent-text);line-height:1.2}
+.founder-event-text{font-size:12px;line-height:1.8;color:var(--muted);overflow-wrap:anywhere;hyphens:auto}
+.founder-photo-toggle{width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--control-border);border-radius:50%;background:var(--control-bg);color:var(--ink);transition:background .2s}
+.founder-photo-toggle svg{transition:transform .2s}
+.founder-event-trigger:hover .founder-photo-toggle{background:var(--control-hover)}
+.founder-event-trigger:hover .founder-event-text{color:var(--ink)}
+.founder-event-trigger[aria-expanded=true] .founder-photo-toggle svg{transform:rotate(45deg)}
+.founder-event-photo{margin:0 0 23px;max-width:620px}
+.founder-event-photo[hidden]{display:none}
+.founder-event-photo img{width:100%;height:auto;border-radius:9px;background:var(--photo-surface)}
+.founder-event-photo figcaption{font-size:10px;line-height:1.8;color:var(--muted);margin-top:12px}
+@media(max-width:960px){.founder{padding-top:48px;padding-bottom:60px}.founder-layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:28px}.founder-identity h3{font-size:32px}.founder-story .founder-lead{font-size:14px}.founder-reader{grid-template-columns:1fr;gap:20px}.founder-reader-intro{padding-top:0}.founder-reader-intro>p{max-width:none}.founder-reader-intro .founder-source{margin-top:13px}.founder-chapter>p{font-size:13px}}
+@media(max-width:640px){.founder{padding-top:42px;padding-bottom:48px}.founder>h2{font-size:29px}.founder-lifespan{font-size:10px}.founder-heading .eyebrow{margin-bottom:20px}.founder-layout{grid-template-columns:1fr;gap:25px;margin-top:27px}.founder-identity h3{font-size:36px}.founder-role{max-width:none}.founder-story>p{font-size:12px}.founder-reader{margin-top:28px;padding-top:25px;gap:15px}.founder-chapter h5{font-size:21px;line-height:1.5;margin-bottom:17px}.founder-chapter>p{font-size:13px;line-height:1.95}.founder-event-trigger{grid-template-columns:45px minmax(0,1fr) 28px;gap:12px}.founder-event-year{font-size:21px}.founder-event-text{font-size:11px}.founder-event-photo{margin-bottom:20px}}

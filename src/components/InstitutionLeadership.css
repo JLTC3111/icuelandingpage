@@ -1,0 +1,23 @@
+.leadership-summary{width:100%;margin-top:35px;padding-top:27px;border-top:1px solid var(--inverse-line)}
+.leadership-eyebrow{font-size:8px;font-weight:500;letter-spacing:.14em;line-height:1.7;color:var(--inverse-faint)}
+.leadership-summary h3{font-size:23px;font-weight:500;letter-spacing:-.035em;line-height:1.4;margin-top:9px}
+.leadership-announcement{font-size:9px;line-height:1.9;color:var(--inverse-muted);margin-top:9px;max-width:300px}
+.leadership-summary dl{margin:23px 0 0}
+.leadership-summary dl>div+div{margin-top:19px}
+.leadership-summary dt{font-size:9px;line-height:1.8;color:var(--inverse-faint)}
+.leadership-summary dd{margin:5px 0 0;font-size:13px;line-height:1.9}
+.leadership-summary dd button{display:inline-flex;align-items:center;gap:8px;padding:0;text-align:left;line-height:1.8;font-weight:500}
+.leadership-summary dd button:hover{color:var(--inverse-accent)}
+.leadership-summary ul{padding:0;margin:0;list-style:none}
+.leadership-sources{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin-top:24px}
+.leadership-sources a{display:inline-flex;align-items:baseline;gap:7px;font-size:10px;line-height:1.7;text-decoration:underline;text-decoration-color:var(--control-border);text-underline-offset:4px}
+.leadership-sources a svg{align-self:center}
+.leadership-sources a:hover{color:var(--accent-text)}
+.leadership-summary .leadership-sources a{color:var(--inverse-muted);text-decoration-color:var(--inverse-line)}
+.leadership-summary .leadership-sources a:hover{color:var(--inverse-accent)}
+.leadership-profile-note{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}
+.leadership-profile-note>p{font-size:12px;line-height:1.9;color:var(--muted)}
+.leadership-profile-note>p+p{margin-top:13px}
+.leadership-profile-note .leadership-sources{margin-top:17px}
+@media(max-width:960px){.leadership-summary h3{font-size:20px}.leadership-summary dd{font-size:12px}.leadership-sources a{font-size:9px}}
+@media(max-width:640px){.leadership-summary{margin-top:28px;padding-top:24px}.leadership-summary h3{font-size:23px}.leadership-summary dd{font-size:13px}.leadership-sources a{font-size:10px}}
