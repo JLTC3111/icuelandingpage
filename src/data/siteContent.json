@@ -378,7 +378,7 @@
             "id": "website",
             "label": "Website ICUE",
             "description": "Giới thiệu, nghiên cứu & tin tức",
-            "href": "https://vi.icue.vn/"
+            "href": "https://vi.icue.vn/?lang=vi"
           },
           {
             "id": "hr",
@@ -773,7 +773,7 @@
             "id": "website",
             "label": "ICUE Website",
             "description": "About ICUE, research & news",
-            "href": "https://en.icue.vn/"
+            "href": "https://vi.icue.vn/?lang=en"
           },
           {
             "id": "hr",

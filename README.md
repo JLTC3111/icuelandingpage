@@ -24,7 +24,11 @@ node scripts/sync-content.mjs /absolute/path/to/ICUE-mainsite-vn
 
 The original project is not modified. The sync imports all six existing translations (`vi`, `en`, `de`, `fr`, `ko`, `ja`) for projects, service descriptions, profiles, FAQs, and platform links, including five experts and four staff members. The logo is the existing `logoIcons/original_logo.png` asset. Landing-page headings and controls are translated in `src/i18n/messages.js`. Japanese and Korean use the existing self-hosted Noto Sans subsets; Latin-script languages use Archivo.
 
-Language selection updates `?lang=` and the shared `icue_news_lang` storage key. Section links use the canonical `https://vi.icue.vn` origin and preserve the selected language. Light and dark themes follow the system preference initially and remember explicit choices under `icue-landing-theme`.
+Language selection updates `?lang=` and the shared `icue_news_lang` storage key. Main-site links use the canonical `https://vi.icue.vn` origin and carry both `lang` and the selected `theme=light` or `theme=dark`. The HR and Contract links retain their portal hosts and carry the selected theme. External links, mail/telephone actions, and in-page anchors remain unchanged. Theme detection accepts an incoming URL preference before checking `icue-landing-theme` and the system setting. Open landing tabs also react to saved theme changes.
+
+The main-site receiver seeds its existing Home, About/shared-page, Our Work, and Newsroom preferences before rendering. People pages also honor the incoming theme, including a static dark palette when background animation is disabled. Portal receivers accept the same query parameter. The legacy hash-route forwarder preserves explicit theme and language parameters and supplies the saved theme when needed. Browser referrer headers continue to identify the originating page; they are not forged as destination URLs.
+
+Run `node --test tests/navigationPreferences.test.js` to check all six locales, both themes, portal URLs, document downloads, and every Netlify redirect target.
 
 The palettes live in `src/theme-tokens.css`. Text, surfaces, icons, borders, button states, dialogs, the navigation rail, and the platform tiles use semantic colors for both themes.
 

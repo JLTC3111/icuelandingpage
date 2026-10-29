@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import siteContent from '../data/siteContent.json'
 import messages from './messages.js'
+import { MAIN_SITE_ORIGIN, normalizeTheme, withNavigationPreferences } from '../lib/navigationPreferences.js'
 
 export const LANGUAGES = [
   { code: 'vi', label: 'Tiếng Việt' }, { code: 'en', label: 'English' },
@@ -9,7 +10,7 @@ export const LANGUAGES = [
 ]
 export const LANGUAGE_KEY = 'icue_news_lang'
 export const THEME_KEY = 'icue-landing-theme'
-export const MAIN_SITE_ORIGIN = 'https://vi.icue.vn'
+export { MAIN_SITE_ORIGIN } from '../lib/navigationPreferences.js'
 const LocaleContext = createContext(null)
 const aliases = { vn: 'vi', gb: 'en', uk: 'en', kr: 'ko', jp: 'ja' }
 
@@ -31,6 +32,8 @@ export function detectLocale() {
 
 function detectTheme() {
   if (typeof window === 'undefined') return 'light'
+  const incoming = normalizeTheme(new URLSearchParams(window.location.search).get('theme'))
+  if (incoming) return incoming
   const saved = readStorage(THEME_KEY)
   if (saved === 'light' || saved === 'dark') return saved
   return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
@@ -38,7 +41,7 @@ function detectTheme() {
 
 export function LocaleProvider({ children, initialLocale, initialTheme }) {
   const [locale, updateLocale] = useState(() => normalizeLocale(initialLocale) || detectLocale())
-  const [theme, updateTheme] = useState(() => initialTheme || detectTheme())
+  const [theme, updateTheme] = useState(() => normalizeTheme(initialTheme) || detectTheme())
   const copy = messages[locale]
 
   useEffect(() => {
@@ -56,9 +59,13 @@ export function LocaleProvider({ children, initialLocale, initialTheme }) {
   }, [theme])
 
   useEffect(() => {
-    const restore = () => updateLocale(detectLocale())
+    const restore = () => { updateLocale(detectLocale()); updateTheme(detectTheme()) }
+    const syncStorage = (event) => {
+      if (event.key === THEME_KEY && normalizeTheme(event.newValue)) updateTheme(event.newValue)
+    }
     window.addEventListener('popstate', restore)
-    return () => window.removeEventListener('popstate', restore)
+    window.addEventListener('storage', syncStorage)
+    return () => { window.removeEventListener('popstate', restore); window.removeEventListener('storage', syncStorage) }
   }, [])
 
   const setLocale = (value) => {
@@ -70,13 +77,19 @@ export function LocaleProvider({ children, initialLocale, initialTheme }) {
     url.searchParams.set('lang', next)
     window.history.replaceState(window.history.state, '', url)
   }
-  const site = (path) => {
-    const url = new URL(path, MAIN_SITE_ORIGIN)
-    url.searchParams.set('lang', locale)
-    return url.href
+  const navigationHref = (href) => withNavigationPreferences(href, { locale, theme })
+  const site = (path) => navigationHref(new URL(path, MAIN_SITE_ORIGIN).href)
+  const toggleTheme = () => {
+    const next = theme === 'dark' ? 'light' : 'dark'
+    updateTheme(next)
+    const url = new URL(window.location.href)
+    if (url.searchParams.has('theme')) {
+      url.searchParams.set('theme', next)
+      window.history.replaceState(window.history.state, '', url)
+    }
   }
 
-  return <LocaleContext.Provider value={{ locale, setLocale, theme, toggleTheme: () => updateTheme((t) => t === 'dark' ? 'light' : 'dark'), copy, content: siteContent.locales[locale], contact: siteContent.contact, site }}>{children}</LocaleContext.Provider>
+  return <LocaleContext.Provider value={{ locale, setLocale, theme, toggleTheme, copy, content: siteContent.locales[locale], contact: siteContent.contact, site, navigationHref }}>{children}</LocaleContext.Provider>
 }
 
 export function useLocale() {

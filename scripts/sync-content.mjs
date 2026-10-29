@@ -2,6 +2,7 @@ import { cp, mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { VALUE_GALLERY_PHOTOS, VALUE_GALLERY_CAPTIONS } from './value-gallery-content.mjs'
+import { withNavigationPreferences } from '../src/lib/navigationPreferences.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const source = path.resolve(process.argv[2] || path.join(root, '../ICUE-mainsite-vn'))
@@ -61,7 +62,10 @@ for (const code of ['vi', 'en', 'de', 'fr', 'ko', 'ja']) {
       }))),
     },
     faq: [faq.entries.services[0], faq.entries.process[0], faq.entries.technology[0], faq.entries.costs[0]],
-    platforms: getAppNavigation(code),
+    platforms: (() => {
+      const navigation = getAppNavigation(code)
+      return { ...navigation, apps: navigation.apps.map((app) => ({ ...app, href: withNavigationPreferences(app.href, { locale: code }) })) }
+    })(),
   }
 }
 

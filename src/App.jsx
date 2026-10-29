@@ -112,8 +112,8 @@ function Faq() {
 }
 
 function Platforms() {
-  const { copy, content, site, locale } = useLocale()
-  const apps = content.platforms.apps.map((app) => app.id === 'website' ? { ...app, href: site('/') } : app)
+  const { copy, content, site, locale, navigationHref } = useLocale()
+  const apps = content.platforms.apps.map((app) => ({ ...app, href: app.id === 'website' ? site('/') : navigationHref(app.href) }))
   const videoLocale = locale === 'vi' ? 'vi' : 'en'
   const videoFiles = videoLocale === 'vi' ? ['icue-vn.mp4', 'hr_vn.mp4', 'contract_vi.mp4'] : ['icue-en.mp4', 'hr_en.mp4', 'contract_en.mp4']
   return <section id="platforms" className="platforms-section"><div className="section-heading"><div><Eyebrow number="07">{copy.platforms.eyebrow}</Eyebrow><h2><Lines lines={copy.platforms.title} /></h2></div><div className="platform-section-links"><p className="section-lead">{copy.platforms.lead}</p><a className="text-link" href={site('/newsroom')}>{copy.nav[4]}<ArrowUpRight size={18} /></a></div></div><div className="platform-grid">{apps.map((app, i) => <article className={`platform-card platform-card-${app.id}`} key={app.id}>
