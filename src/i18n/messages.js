@@ -3,7 +3,7 @@ const messages = {
     metaTitle: 'ICUE — Kiến tạo tương lai đô thị',
     metaDescription: 'Kết nối nghiên cứu, quy hoạch và cộng đồng để kiến tạo tương lai đô thị bền vững cùng ICUE.',
     ui: { skip: 'Tới nội dung chính', quickNav: 'Điều hướng nhanh', openMenu: 'Mở menu điều hướng', closeMenu: 'Đóng menu', menuTitle: 'Điều hướng ICUE', primaryNav: 'Điều hướng chính', allNav: 'Khám phá ICUE', language: 'Ngôn ngữ', lightTheme: 'Chuyển sang giao diện sáng', darkTheme: 'Chuyển sang giao diện tối', home: 'ICUE — Trang chủ', facebook: 'ICUE trên Facebook', email: 'Gửi email cho ICUE', call: 'Gọi điện cho ICUE', backTop: 'Về đầu trang', legalNav: 'Thông tin pháp lý', closeProfile: 'Đóng hồ sơ', viewProfile: 'Xem hồ sơ {name}' },
-    nav: ['KHÁM PHÁ', 'Năng lực', 'Dự án', 'Con người', 'Tin tức'],
+    nav: ['KHÁM PHÁ', 'Năng lực', 'Dự án', 'Đội Ngũ', 'Tin tức'],
     links: { structure: 'Cơ cấu & tổ chức', archive: 'Kho tin tức' },
     menu: { eyebrow: 'KHÁM PHÁ ICUE', lead: 'Cùng kiến tạo những điều có ý nghĩa.', socials: 'GIỮ KẾT NỐI', place: 'HÀ NỘI, VIỆT NAM' },
     header: { about: 'Về ICUE', projects: 'Dự án', contact: 'Cùng hợp tác' },

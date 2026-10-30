@@ -1,6 +1,8 @@
-// Narrative chapters drawn from public/docs/drphamsyliem.md, supplied by the user.
+// Narrative chapters drawn from research notes supplied by the user.
 // Photo contexts additionally confirmed by the user: VTV1 (2017), editorial meeting (2018).
 const chapter = (id, title, period, heading, paragraphs, photoEvents = []) => ({ id, title, period, heading, paragraphs, photoEvents })
+// Published remembrance cited in the final chapter. Người Đô Thị, 30 November 2019.
+const remembrance = 'https://nguoidothi.net.vn/nghi-ve-mot-nguoi-cong-hien-21097.html'
 
 const founderBiography = {
   vi: {
@@ -8,7 +10,7 @@ const founderBiography = {
     introduction: 'Từ giảng đường đến quản lý nhà nước, từ nghiên cứu chính sách đến xây dựng các tổ chức nghề nghiệp: khám phá cuộc đời và những đóng góp của người sáng lập ICUE qua tám chương.',
     readerHint: 'Mở từng chương hoặc đọc lần lượt bằng nút Tiếp tục.',
     back: 'Quay lại', next: 'Tiếp tục', complete: 'Đọc xong', completed: 'Đã đọc xong', counter: 'Chương {current} / {total}',
-    source: 'Tư liệu tiểu sử đầy đủ',
+    sourceHref: remembrance, source: 'Nghĩ về một người cống hiến · 30.11.2019',
     photoEvents: { '2017': 'Phỏng vấn truyền hình trên VTV1', '2018': 'Cuộc họp cùng các đồng nghiệp biên tập' },
     chapters: [
       chapter('life', 'Cuộc đời và quê hương', '1931–2018', 'Một cuộc đời gắn với sự phát triển đô thị Việt Nam', [
@@ -60,7 +62,7 @@ const founderBiography = {
     introduction: 'From university teaching to public administration, policy research and institution building: explore the life and contributions of ICUE’s founder in eight chapters.',
     readerHint: 'Open any chapter, or read in order with Continue.',
     back: 'Back', next: 'Continue', complete: 'Finish reading', completed: 'Reading complete', counter: 'Chapter {current} of {total}',
-    source: 'Full biographical notes',
+    sourceHref: remembrance, source: 'A remembrance · 30.11.2019',
     photoEvents: { '2017': 'VTV1 television interview', '2018': 'Meeting with his editorial colleagues' },
     chapters: [
       chapter('life', 'Life and origins', '1931–2018', 'A life connected to Vietnam’s urban development', [
@@ -112,7 +114,7 @@ const founderBiography = {
     introduction: 'Von der Hochschullehre über die öffentliche Verwaltung bis zur Politikforschung und zum Aufbau von Institutionen: acht Kapitel über das Leben und die Beiträge des ICUE-Gründers.',
     readerHint: 'Öffnen Sie ein Kapitel oder lesen Sie mit Weiter der Reihe nach.',
     back: 'Zurück', next: 'Weiter', complete: 'Lektüre beenden', completed: 'Lektüre beendet', counter: 'Kapitel {current} von {total}',
-    source: 'Vollständige biografische Notizen',
+    sourceHref: remembrance, source: 'Eine Erinnerung · 30.11.2019',
     photoEvents: { '2017': 'Fernsehinterview auf VTV1', '2018': 'Sitzung mit seinen Redaktionskollegen' },
     chapters: [
       chapter('life', 'Leben und Herkunft', '1931–2018', 'Ein Leben im Zeichen der Stadtentwicklung Vietnams', [
@@ -164,7 +166,7 @@ const founderBiography = {
     introduction: 'De l’enseignement universitaire à l’administration publique, de la recherche sur les politiques urbaines à la création d’institutions : huit chapitres pour découvrir le parcours du fondateur de l’ICUE.',
     readerHint: 'Ouvrez un chapitre ou lisez dans l’ordre avec Continuer.',
     back: 'Retour', next: 'Continuer', complete: 'Terminer la lecture', completed: 'Lecture terminée', counter: 'Chapitre {current} sur {total}',
-    source: 'Notes biographiques complètes',
+    sourceHref: remembrance, source: 'Un hommage · 30.11.2019',
     photoEvents: { '2017': 'Entretien télévisé sur VTV1', '2018': 'Réunion avec ses collègues de la rédaction' },
     chapters: [
       chapter('life', 'Vie et origines', '1931–2018', 'Une vie liée au développement urbain du Vietnam', [
@@ -216,7 +218,7 @@ const founderBiography = {
     introduction: '대학 교육에서 공공행정, 정책 연구와 전문기관 설립에 이르기까지, ICUE 설립자의 삶과 기여를 여덟 장으로 살펴봅니다.',
     readerHint: '원하는 장을 열거나 계속 버튼으로 차례대로 읽어 보세요.',
     back: '이전', next: '계속', complete: '읽기 마치기', completed: '읽기 완료', counter: '{total}장 중 {current}장',
-    source: '전체 약력 자료',
+    sourceHref: remembrance, source: '추모 글 · 2019.11.30',
     photoEvents: { '2017': 'VTV1 텔레비전 인터뷰', '2018': '편집 동료들과의 회의' },
     chapters: [
       chapter('life', '생애와 고향', '1931–2018', '베트남 도시 발전과 함께한 삶', [
@@ -268,7 +270,7 @@ const founderBiography = {
     introduction: '大学教育から行政、政策研究、専門機関の設立まで。ICUE創設者の生涯と貢献を、八つの章でたどります。',
     readerHint: '各章を開くか、「次へ」で順番にお読みいただけます。',
     back: '戻る', next: '次へ', complete: '読み終える', completed: '読了', counter: '全{total}章中 第{current}章',
-    source: '詳しい経歴資料',
+    sourceHref: remembrance, source: '追悼記事 · 2019.11.30',
     photoEvents: { '2017': 'VTV1のテレビインタビュー', '2018': '編集の同僚たちとの会議' },
     chapters: [
       chapter('life', '生涯と故郷', '1931–2018', 'ベトナムの都市発展と歩んだ生涯', [

@@ -5,7 +5,7 @@ const founderContent = {
   vi: {
     navLabel: 'Sáng lập',
     eyebrow: 'NGƯỜI SÁNG LẬP',
-    heading: 'MỘT ĐỜI VÌ TRI THỨC.',
+    heading: 'Một đời vì tri thức',
     honorific: 'Tiến sĩ',
     name: 'Phạm Sỹ Liêm',
     lifespan: '1931–2018',
@@ -22,7 +22,7 @@ const founderContent = {
   en: {
     navLabel: 'Our founder',
     eyebrow: 'OUR FOUNDER',
-    heading: 'A LIFE DEDICATED TO KNOWLEDGE.',
+    heading: 'A life dedicated to knowledge',
     honorific: 'Dr.',
     name: 'Phạm Sỹ Liêm',
     lifespan: '1931–2018',
@@ -39,7 +39,7 @@ const founderContent = {
   de: {
     navLabel: 'Gründer',
     eyebrow: 'UNSER GRÜNDER',
-    heading: 'EIN LEBEN FÜR DAS WISSEN.',
+    heading: 'Ein Leben für das Wissen',
     honorific: 'Dr.',
     name: 'Phạm Sỹ Liêm',
     lifespan: '1931–2018',
@@ -56,7 +56,7 @@ const founderContent = {
   fr: {
     navLabel: 'Fondateur',
     eyebrow: 'NOTRE FONDATEUR',
-    heading: 'UNE VIE CONSACRÉE AU SAVOIR.',
+    heading: 'Une vie consacrée au savoir',
     honorific: 'Dr',
     name: 'Phạm Sỹ Liêm',
     lifespan: '1931–2018',
@@ -73,7 +73,7 @@ const founderContent = {
   ko: {
     navLabel: '설립자',
     eyebrow: '설립자',
-    heading: '지식에 바친 한평생.',
+    heading: '지식에 바친 한평생',
     honorific: '박사',
     name: 'Phạm Sỹ Liêm',
     lifespan: '1931–2018',
@@ -90,7 +90,7 @@ const founderContent = {
   ja: {
     navLabel: '創設者',
     eyebrow: '創設者',
-    heading: '知の探究に捧げた生涯。',
+    heading: '知の探究に捧げた生涯',
     honorific: '博士',
     name: 'Phạm Sỹ Liêm',
     lifespan: '1931–2018',
