@@ -12,7 +12,7 @@ import PlatformVideo from './components/PlatformVideo.jsx'
 import StarBorder from './components/StarBorder.jsx'
 import RailScrollCue from './components/RailScrollCue.jsx'
 import Founder from './components/Founder.jsx'
-import InstitutionLeadership, { LeadershipProfileNote } from './components/InstitutionLeadership.jsx'
+import InstitutionLeadership, { LeadershipProfileNote, presentPerson } from './components/InstitutionLeadership.jsx'
 import founderContent from './data/founderContent.js'
 import './components/NavigationRail.css'
 
@@ -133,7 +133,7 @@ function LandingPage() {
   const [currentSection, setCurrentSection] = useState('home')
   const [menuOpen, setMenuOpen] = useState(false)
   const [brandHidden, setBrandHidden] = useState(true)
-  const person = content.people.find((p) => p.id === personId)
+  const person = presentPerson(content.people.find((p) => p.id === personId), locale)
   const heroPortraits = content.people.filter((expert) => expert.group === 'experts').slice(0, 5).map((expert) => expert.id === 'do-bao-long' ? { ...expert, photo: '/media/longdoorgstructure_prev.png' } : expert)
 
   useEffect(() => {

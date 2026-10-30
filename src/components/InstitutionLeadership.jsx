@@ -3,11 +3,18 @@ import { useLocale } from '../i18n/LocaleProvider.jsx'
 import leadershipContent, { leadershipSources } from '../data/leadershipContent.js'
 import './InstitutionLeadership.css'
 
-export function LeadershipSources({ includeInterview = false }) {
+export function presentPerson(person, locale) {
+  if (person?.id !== 'nguyen-thanh-tam') return person
+  const copy = leadershipContent[locale] || leadershipContent.vi
+  return { ...person, bio: copy.tamBio, highlights: copy.tamHighlights }
+}
+
+export function LeadershipSources({ includeInterview = false, appointment = 'institute' }) {
   const { locale } = useLocale()
   const copy = leadershipContent[locale]
+  const tam = appointment === 'tam'
   return <div className="leadership-sources" aria-label={copy.sourcesLabel}>
-    <a href={leadershipSources.appointment} target="_blank" rel="noopener noreferrer">{copy.appointmentLabel}<ArrowUpRight size={14} aria-hidden="true" /></a>
+    <a href={tam ? leadershipSources.tamAppointment : leadershipSources.appointment} target="_blank" rel="noopener noreferrer">{tam ? copy.tamAppointmentLabel : copy.appointmentLabel}<ArrowUpRight size={14} aria-hidden="true" /></a>
     {includeInterview && <a href={leadershipSources.interview} target="_blank" rel="noopener noreferrer">{copy.interviewLabel}<ArrowUpRight size={14} aria-hidden="true" /></a>}
   </div>
 }
@@ -16,11 +23,12 @@ export function LeadershipProfileNote({ personId }) {
   const { locale } = useLocale()
   const copy = leadershipContent[locale]
   const director = personId === 'nguyen-hong-hanh'
-  if (!director && !['tran-quoc-toan', 'tran-thi-lan-anh'].includes(personId)) return null
+  const tam = personId === 'nguyen-thanh-tam'
+  if (!director && !tam && !['tran-quoc-toan', 'tran-thi-lan-anh'].includes(personId)) return null
   return <div className="leadership-profile-note">
-    <p>{director ? copy.directorNote : copy.deputyNote}</p>
+    <p>{director ? copy.directorNote : tam ? copy.tamNote : copy.deputyNote}</p>
     {director && <p>{copy.researchNote}</p>}
-    <LeadershipSources includeInterview={director} />
+    <LeadershipSources includeInterview={director} appointment={tam ? 'tam' : 'institute'} />
   </div>
 }
 

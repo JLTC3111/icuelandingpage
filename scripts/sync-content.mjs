@@ -3,6 +3,7 @@ import path from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { VALUE_GALLERY_PHOTOS, VALUE_GALLERY_CAPTIONS } from './value-gallery-content.mjs'
 import { withNavigationPreferences } from '../src/lib/navigationPreferences.js'
+import leadershipContent from '../src/data/leadershipContent.js'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const source = path.resolve(process.argv[2] || path.join(root, '../ICUE-mainsite-vn'))
@@ -52,7 +53,12 @@ for (const code of ['vi', 'en', 'de', 'fr', 'ko', 'ja']) {
       const p = PAST_PROJECTS.find((item) => item.id === id)
       return { id, year: p.year, image: id === '9' ? '/media/park-city.jpg' : `/media/project-${id}.jpg`, ...locale.projects.items[p.key] }
     }),
-    people: selectedPeople.map((p) => ({ id: p.id, group: p.group, photo: `/media/${landingPhoto(p)}`, ...p.i18n[code] })),
+    people: selectedPeople.map((p) => {
+      const person = { id: p.id, group: p.group, photo: `/media/${landingPhoto(p)}`, ...p.i18n[code] }
+      if (p.id !== 'nguyen-thanh-tam') return person
+      const profile = leadershipContent[code]
+      return { ...person, bio: profile.tamBio, highlights: profile.tamHighlights }
+    }),
     valuesGallery: {
       labels: galleryControls[code],
       groups: VALUE_GALLERY_PHOTOS.map((photos) => photos.map(({ key, file, name = path.basename(file), width, height }) => ({
