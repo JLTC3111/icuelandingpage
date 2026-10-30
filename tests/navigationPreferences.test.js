@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { runInNewContext } from 'node:vm'
 import { withNavigationPreferences, normalizeTheme } from '../src/lib/navigationPreferences.js'
+import { leadershipSources } from '../src/data/leadershipContent.js'
 
 test('all six locales and both themes survive cross-origin navigation', () => {
   for (const locale of ['vi', 'en', 'de', 'fr', 'ko', 'ja']) for (const theme of ['light', 'dark']) {
@@ -40,7 +41,13 @@ test('all redirect destinations and saved main-site links use the new origin', a
   let checked = 0
   for (const line of redirects.split('\n')) {
     if (!line.trim() || line.trim().startsWith('#')) continue
-    const [, target, status] = line.trim().split(/\s+/)
+    const [from, target, status] = line.trim().split(/\s+/)
+    if (from === '/docs/05-QD-THXDVN-nguyen-thanh-tam.pdf') {
+      assert.equal(target, from, line)
+      assert.equal(status, '200', line)
+      checked++
+      continue
+    }
     assert.equal(new URL(target).origin, 'https://vi.icue.vn', line)
     assert.equal(status, '301!', line)
     checked++
@@ -53,6 +60,7 @@ test('all redirect destinations and saved main-site links use the new origin', a
     assert.equal(url.origin, 'https://vi.icue.vn')
     assert.equal(url.searchParams.get('lang'), locale)
   }
+  assert.equal(leadershipSources.tamAppointment, 'https://icue.vn/docs/05-QD-THXDVN-nguyen-thanh-tam.pdf')
 })
 
 test('the legacy forwarder preserves language, theme, and legacy route details', async () => {

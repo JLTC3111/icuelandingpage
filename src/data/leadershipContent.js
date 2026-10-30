@@ -2,7 +2,8 @@
 export const leadershipSources = {
   appointment: 'https://tonghoixaydung.vn/bo-nhiem-ts-nguyen-hong-hanh-giu-chuc-vien-truong-vien-nghien-cuu-kinh-te-xay-dung-va-do-thi.html',
   interview: 'https://kinhtexanh.vn/ts-nguyen-hong-hanh-phu-nu-la-dong-luc-lon-cho-su-phat-trien-14752.html',
-  tamAppointment: '/docs/05-QD-THXDVN-nguyen-thanh-tam.pdf',
+  tamAppointment: 'https://icue.vn/docs/05-QD-THXDVN-nguyen-thanh-tam.pdf',
+  longWebsite: 'https://longd.tech/',
 }
 
 const leadershipContent = {
@@ -20,6 +21,7 @@ const leadershipContent = {
     tamHighlights: ['quy hoạch đô thị', 'quản lý nhà nước', 'phát triển không gian', 'phối hợp tỉnh', 'thiết kế nhà ở'],
     researchNote: 'Trong cuộc phỏng vấn năm 2020, bà chia sẻ niềm đam mê nghiên cứu khoa học, đề cao quy hoạch dài hạn, giao thông xanh, sản xuất sạch và vai trò của phụ nữ trong phát triển.',
     sourcesLabel: 'Tìm hiểu thêm', appointmentLabel: 'Thông báo bổ nhiệm · 14.03.2024', interviewLabel: 'Phỏng vấn TS. Hạnh · 20.10.2020',
+    longWebsiteLabel: 'Trang cá nhân',
   },
   en: {
     heading: 'INSTITUTE LEADERSHIP', term: '2022–2027 term',
@@ -35,6 +37,7 @@ const leadershipContent = {
     tamHighlights: ['urban planning', 'public administration', 'spatial development', 'provincial liaison', 'residential design'],
     researchNote: 'In her 2020 interview, she describes her passion for scientific research and advocates long-term planning, green transport, cleaner production and women’s participation in development.',
     sourcesLabel: 'Further reading', appointmentLabel: 'Appointment announcement · 14.03.2024', interviewLabel: 'Interview with Dr. Hạnh · 20.10.2020',
+    longWebsiteLabel: 'Personal website',
   },
   de: {
     heading: 'INSTITUTSLEITUNG', term: 'Amtszeit 2022–2027',
@@ -50,6 +53,7 @@ const leadershipContent = {
     tamHighlights: ['Stadtplanung', 'öffentliche Verwaltung', 'Raumentwicklung', 'Provinzbehörden', 'Wohnungsentwurf'],
     researchNote: 'Im Interview von 2020 erläutert sie ihre Begeisterung für wissenschaftliche Forschung und setzt sich für langfristige Planung, umweltfreundlichen Verkehr, saubere Produktion und die Beteiligung von Frauen an der Entwicklung ein.',
     sourcesLabel: 'Weiterlesen', appointmentLabel: 'Ernennungsmitteilung · 14.03.2024', interviewLabel: 'Interview mit Dr. Hạnh · 20.10.2020',
+    longWebsiteLabel: 'Persönliche Website',
   },
   fr: {
     heading: 'DIRECTION DE L’INSTITUT', term: 'Mandat 2022–2027',
@@ -65,6 +69,7 @@ const leadershipContent = {
     tamHighlights: ['urbanisme', 'administration publique', 'développement spatial', 'liaison provinciale', 'conception résidentielle'],
     researchNote: 'Dans son entretien de 2020, elle exprime sa passion pour la recherche scientifique et défend la planification à long terme, les transports verts, une production plus propre et la participation des femmes au développement.',
     sourcesLabel: 'Pour en savoir plus', appointmentLabel: 'Annonce des nominations · 14.03.2024', interviewLabel: 'Entretien avec le Dr Hạnh · 20.10.2020',
+    longWebsiteLabel: 'Site personnel',
   },
   ko: {
     heading: '연구원 지도부', term: '임기 2022–2027',
@@ -80,6 +85,7 @@ const leadershipContent = {
     tamHighlights: ['도시 계획', '공공 행정', '공간 개발', '지방 협력', '주거 설계'],
     researchNote: '2020년 인터뷰에서 과학 연구에 대한 열정을 밝히고 장기 도시계획, 친환경 교통, 청정 생산과 발전 과정에서 여성의 참여를 강조했습니다.',
     sourcesLabel: '더 읽기', appointmentLabel: '임명 발표 · 2024.03.14', interviewLabel: 'Hạnh 박사 인터뷰 · 2020.10.20',
+    longWebsiteLabel: '개인 웹사이트',
   },
   ja: {
     heading: '研究所の指導部', term: '任期 2022–2027',
@@ -95,6 +101,7 @@ const leadershipContent = {
     tamHighlights: ['都市計画', '公共行政', '空間開発', '地方連携', '住宅設計'],
     researchNote: '2020年のインタビューでは、科学研究への情熱を語り、長期的な都市計画、環境に配慮した交通、クリーンな生産、発展における女性の参画を重視しています。',
     sourcesLabel: '詳しく読む', appointmentLabel: '任命の発表 · 2024.03.14', interviewLabel: 'Hạnh博士インタビュー · 2020.10.20',
+    longWebsiteLabel: '個人ウェブサイト',
   },
 }
 

@@ -24,6 +24,11 @@ export function LeadershipProfileNote({ personId }) {
   const copy = leadershipContent[locale]
   const director = personId === 'nguyen-hong-hanh'
   const tam = personId === 'nguyen-thanh-tam'
+  if (personId === 'do-bao-long') return <div className="leadership-profile-note">
+    <div className="leadership-sources">
+      <a href={leadershipSources.longWebsite} target="_blank" rel="noopener noreferrer">{copy.longWebsiteLabel}<ArrowUpRight size={14} aria-hidden="true" /></a>
+    </div>
+  </div>
   if (!director && !tam && !['tran-quoc-toan', 'tran-thi-lan-anh'].includes(personId)) return null
   return <div className="leadership-profile-note">
     <p>{director ? copy.directorNote : tam ? copy.tamNote : copy.deputyNote}</p>

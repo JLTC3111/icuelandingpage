@@ -19,5 +19,6 @@
 .leadership-profile-note>p{font-size:12px;line-height:1.9;color:var(--muted)}
 .leadership-profile-note>p+p{margin-top:13px}
 .leadership-profile-note .leadership-sources{margin-top:17px}
+.leadership-profile-note .leadership-sources:first-child{margin-top:0}
 @media(max-width:960px){.leadership-summary h3{font-size:20px}.leadership-summary dd{font-size:12px}.leadership-sources a{font-size:9px}}
 @media(max-width:640px){.leadership-summary{margin-top:28px;padding-top:24px}.leadership-summary h3{font-size:23px}.leadership-summary dd{font-size:13px}.leadership-sources a{font-size:10px}}

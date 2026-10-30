@@ -31,5 +31,7 @@
 /legacy/*                https://vi.icue.vn/legacy/:splat                301!
 /legacy-embed/*          https://vi.icue.vn/legacy-embed/:splat          301!
 /public/*                https://vi.icue.vn/public/:splat                301!
+# This appointment decision stays on icue.vn. The rule must precede the /docs/* redirect.
+/docs/05-QD-THXDVN-nguyen-thanh-tam.pdf  /docs/05-QD-THXDVN-nguyen-thanh-tam.pdf  200
 /docs/*                  https://vi.icue.vn/docs/:splat                  301!
 /preview.jpg             https://vi.icue.vn/preview.jpg                  301!
