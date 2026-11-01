@@ -2,7 +2,7 @@ import { useId, useState } from 'react'
 import { ArrowUpRight, Plus } from 'lucide-react'
 import { useLocale } from '../i18n/LocaleProvider.jsx'
 import founderContent from '../data/founderContent.js'
-import founderBiography from '../data/founderBiography.js'
+import founderBiography, { nguoiDoThi, remembrance } from '../data/founderBiography.js'
 import Stepper, { Step } from './Stepper.jsx'
 import './Founder.css'
 
@@ -26,10 +26,30 @@ function FounderPhotoEvent({ year, founder, reader }) {
   </div>
 }
 
+const inlineLinks = [
+  ['Nghĩ về một người cống hiến năm 2019', remembrance],
+  ['Người Đô Thị', nguoiDoThi],
+  ['Nghĩ về một người cống hiến', remembrance],
+]
+
+function withInlineLinks(text) {
+  let nodes = [text]
+  inlineLinks.forEach(([label, href], linkIndex) => {
+    nodes = nodes.flatMap(node => {
+      if (typeof node !== 'string' || !node.includes(label)) return [node]
+      return node.split(label).flatMap((part, index) => index === 0 ? [part] : [
+        <a key={`${linkIndex}-${index}`} className="founder-inline-link" href={href} target="_blank" rel="noopener noreferrer">{label}<ArrowUpRight size={13} aria-hidden="true" /></a>,
+        part,
+      ])
+    })
+  })
+  return nodes
+}
+
 function FounderChapter({ chapter, isActive, founder, reader }) {
   return <div className="founder-chapter">
     <h5>{chapter.heading}</h5>
-    {chapter.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+    {chapter.paragraphs.map((paragraph, index) => <p key={index}>{withInlineLinks(paragraph)}</p>)}
     {isActive && chapter.photoEvents.map(year => <FounderPhotoEvent key={year} year={year} founder={founder} reader={reader} />)}
   </div>
 }

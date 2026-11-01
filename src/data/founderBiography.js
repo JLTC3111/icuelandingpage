@@ -2,7 +2,8 @@
 // Photo contexts additionally confirmed by the user: VTV1 (2017), editorial meeting (2018).
 const chapter = (id, title, period, heading, paragraphs, photoEvents = []) => ({ id, title, period, heading, paragraphs, photoEvents })
 // Published remembrance cited in the final chapter. Người Đô Thị, 30 November 2019.
-const remembrance = 'https://nguoidothi.net.vn/nghi-ve-mot-nguoi-cong-hien-21097.html'
+export const remembrance = 'https://nguoidothi.net.vn/nghi-ve-mot-nguoi-cong-hien-21097.html'
+export const nguoiDoThi = 'https://nguoidothi.net.vn/'
 
 const founderBiography = {
   vi: {

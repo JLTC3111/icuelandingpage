@@ -17,6 +17,9 @@
 .founder-chapter{max-width:760px}
 .founder-chapter h5{font-size:clamp(19px,1.7vw,26px);font-weight:500;line-height:1.45;letter-spacing:-.025em;margin:0 0 20px;color:var(--ink);text-wrap:balance}
 .founder-chapter>p{font-size:14px;line-height:1.95;color:var(--muted);overflow-wrap:anywhere;hyphens:auto}
+.founder-inline-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.18em;hyphens:manual;white-space:nowrap}
+.founder-inline-link svg{display:inline-block;vertical-align:-.12em;margin-left:2px}
+.founder-inline-link:hover{color:var(--accent-text)}
 .founder-chapter>p+p{margin-top:17px}
 .founder-photo-event{margin-top:25px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .founder-event-trigger{width:100%;display:grid;grid-template-columns:49px minmax(0,1fr) 28px;gap:15px;align-items:center;text-align:left;padding:18px 0}
