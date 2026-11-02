@@ -6,18 +6,27 @@ export default function PlatformVideo({ src, poster, label, labels }) {
   const videoRef = useRef(null)
   const inViewRef = useRef(false)
   const userPausedRef = useRef(false)
+  const [prepared, setPrepared] = useState(false)
   const [playing, setPlaying] = useState(false)
   const [failed, setFailed] = useState(false)
 
   const resume = () => {
     const video = videoRef.current
-    if (!video || userPausedRef.current || !inViewRef.current || document.hidden) return
+    if (!video?.getAttribute('src') || userPausedRef.current || !inViewRef.current || document.hidden) return
     video.muted = true
     video.play()?.catch(() => setPlaying(false))
   }
 
   useEffect(() => {
     const video = videoRef.current
+    // Source discovery, rather than just playback, is deferred. A poster on a
+    // below-page <video> would also bypass the card image's lazy loading.
+    const prepare = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting) return
+      setPrepared(true)
+      prepare.disconnect()
+    }, { rootMargin: '300px 0px' })
+    prepare.observe(video)
     const sync = () => {
       if (inViewRef.current && !document.hidden && !userPausedRef.current) resume()
       else video.pause()
@@ -30,6 +39,7 @@ export default function PlatformVideo({ src, poster, label, labels }) {
     document.addEventListener('visibilitychange', sync)
     return () => {
       observer.disconnect()
+      prepare.disconnect()
       document.removeEventListener('visibilitychange', sync)
       video.pause()
     }
@@ -39,6 +49,7 @@ export default function PlatformVideo({ src, poster, label, labels }) {
     const video = videoRef.current
     if (video.paused) {
       userPausedRef.current = false
+      setPrepared(true)
       resume()
     } else {
       userPausedRef.current = true
@@ -49,7 +60,7 @@ export default function PlatformVideo({ src, poster, label, labels }) {
   const Icon = playing ? Pause : Play
 
   return <>
-    <video ref={videoRef} className={`platform-preview-video${failed ? ' has-error' : ''}`} src={src} poster={poster} autoPlay muted loop playsInline preload="metadata" aria-label={labels.previewLabel.replace('{platform}', label)} onCanPlay={resume} onPlay={() => {
+    <video ref={videoRef} className={`platform-preview-video${failed ? ' has-error' : ''}`} src={prepared ? src : undefined} poster={prepared ? poster : undefined} muted loop playsInline preload={prepared ? 'metadata' : 'none'} aria-label={labels.previewLabel.replace('{platform}', label)} onCanPlay={resume} onPlay={() => {
       if (!inViewRef.current || document.hidden || userPausedRef.current) videoRef.current.pause()
       else setPlaying(true)
     }} onPause={() => setPlaying(false)} onError={() => { setFailed(true); setPlaying(false) }} />

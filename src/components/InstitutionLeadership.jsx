@@ -1,17 +1,14 @@
 import { ArrowUpRight } from 'lucide-react'
 import { useLocale } from '../i18n/LocaleProvider.jsx'
-import leadershipContent, { leadershipSources } from '../data/leadershipContent.js'
 import './InstitutionLeadership.css'
 
-export function presentPerson(person, locale) {
+export function presentPerson(person, copy) {
   if (person?.id !== 'nguyen-thanh-tam') return person
-  const copy = leadershipContent[locale] || leadershipContent.vi
   return { ...person, bio: copy.tamBio, highlights: copy.tamHighlights }
 }
 
 export function LeadershipSources({ includeInterview = false, appointment = 'institute' }) {
-  const { locale } = useLocale()
-  const copy = leadershipContent[locale]
+  const { leadership: copy, leadershipSources } = useLocale()
   const tam = appointment === 'tam'
   return <div className="leadership-sources" aria-label={copy.sourcesLabel}>
     <a href={tam ? leadershipSources.tamAppointment : leadershipSources.appointment} target="_blank" rel="noopener noreferrer">{tam ? copy.tamAppointmentLabel : copy.appointmentLabel}<ArrowUpRight size={14} aria-hidden="true" /></a>
@@ -20,8 +17,7 @@ export function LeadershipSources({ includeInterview = false, appointment = 'ins
 }
 
 export function LeadershipProfileNote({ personId }) {
-  const { locale } = useLocale()
-  const copy = leadershipContent[locale]
+  const { leadership: copy, leadershipSources } = useLocale()
   const director = personId === 'nguyen-hong-hanh'
   const tam = personId === 'nguyen-thanh-tam'
   if (personId === 'do-bao-long') return <div className="leadership-profile-note">
@@ -38,8 +34,7 @@ export function LeadershipProfileNote({ personId }) {
 }
 
 export default function InstitutionLeadership({ onSelect }) {
-  const { locale } = useLocale()
-  const copy = leadershipContent[locale]
+  const { leadership: copy } = useLocale()
   return <aside className="leadership-summary" aria-labelledby="leadership-heading">
     <span className="leadership-eyebrow">{copy.heading}</span>
     <h3 id="leadership-heading">{copy.term}</h3>

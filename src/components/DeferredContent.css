@@ -1,0 +1,21 @@
+.deferred-gallery{min-height:clamp(330px,29vw,480px)}
+.deferred-gallery>.value-gallery{align-self:stretch}
+.deferred-placeholder{width:100%;height:100%;min-height:inherit;border-radius:14px;background:var(--surface-soft)}
+.deferred-error{width:100%;position:relative}
+.deferred-error>button{position:absolute;left:20px;top:20px;background:var(--surface);padding:12px 18px;border:1px solid var(--line);border-radius:25px}
+.founder-reader-placeholder{min-height:650px}
+.startup-status{min-height:100svh;display:grid;place-content:center;font:700 28px Archivo,Arial,sans-serif}
+.startup-status button,.locale-retry{font-size:24px;padding:12px}
+.locale-retry{position:fixed;bottom:20px;right:20px;z-index:30;background:var(--surface);border:1px solid var(--line);border-radius:50%}
+.menu-pending-dialog{position:fixed;inset:0 auto 0 0;margin:0;padding:30px 35px;width:min(670px,90vw);height:100svh;max-height:none;max-width:none;border:0;border-radius:0 22px 22px 0;background:var(--surface);color:var(--ink)}
+.menu-pending-dialog::backdrop{background:var(--menu-backdrop)}
+.menu-pending-dialog>header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.menu-pending-dialog h2{font-size:20px}
+.menu-pending-dialog nav{display:grid;gap:22px;margin-top:42px;font-size:clamp(24px,4vw,48px);font-weight:700}
+.menu-pending-dialog .locale-controls{margin-top:40px}
+.menu-pending-indicator{display:block;margin-top:25px;width:22px;height:22px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:menu-pending 1s linear infinite}
+@keyframes menu-pending{to{transform:rotate(360deg)}}
+@media(min-width:641px) and (max-width:1200px){.deferred-gallery{min-height:clamp(320px,38vw,430px)}}
+@media(max-width:640px){.deferred-gallery{min-height:420px}.founder-reader-placeholder{min-height:800px}}
+@media(max-width:520px){.deferred-gallery{min-height:var(--value-gallery-compact-height)}}
+@media(prefers-reduced-motion:reduce){.menu-pending-indicator{animation:none}}

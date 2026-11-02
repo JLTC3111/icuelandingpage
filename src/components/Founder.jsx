@@ -1,8 +1,8 @@
-import { useId, useState } from 'react'
+import { useEffect, useId, useState } from 'react'
 import { ArrowUpRight, Plus } from 'lucide-react'
 import { useLocale } from '../i18n/LocaleProvider.jsx'
-import founderContent from '../data/founderContent.js'
-import founderBiography, { nguoiDoThi, remembrance } from '../data/founderBiography.js'
+import { loadFounderData } from '../i18n/localeData.js'
+import FounderIntro from './FounderIntro.jsx'
 import Stepper, { Step } from './Stepper.jsx'
 import './Founder.css'
 
@@ -26,13 +26,12 @@ function FounderPhotoEvent({ year, founder, reader }) {
   </div>
 }
 
-const inlineLinks = [
-  ['Nghĩ về một người cống hiến năm 2019', remembrance],
-  ['Người Đô Thị', nguoiDoThi],
-  ['Nghĩ về một người cống hiến', remembrance],
-]
-
-function withInlineLinks(text) {
+function withInlineLinks(text, reader) {
+  const inlineLinks = [
+    ['Nghĩ về một người cống hiến năm 2019', reader.remembrance],
+    ['Người Đô Thị', reader.nguoiDoThi],
+    ['Nghĩ về một người cống hiến', reader.remembrance],
+  ]
   let nodes = [text]
   inlineLinks.forEach(([label, href], linkIndex) => {
     nodes = nodes.flatMap(node => {
@@ -49,39 +48,39 @@ function withInlineLinks(text) {
 function FounderChapter({ chapter, isActive, founder, reader }) {
   return <div className="founder-chapter">
     <h5>{chapter.heading}</h5>
-    {chapter.paragraphs.map((paragraph, index) => <p key={index}>{withInlineLinks(paragraph)}</p>)}
+    {chapter.paragraphs.map((paragraph, index) => <p key={index}>{withInlineLinks(paragraph, reader)}</p>)}
     {isActive && chapter.photoEvents.map(year => <FounderPhotoEvent key={year} year={year} founder={founder} reader={reader} />)}
   </div>
 }
 
 export default function Founder() {
-  const { locale } = useLocale()
-  const founder = founderContent[locale]
-  const reader = founderBiography[locale]
+  const { locale, founder, copy } = useLocale()
+  const [loaded, setLoaded] = useState(null)
+  const [readerFailed, setReaderFailed] = useState(false)
+  const [attempt, setAttempt] = useState(0)
+  const [currentStep, setCurrentStep] = useState(1)
+  useEffect(() => {
+    let cancelled = false
+    setReaderFailed(false)
+    loadFounderData(locale).then(reader => { if (!cancelled) setLoaded({ locale, reader }) }).catch(() => { if (!cancelled) setReaderFailed(true) })
+    return () => { cancelled = true }
+  }, [locale, attempt])
+  const reader = loaded?.locale === locale ? loaded.reader : null
+  if (!reader) return <><FounderIntro founder={founder} />{readerFailed && <button type="button" className="text-link" onClick={() => setAttempt(value => value + 1)}>{copy.ui.retry}</button>}<div className="founder-reader-placeholder" aria-hidden="true" /></>
 
-  return <section id="founder" className="founder section-shell" aria-labelledby="founder-heading">
-    <div className="founder-heading">
-      <div className="eyebrow"><span className="eyebrow-dot" />{founder.eyebrow}<span className="section-number">/ 08</span></div>
-      <span className="founder-lifespan">{founder.lifespan}</span>
-    </div>
-    <p className="founder-kicker">{founder.heading}</p>
-    <h2 id="founder-heading">{founder.name}</h2>
-    <p className="founder-role">{founder.honorific} · {founder.role}</p>
-    <div className="founder-story">
-      <p className="founder-lead">{founder.lead}</p>
-      <p>{reader.introduction}</p>
-    </div>
+  return <>
+    <FounderIntro founder={founder} introduction={reader.introduction} />
     <div className="founder-reader">
       <div className="founder-reader-intro">
         <h3>{reader.heading}</h3>
         <p>{reader.readerHint}</p>
         <a className="text-link founder-source" href={reader.sourceHref} target="_blank" rel="noopener noreferrer">{reader.source}<ArrowUpRight size={15} aria-hidden="true" /></a>
       </div>
-      <Stepper initialStep={1} backButtonText={reader.back} nextButtonText={reader.next} completeButtonText={reader.complete} completedButtonText={reader.completed} stepCounterText={reader.counter} headingLevel={4} aria-label={reader.heading}>
+      <Stepper key={locale} initialStep={currentStep} onStepChange={setCurrentStep} backButtonText={reader.back} nextButtonText={reader.next} completeButtonText={reader.complete} completedButtonText={reader.completed} stepCounterText={reader.counter} headingLevel={4} aria-label={reader.heading}>
         {reader.chapters.map(chapter => <Step key={chapter.id} title={chapter.title} description={chapter.period}>
           {({ isActive }) => <FounderChapter chapter={chapter} isActive={isActive} founder={founder} reader={reader} />}
         </Step>)}
       </Stepper>
     </div>
-  </section>
+  </>
 }

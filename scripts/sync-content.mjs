@@ -4,6 +4,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 import { VALUE_GALLERY_PHOTOS, VALUE_GALLERY_CAPTIONS } from './value-gallery-content.mjs'
 import { withNavigationPreferences } from '../src/lib/navigationPreferences.js'
 import leadershipContent from '../src/data/leadershipContent.js'
+import { optimizeAssets } from './optimize-assets.mjs'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const source = path.resolve(process.argv[2] || path.join(root, '../ICUE-mainsite-vn'))
@@ -108,4 +109,6 @@ for (const rule of cjkFaces) {
   if (filename) await cp(path.join(source, 'fonts', filename), path.join(root, 'public/fonts', filename))
 }
 await writeFile(path.join(root, 'src/cjk-fonts.css'), cjkFaces.join('\n\n') + '\n')
+await optimizeAssets()
+await import('./generate-locales.mjs')
 console.log(`Synced six locales, ${output.locales.vi.projects.length} projects, ${output.locales.vi.services.length} services, ${output.locales.vi.people.length} people and ${files.length} assets from ICUE-mainsite-vn.`)

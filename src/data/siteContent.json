@@ -105,7 +105,7 @@
         {
           "id": "nguyen-hong-hanh",
           "group": "experts",
-          "photo": "/media/hanhnguyen__nobg.png",
+          "photo": "/media/hanhnguyen__nobg-profile.webp",
           "name": "Nguyễn Hồng Hạnh",
           "honorific": "Tiến Sỹ",
           "title": "Viện trưởng Viện Nghiên cứu Kinh tế Xây Dựng và Đô thị thuộc Tổng Hội Xây Dựng Việt Nam",
@@ -115,12 +115,15 @@
             "phát triển đô thị xanh",
             "biến đổi khí hậu",
             "chính sách"
-          ]
+          ],
+          "avatar": "/media/hanhnguyen__nobg-avatar-96.webp",
+          "avatar2x": "/media/hanhnguyen__nobg-avatar-144.webp",
+          "originalPhoto": "/media/hanhnguyen__nobg.png"
         },
         {
           "id": "tran-thi-lan-anh",
           "group": "experts",
-          "photo": "/media/tranthilananh__nobg.png",
+          "photo": "/media/tranthilananh__nobg-profile.webp",
           "name": "Trần Thị Lan Anh",
           "honorific": "TS.KTS",
           "title": "Phó Viện Trưởng",
@@ -130,12 +133,15 @@
             "bền vững",
             "chính sách",
             "biến đổi khí hậu"
-          ]
+          ],
+          "avatar": "/media/tranthilananh__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranthilananh__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranthilananh__nobg.png"
         },
         {
           "id": "tran-quoc-toan",
           "group": "experts",
-          "photo": "/media/tranquoctoan__nobg.png",
+          "photo": "/media/tranquoctoan__nobg-profile.webp",
           "name": "Trần Quốc Toản",
           "honorific": "KS.",
           "title": "Phó Viện Trưởng",
@@ -144,12 +150,15 @@
             "hạ tầng giao thông",
             "quy hoạch thông minh",
             "tăng trưởng xanh"
-          ]
+          ],
+          "avatar": "/media/tranquoctoan__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranquoctoan__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranquoctoan__nobg.png"
         },
         {
           "id": "nguyen-thanh-tam",
           "group": "experts",
-          "photo": "/media/tam.png",
+          "photo": "/media/tam-profile.webp",
           "name": "Nguyễn Thanh Tâm",
           "honorific": "KTS.",
           "title": "Phó Viện Trưởng",
@@ -160,12 +169,15 @@
             "phát triển không gian",
             "phối hợp tỉnh",
             "thiết kế nhà ở"
-          ]
+          ],
+          "avatar": "/media/tam-avatar-96.webp",
+          "avatar2x": "/media/tam-avatar-144.webp",
+          "originalPhoto": "/media/tam.png"
         },
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdoorgstructure_prev.png",
+          "photo": "/media/longdoorgstructure_prev-profile.webp",
           "name": "Đỗ Bảo Long",
           "honorific": "",
           "title": "Quản Lý Dự Án",
@@ -175,12 +187,15 @@
             "quản lý hợp đồng",
             "thiết kế",
             "giải quyết vấn đề sáng tạo"
-          ]
+          ],
+          "avatar": "/media/longdoorgstructure_prev-avatar-96.webp",
+          "avatar2x": "/media/longdoorgstructure_prev-avatar-144.webp",
+          "originalPhoto": "/media/longdoorgstructure_prev.png"
         },
         {
           "id": "nguyen-thi-ly",
           "group": "core",
-          "photo": "/media/lyly.png",
+          "photo": "/media/lyly-profile.webp",
           "name": "Nguyễn Thị Ly",
           "honorific": "",
           "title": "Cán bộ nghiên cứu",
@@ -189,12 +204,15 @@
             "quy hoạch đô thị",
             "phát triển bền vững",
             "không gian công cộng"
-          ]
+          ],
+          "avatar": "/media/lyly-avatar-96.webp",
+          "avatar2x": "/media/lyly-avatar-144.webp",
+          "originalPhoto": "/media/lyly.png"
         },
         {
           "id": "dinh-tung-duong",
           "group": "core",
-          "photo": "/media/duong.png",
+          "photo": "/media/duong-profile.webp",
           "name": "Đinh Tùng Dương",
           "honorific": "",
           "title": "Cán bộ nghiên cứu",
@@ -204,12 +222,15 @@
             "Thủ khoa",
             "quy hoạch không gian",
             "bền vững"
-          ]
+          ],
+          "avatar": "/media/duong-avatar-96.webp",
+          "avatar2x": "/media/duong-avatar-144.webp",
+          "originalPhoto": "/media/duong.png"
         },
         {
           "id": "trinh-thi-tinh",
           "group": "core",
-          "photo": "/media/tinh.png",
+          "photo": "/media/tinh-profile.webp",
           "name": "Trịnh Thị Tình",
           "honorific": "",
           "title": "Cán bộ hành chính",
@@ -218,12 +239,15 @@
             "Quản trị kinh doanh",
             "trách nhiệm",
             "làm việc nhóm"
-          ]
+          ],
+          "avatar": "/media/tinh-avatar-96.webp",
+          "avatar2x": "/media/tinh-avatar-144.webp",
+          "originalPhoto": "/media/tinh.png"
         },
         {
           "id": "nguyen-quynh-ly",
           "group": "core",
-          "photo": "/media/nguyenquynhly.png",
+          "photo": "/media/nguyenquynhly-profile.webp",
           "name": "Nguyễn Quỳnh Ly",
           "honorific": "",
           "title": "Cán bộ nghiên cứu",
@@ -232,7 +256,10 @@
             "Đại học Kinh tế Quốc dân",
             "đấu thầu",
             "quy hoạch đô thị"
-          ]
+          ],
+          "avatar": "/media/nguyenquynhly-avatar-96.webp",
+          "avatar2x": "/media/nguyenquynhly-avatar-144.webp",
+          "originalPhoto": "/media/nguyenquynhly.png"
         }
       ],
       "valuesGallery": {
@@ -251,7 +278,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
               "label": "Diễn Đàn Đô Thị Việt Nam 2025",
-              "alt": "Phiên toàn thể Diễn đàn Đô thị Việt Nam 2025 – Phát triển thông minh, bền vững và bao trùm, ngày 08/11/2025"
+              "alt": "Phiên toàn thể Diễn đàn Đô thị Việt Nam 2025 – Phát triển thông minh, bền vững và bao trùm, ngày 08/11/2025",
+              "fullImage": "/media/conference_nov5_2025.webp"
             },
             {
               "image": "/media/dubai_2025_2.webp",
@@ -259,7 +287,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
               "label": "Sân Khấu Đại Hội, UAE 2025",
-              "alt": "Sân khấu toàn thể với hình ảnh cảnh quan tại Đại hội Bảo tồn Thế giới IUCN, Abu Dhabi, 2025"
+              "alt": "Sân khấu toàn thể với hình ảnh cảnh quan tại Đại hội Bảo tồn Thế giới IUCN, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_2.webp"
             },
             {
               "image": "/media/dubai_2025_3.webp",
@@ -267,7 +296,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
               "label": "Hội Trường Toàn Thể, 2025",
-              "alt": "Hội trường toàn thể trong Đại hội Bảo tồn Thế giới IUCN Abu Dhabi 2025"
+              "alt": "Hội trường toàn thể trong Đại hội Bảo tồn Thế giới IUCN Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_3.webp"
             },
             {
               "image": "/media/dubai_2025_4.webp",
@@ -275,69 +305,78 @@
               "height": 540,
               "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
               "label": "Ảnh Tập Thể ICUE, 2025",
-              "alt": "Ảnh chụp tập thể đoàn ICUE tại Đại hội Bảo tồn Thế giới IUCN Abu Dhabi 2025"
+              "alt": "Ảnh chụp tập thể đoàn ICUE tại Đại hội Bảo tồn Thế giới IUCN Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_4.webp"
             }
           ],
           [
             {
-              "image": "/media/people-play-together.jpg",
+              "image": "/media/people-play-together-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Niềm vui cùng nhau",
-              "alt": "Trẻ em cùng vui chơi bên cây và mô hình bằng lốp xe."
+              "alt": "Trẻ em cùng vui chơi bên cây và mô hình bằng lốp xe.",
+              "fullImage": "/media/people-play-together.jpg"
             },
             {
-              "image": "/media/people-room-to-play.jpg",
+              "image": "/media/people-room-to-play-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Không gian vui chơi và khám phá",
-              "alt": "Trẻ em leo trèo trên mô hình vui chơi bằng lốp xe cạnh một cây lớn."
+              "alt": "Trẻ em leo trèo trên mô hình vui chơi bằng lốp xe cạnh một cây lớn.",
+              "fullImage": "/media/people-room-to-play.jpg"
             },
             {
-              "image": "/media/people-community-childhood.jpg",
+              "image": "/media/people-community-childhood-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Tuổi thơ trong cộng đồng",
-              "alt": "Trẻ em cười đùa tại một bãi cỏ trong khu dân cư."
+              "alt": "Trẻ em cười đùa tại một bãi cỏ trong khu dân cư.",
+              "fullImage": "/media/people-community-childhood.jpg"
             }
           ],
           [
             {
-              "image": "/media/connected-anniversary.jpg",
+              "image": "/media/connected-anniversary-preview.webp",
               "width": 1276,
               "height": 956,
               "label": "Kỷ niệm 10 năm thành lập ICUE",
-              "alt": "Đại biểu nhận cờ tại lễ kỷ niệm 10 năm thành lập ICUE."
+              "alt": "Đại biểu nhận cờ tại lễ kỷ niệm 10 năm thành lập ICUE.",
+              "fullImage": "/media/connected-anniversary.jpg"
             },
             {
-              "image": "/media/connected-urban-economy.jpg",
+              "image": "/media/connected-urban-economy-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Kinh tế đô thị và phát triển bền vững",
-              "alt": "Ảnh tập thể tại hội thảo kinh tế đô thị, quy hoạch, xây dựng và phát triển bền vững ở Hà Nội."
+              "alt": "Ảnh tập thể tại hội thảo kinh tế đô thị, quy hoạch, xây dựng và phát triển bền vững ở Hà Nội.",
+              "fullImage": "/media/connected-urban-economy.jpg"
             },
             {
-              "image": "/media/connected-international-partners.jpg",
+              "image": "/media/connected-international-partners-preview.webp",
               "width": 1280,
               "height": 720,
               "label": "Kết nối với đối tác quốc tế",
-              "alt": "Các đại biểu quốc tế chụp ảnh tập thể trên bậc thềm bên ngoài một tòa nhà."
+              "alt": "Các đại biểu quốc tế chụp ảnh tập thể trên bậc thềm bên ngoài một tòa nhà.",
+              "fullImage": "/media/connected-international-partners.jpg"
             }
           ],
           [
             {
-              "image": "/media/outlook-office-exchange.jpg",
+              "image": "/media/outlook-office-exchange-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Trao đổi ý tưởng tại ICUE",
-              "alt": "Ba người tham gia buổi gặp gỡ tại văn phòng ICUE."
+              "alt": "Ba người tham gia buổi gặp gỡ tại văn phòng ICUE.",
+              "fullImage": "/media/outlook-office-exchange.jpg"
             },
             {
-              "image": "/media/outlook-industry-visit.jpg",
+              "image": "/media/outlook-industry-visit-preview.webp",
               "width": 1280,
               "height": 719,
               "label": "Học hỏi từ thực tiễn sản xuất",
-              "alt": "Ba người đội mũ bảo hộ trong chuyến thăm một nhà máy."
+              "alt": "Ba người đội mũ bảo hộ trong chuyến thăm một nhà máy.",
+              "fullImage": "/media/outlook-industry-visit.jpg"
             },
             {
               "image": "/media/dubai_2025_1.webp",
@@ -345,7 +384,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
               "label": "Đoàn ICUE Tại Dubai, 2025",
-              "alt": "Cán bộ ICUE tại phiên làm việc trong Đại hội Bảo tồn Thế giới IUCN, Abu Dhabi, 2025"
+              "alt": "Cán bộ ICUE tại phiên làm việc trong Đại hội Bảo tồn Thế giới IUCN, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_1.webp"
             }
           ]
         ]
@@ -502,7 +542,7 @@
         {
           "id": "nguyen-hong-hanh",
           "group": "experts",
-          "photo": "/media/hanhnguyen__nobg.png",
+          "photo": "/media/hanhnguyen__nobg-profile.webp",
           "name": "Nguyen Hong Hanh",
           "honorific": "PhD",
           "title": "Director, Institute of Construction Economics and Urban Planning (Vietnam Construction Association)",
@@ -512,12 +552,15 @@
             "green urban development",
             "climate change",
             "policy"
-          ]
+          ],
+          "avatar": "/media/hanhnguyen__nobg-avatar-96.webp",
+          "avatar2x": "/media/hanhnguyen__nobg-avatar-144.webp",
+          "originalPhoto": "/media/hanhnguyen__nobg.png"
         },
         {
           "id": "tran-thi-lan-anh",
           "group": "experts",
-          "photo": "/media/tranthilananh__nobg.png",
+          "photo": "/media/tranthilananh__nobg-profile.webp",
           "name": "Tran Thi Lan Anh",
           "honorific": "PhD, M.Arch",
           "title": "Vice Director",
@@ -527,12 +570,15 @@
             "sustainability",
             "policy",
             "climate change"
-          ]
+          ],
+          "avatar": "/media/tranthilananh__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranthilananh__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranthilananh__nobg.png"
         },
         {
           "id": "tran-quoc-toan",
           "group": "experts",
-          "photo": "/media/tranquoctoan__nobg.png",
+          "photo": "/media/tranquoctoan__nobg-profile.webp",
           "name": "Tran Quoc Toan",
           "honorific": "Eng.",
           "title": "Vice Director",
@@ -541,12 +587,15 @@
             "transport infrastructure",
             "smart planning",
             "green growth"
-          ]
+          ],
+          "avatar": "/media/tranquoctoan__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranquoctoan__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranquoctoan__nobg.png"
         },
         {
           "id": "nguyen-thanh-tam",
           "group": "experts",
-          "photo": "/media/tam.png",
+          "photo": "/media/tam-profile.webp",
           "name": "Nguyen Thanh Tam",
           "honorific": "M.Arch",
           "title": "Vice Director",
@@ -557,12 +606,15 @@
             "spatial development",
             "provincial liaison",
             "residential design"
-          ]
+          ],
+          "avatar": "/media/tam-avatar-96.webp",
+          "avatar2x": "/media/tam-avatar-144.webp",
+          "originalPhoto": "/media/tam.png"
         },
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdoorgstructure_prev.png",
+          "photo": "/media/longdoorgstructure_prev-profile.webp",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "Project Manager",
@@ -572,12 +624,15 @@
             "contract management",
             "design",
             "creative problem-solving"
-          ]
+          ],
+          "avatar": "/media/longdoorgstructure_prev-avatar-96.webp",
+          "avatar2x": "/media/longdoorgstructure_prev-avatar-144.webp",
+          "originalPhoto": "/media/longdoorgstructure_prev.png"
         },
         {
           "id": "nguyen-thi-ly",
           "group": "core",
-          "photo": "/media/lyly.png",
+          "photo": "/media/lyly-profile.webp",
           "name": "Nguyen Thi Ly",
           "honorific": "",
           "title": "Research Officer",
@@ -586,12 +641,15 @@
             "urban planning",
             "sustainable development",
             "public space"
-          ]
+          ],
+          "avatar": "/media/lyly-avatar-96.webp",
+          "avatar2x": "/media/lyly-avatar-144.webp",
+          "originalPhoto": "/media/lyly.png"
         },
         {
           "id": "dinh-tung-duong",
           "group": "core",
-          "photo": "/media/duong.png",
+          "photo": "/media/duong-profile.webp",
           "name": "Dinh Tung Duong",
           "honorific": "",
           "title": "Research Officer",
@@ -601,12 +659,15 @@
             "Top graduate",
             "spatial planning",
             "sustainability"
-          ]
+          ],
+          "avatar": "/media/duong-avatar-96.webp",
+          "avatar2x": "/media/duong-avatar-144.webp",
+          "originalPhoto": "/media/duong.png"
         },
         {
           "id": "trinh-thi-tinh",
           "group": "core",
-          "photo": "/media/tinh.png",
+          "photo": "/media/tinh-profile.webp",
           "name": "Trinh Thi Tinh",
           "honorific": "",
           "title": "Administrative Officer",
@@ -615,12 +676,15 @@
             "Business Administration",
             "responsibility",
             "teamwork"
-          ]
+          ],
+          "avatar": "/media/tinh-avatar-96.webp",
+          "avatar2x": "/media/tinh-avatar-144.webp",
+          "originalPhoto": "/media/tinh.png"
         },
         {
           "id": "nguyen-quynh-ly",
           "group": "core",
-          "photo": "/media/nguyenquynhly.png",
+          "photo": "/media/nguyenquynhly-profile.webp",
           "name": "Nguyen Quynh Ly",
           "honorific": "",
           "title": "Research Officer",
@@ -629,7 +693,10 @@
             "National Economics University",
             "bidding",
             "urban planning"
-          ]
+          ],
+          "avatar": "/media/nguyenquynhly-avatar-96.webp",
+          "avatar2x": "/media/nguyenquynhly-avatar-144.webp",
+          "originalPhoto": "/media/nguyenquynhly.png"
         }
       ],
       "valuesGallery": {
@@ -648,7 +715,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
               "label": "Vietnam Urban Summit 2025",
-              "alt": "The plenary session of Vietnam Urban Summit 2025 — Smart, Sustainable and Inclusive Development, 8 November 2025"
+              "alt": "The plenary session of Vietnam Urban Summit 2025 — Smart, Sustainable and Inclusive Development, 8 November 2025",
+              "fullImage": "/media/conference_nov5_2025.webp"
             },
             {
               "image": "/media/dubai_2025_2.webp",
@@ -656,7 +724,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
               "label": "Congress Stage, UAE 2025",
-              "alt": "A plenary stage with landscape imagery during the IUCN World Conservation Congress, Abu Dhabi, 2025"
+              "alt": "A plenary stage with landscape imagery during the IUCN World Conservation Congress, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_2.webp"
             },
             {
               "image": "/media/dubai_2025_3.webp",
@@ -664,7 +733,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
               "label": "Plenary Hall, 2025",
-              "alt": "The plenary hall during the IUCN World Conservation Congress Abu Dhabi 2025"
+              "alt": "The plenary hall during the IUCN World Conservation Congress Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_3.webp"
             },
             {
               "image": "/media/dubai_2025_4.webp",
@@ -672,69 +742,78 @@
               "height": 540,
               "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
               "label": "ICUE Group Photo, 2025",
-              "alt": "ICUE delegation group photograph at the IUCN World Conservation Congress Abu Dhabi 2025"
+              "alt": "ICUE delegation group photograph at the IUCN World Conservation Congress Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_4.webp"
             }
           ],
           [
             {
-              "image": "/media/people-play-together.jpg",
+              "image": "/media/people-play-together-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "The joy of playing together",
-              "alt": "Children playing together around a tree and a structure made from tyres."
+              "alt": "Children playing together around a tree and a structure made from tyres.",
+              "fullImage": "/media/people-play-together.jpg"
             },
             {
-              "image": "/media/people-room-to-play.jpg",
+              "image": "/media/people-room-to-play-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Room to play and explore",
-              "alt": "Children climbing a tyre play structure beside a large tree."
+              "alt": "Children climbing a tyre play structure beside a large tree.",
+              "fullImage": "/media/people-room-to-play.jpg"
             },
             {
-              "image": "/media/people-community-childhood.jpg",
+              "image": "/media/people-community-childhood-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Childhood in the community",
-              "alt": "Children smiling and playing in a grassy neighbourhood space."
+              "alt": "Children smiling and playing in a grassy neighbourhood space.",
+              "fullImage": "/media/people-community-childhood.jpg"
             }
           ],
           [
             {
-              "image": "/media/connected-anniversary.jpg",
+              "image": "/media/connected-anniversary-preview.webp",
               "width": 1276,
               "height": 956,
               "label": "Celebrating ten years of ICUE",
-              "alt": "Delegates receiving a commemorative flag at ICUE’s tenth anniversary celebration."
+              "alt": "Delegates receiving a commemorative flag at ICUE’s tenth anniversary celebration.",
+              "fullImage": "/media/connected-anniversary.jpg"
             },
             {
-              "image": "/media/connected-urban-economy.jpg",
+              "image": "/media/connected-urban-economy-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Urban economy and sustainable development",
-              "alt": "Group photograph at an urban economy, planning, construction and sustainable development event in Hanoi."
+              "alt": "Group photograph at an urban economy, planning, construction and sustainable development event in Hanoi.",
+              "fullImage": "/media/connected-urban-economy.jpg"
             },
             {
-              "image": "/media/connected-international-partners.jpg",
+              "image": "/media/connected-international-partners-preview.webp",
               "width": 1280,
               "height": 720,
               "label": "Connecting with international partners",
-              "alt": "International delegates posing together on the steps outside a building."
+              "alt": "International delegates posing together on the steps outside a building.",
+              "fullImage": "/media/connected-international-partners.jpg"
             }
           ],
           [
             {
-              "image": "/media/outlook-office-exchange.jpg",
+              "image": "/media/outlook-office-exchange-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Exchanging ideas at ICUE",
-              "alt": "Three participants meeting at the ICUE office."
+              "alt": "Three participants meeting at the ICUE office.",
+              "fullImage": "/media/outlook-office-exchange.jpg"
             },
             {
-              "image": "/media/outlook-industry-visit.jpg",
+              "image": "/media/outlook-industry-visit-preview.webp",
               "width": 1280,
               "height": 719,
               "label": "Learning from industry",
-              "alt": "Three people wearing safety helmets during a factory visit."
+              "alt": "Three people wearing safety helmets during a factory visit.",
+              "fullImage": "/media/outlook-industry-visit.jpg"
             },
             {
               "image": "/media/dubai_2025_1.webp",
@@ -742,7 +821,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
               "label": "ICUE Delegation In Dubai, 2025",
-              "alt": "ICUE staff seated at a working session during the IUCN World Conservation Congress, Abu Dhabi, 2025"
+              "alt": "ICUE staff seated at a working session during the IUCN World Conservation Congress, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_1.webp"
             }
           ]
         ]
@@ -899,7 +979,7 @@
         {
           "id": "nguyen-hong-hanh",
           "group": "experts",
-          "photo": "/media/hanhnguyen__nobg.png",
+          "photo": "/media/hanhnguyen__nobg-profile.webp",
           "name": "Nguyen Hong Hanh",
           "honorific": "PhD",
           "title": "Direktorin, Institut für Bauwirtschaft und Stadtplanung (Vietnamesischer Bauverband)",
@@ -909,12 +989,15 @@
             "grüne Stadtentwicklung",
             "Klimawandel",
             "Politik"
-          ]
+          ],
+          "avatar": "/media/hanhnguyen__nobg-avatar-96.webp",
+          "avatar2x": "/media/hanhnguyen__nobg-avatar-144.webp",
+          "originalPhoto": "/media/hanhnguyen__nobg.png"
         },
         {
           "id": "tran-thi-lan-anh",
           "group": "experts",
-          "photo": "/media/tranthilananh__nobg.png",
+          "photo": "/media/tranthilananh__nobg-profile.webp",
           "name": "Tran Thi Lan Anh",
           "honorific": "PhD, M.Arch",
           "title": "Stellvertretende Direktorin",
@@ -924,12 +1007,15 @@
             "Nachhaltigkeit",
             "Politik",
             "Klimawandel"
-          ]
+          ],
+          "avatar": "/media/tranthilananh__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranthilananh__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranthilananh__nobg.png"
         },
         {
           "id": "tran-quoc-toan",
           "group": "experts",
-          "photo": "/media/tranquoctoan__nobg.png",
+          "photo": "/media/tranquoctoan__nobg-profile.webp",
           "name": "Tran Quoc Toan",
           "honorific": "Ing.",
           "title": "Stellvertretender Direktor",
@@ -938,12 +1024,15 @@
             "Verkehrsinfrastruktur",
             "intelligente Planung",
             "grünes Wachstum"
-          ]
+          ],
+          "avatar": "/media/tranquoctoan__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranquoctoan__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranquoctoan__nobg.png"
         },
         {
           "id": "nguyen-thanh-tam",
           "group": "experts",
-          "photo": "/media/tam.png",
+          "photo": "/media/tam-profile.webp",
           "name": "Nguyen Thanh Tam",
           "honorific": "M.Arch",
           "title": "Stellvertretender Direktor",
@@ -954,12 +1043,15 @@
             "Raumentwicklung",
             "Provinzbehörden",
             "Wohnungsentwurf"
-          ]
+          ],
+          "avatar": "/media/tam-avatar-96.webp",
+          "avatar2x": "/media/tam-avatar-144.webp",
+          "originalPhoto": "/media/tam.png"
         },
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdoorgstructure_prev.png",
+          "photo": "/media/longdoorgstructure_prev-profile.webp",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "Projektmanager",
@@ -969,12 +1061,15 @@
             "Vertragsmanagement",
             "Design",
             "kreative Problemlösung"
-          ]
+          ],
+          "avatar": "/media/longdoorgstructure_prev-avatar-96.webp",
+          "avatar2x": "/media/longdoorgstructure_prev-avatar-144.webp",
+          "originalPhoto": "/media/longdoorgstructure_prev.png"
         },
         {
           "id": "nguyen-thi-ly",
           "group": "core",
-          "photo": "/media/lyly.png",
+          "photo": "/media/lyly-profile.webp",
           "name": "Nguyen Thi Ly",
           "honorific": "",
           "title": "Forschungsmitarbeiterin",
@@ -983,12 +1078,15 @@
             "Stadtplanung",
             "nachhaltige Entwicklung",
             "öffentlicher Raum"
-          ]
+          ],
+          "avatar": "/media/lyly-avatar-96.webp",
+          "avatar2x": "/media/lyly-avatar-144.webp",
+          "originalPhoto": "/media/lyly.png"
         },
         {
           "id": "dinh-tung-duong",
           "group": "core",
-          "photo": "/media/duong.png",
+          "photo": "/media/duong-profile.webp",
           "name": "Dinh Tung Duong",
           "honorific": "",
           "title": "Forschungsmitarbeiter",
@@ -998,12 +1096,15 @@
             "Bester Absolvent",
             "Raumplanung",
             "Nachhaltigkeit"
-          ]
+          ],
+          "avatar": "/media/duong-avatar-96.webp",
+          "avatar2x": "/media/duong-avatar-144.webp",
+          "originalPhoto": "/media/duong.png"
         },
         {
           "id": "trinh-thi-tinh",
           "group": "core",
-          "photo": "/media/tinh.png",
+          "photo": "/media/tinh-profile.webp",
           "name": "Trinh Thi Tinh",
           "honorific": "",
           "title": "Verwaltungsmitarbeiterin",
@@ -1012,12 +1113,15 @@
             "Betriebswirtschaft",
             "Verantwortung",
             "Teamarbeit"
-          ]
+          ],
+          "avatar": "/media/tinh-avatar-96.webp",
+          "avatar2x": "/media/tinh-avatar-144.webp",
+          "originalPhoto": "/media/tinh.png"
         },
         {
           "id": "nguyen-quynh-ly",
           "group": "core",
-          "photo": "/media/nguyenquynhly.png",
+          "photo": "/media/nguyenquynhly-profile.webp",
           "name": "Nguyen Quynh Ly",
           "honorific": "",
           "title": "Forschungsmitarbeiterin",
@@ -1026,7 +1130,10 @@
             "Nationale Wirtschaftsuniversität",
             "Ausschreibungen",
             "Stadtplanung"
-          ]
+          ],
+          "avatar": "/media/nguyenquynhly-avatar-96.webp",
+          "avatar2x": "/media/nguyenquynhly-avatar-144.webp",
+          "originalPhoto": "/media/nguyenquynhly.png"
         }
       ],
       "valuesGallery": {
@@ -1045,7 +1152,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
               "label": "Vietnam Urban Summit 2025",
-              "alt": "Die Plenarsitzung des Vietnam Urban Summit 2025 – Intelligente, nachhaltige und inklusive Entwicklung, 8. November 2025"
+              "alt": "Die Plenarsitzung des Vietnam Urban Summit 2025 – Intelligente, nachhaltige und inklusive Entwicklung, 8. November 2025",
+              "fullImage": "/media/conference_nov5_2025.webp"
             },
             {
               "image": "/media/dubai_2025_2.webp",
@@ -1053,7 +1161,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
               "label": "Kongressbühne, VAE 2025",
-              "alt": "Eine Plenarbühne mit Landschaftsbildern beim IUCN-Weltnaturschutzkongress, Abu Dhabi, 2025"
+              "alt": "Eine Plenarbühne mit Landschaftsbildern beim IUCN-Weltnaturschutzkongress, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_2.webp"
             },
             {
               "image": "/media/dubai_2025_3.webp",
@@ -1061,7 +1170,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
               "label": "Plenarsaal, 2025",
-              "alt": "Der Plenarsaal beim IUCN World Conservation Congress Abu Dhabi 2025"
+              "alt": "Der Plenarsaal beim IUCN World Conservation Congress Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_3.webp"
             },
             {
               "image": "/media/dubai_2025_4.webp",
@@ -1069,69 +1179,78 @@
               "height": 540,
               "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
               "label": "ICUE-Gruppenfoto, 2025",
-              "alt": "Gruppenfoto der ICUE-Delegation beim IUCN World Conservation Congress Abu Dhabi 2025"
+              "alt": "Gruppenfoto der ICUE-Delegation beim IUCN World Conservation Congress Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_4.webp"
             }
           ],
           [
             {
-              "image": "/media/people-play-together.jpg",
+              "image": "/media/people-play-together-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Die Freude am gemeinsamen Spielen",
-              "alt": "Kinder spielen gemeinsam an einem Baum und einem Spielgerät aus Reifen."
+              "alt": "Kinder spielen gemeinsam an einem Baum und einem Spielgerät aus Reifen.",
+              "fullImage": "/media/people-play-together.jpg"
             },
             {
-              "image": "/media/people-room-to-play.jpg",
+              "image": "/media/people-room-to-play-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Raum zum Spielen und Entdecken",
-              "alt": "Kinder klettern auf einem Spielgerät aus Reifen neben einem großen Baum."
+              "alt": "Kinder klettern auf einem Spielgerät aus Reifen neben einem großen Baum.",
+              "fullImage": "/media/people-room-to-play.jpg"
             },
             {
-              "image": "/media/people-community-childhood.jpg",
+              "image": "/media/people-community-childhood-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Kindheit in der Gemeinschaft",
-              "alt": "Kinder lachen und spielen auf einer Grünfläche im Wohnviertel."
+              "alt": "Kinder lachen und spielen auf einer Grünfläche im Wohnviertel.",
+              "fullImage": "/media/people-community-childhood.jpg"
             }
           ],
           [
             {
-              "image": "/media/connected-anniversary.jpg",
+              "image": "/media/connected-anniversary-preview.webp",
               "width": 1276,
               "height": 956,
               "label": "Zehn Jahre ICUE feiern",
-              "alt": "Delegierte erhalten eine Erinnerungsfahne beim zehnjährigen Jubiläum von ICUE."
+              "alt": "Delegierte erhalten eine Erinnerungsfahne beim zehnjährigen Jubiläum von ICUE.",
+              "fullImage": "/media/connected-anniversary.jpg"
             },
             {
-              "image": "/media/connected-urban-economy.jpg",
+              "image": "/media/connected-urban-economy-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Stadtwirtschaft und nachhaltige Entwicklung",
-              "alt": "Gruppenfoto bei einer Veranstaltung zu Stadtwirtschaft, Planung, Bauwesen und nachhaltiger Entwicklung in Hanoi."
+              "alt": "Gruppenfoto bei einer Veranstaltung zu Stadtwirtschaft, Planung, Bauwesen und nachhaltiger Entwicklung in Hanoi.",
+              "fullImage": "/media/connected-urban-economy.jpg"
             },
             {
-              "image": "/media/connected-international-partners.jpg",
+              "image": "/media/connected-international-partners-preview.webp",
               "width": 1280,
               "height": 720,
               "label": "Austausch mit internationalen Partnern",
-              "alt": "Internationale Delegierte stehen gemeinsam auf den Stufen vor einem Gebäude."
+              "alt": "Internationale Delegierte stehen gemeinsam auf den Stufen vor einem Gebäude.",
+              "fullImage": "/media/connected-international-partners.jpg"
             }
           ],
           [
             {
-              "image": "/media/outlook-office-exchange.jpg",
+              "image": "/media/outlook-office-exchange-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Ideenaustausch bei ICUE",
-              "alt": "Drei Teilnehmende bei einem Treffen im Büro von ICUE."
+              "alt": "Drei Teilnehmende bei einem Treffen im Büro von ICUE.",
+              "fullImage": "/media/outlook-office-exchange.jpg"
             },
             {
-              "image": "/media/outlook-industry-visit.jpg",
+              "image": "/media/outlook-industry-visit-preview.webp",
               "width": 1280,
               "height": 719,
               "label": "Aus der industriellen Praxis lernen",
-              "alt": "Drei Personen mit Schutzhelmen bei einem Fabrikbesuch."
+              "alt": "Drei Personen mit Schutzhelmen bei einem Fabrikbesuch.",
+              "fullImage": "/media/outlook-industry-visit.jpg"
             },
             {
               "image": "/media/dubai_2025_1.webp",
@@ -1139,7 +1258,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
               "label": "ICUE-Delegation In Dubai, 2025",
-              "alt": "Mitarbeitende von ICUE bei einer Arbeitssitzung während des IUCN-Weltnaturschutzkongresses, Abu Dhabi, 2025"
+              "alt": "Mitarbeitende von ICUE bei einer Arbeitssitzung während des IUCN-Weltnaturschutzkongresses, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_1.webp"
             }
           ]
         ]
@@ -1296,7 +1416,7 @@
         {
           "id": "nguyen-hong-hanh",
           "group": "experts",
-          "photo": "/media/hanhnguyen__nobg.png",
+          "photo": "/media/hanhnguyen__nobg-profile.webp",
           "name": "Nguyen Hong Hanh",
           "honorific": "PhD",
           "title": "Directrice, Institut de recherche en économie de la construction et urbanisme (Association vietnamienne de la construction)",
@@ -1306,12 +1426,15 @@
             "développement urbain vert",
             "changement climatique",
             "politique publique"
-          ]
+          ],
+          "avatar": "/media/hanhnguyen__nobg-avatar-96.webp",
+          "avatar2x": "/media/hanhnguyen__nobg-avatar-144.webp",
+          "originalPhoto": "/media/hanhnguyen__nobg.png"
         },
         {
           "id": "tran-thi-lan-anh",
           "group": "experts",
-          "photo": "/media/tranthilananh__nobg.png",
+          "photo": "/media/tranthilananh__nobg-profile.webp",
           "name": "Tran Thi Lan Anh",
           "honorific": "PhD, M.Arch",
           "title": "Directrice adjointe",
@@ -1321,12 +1444,15 @@
             "durabilité",
             "politique publique",
             "changement climatique"
-          ]
+          ],
+          "avatar": "/media/tranthilananh__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranthilananh__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranthilananh__nobg.png"
         },
         {
           "id": "tran-quoc-toan",
           "group": "experts",
-          "photo": "/media/tranquoctoan__nobg.png",
+          "photo": "/media/tranquoctoan__nobg-profile.webp",
           "name": "Tran Quoc Toan",
           "honorific": "Ing.",
           "title": "Directeur adjoint",
@@ -1335,12 +1461,15 @@
             "infrastructures de transport",
             "planification intelligente",
             "croissance verte"
-          ]
+          ],
+          "avatar": "/media/tranquoctoan__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranquoctoan__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranquoctoan__nobg.png"
         },
         {
           "id": "nguyen-thanh-tam",
           "group": "experts",
-          "photo": "/media/tam.png",
+          "photo": "/media/tam-profile.webp",
           "name": "Nguyen Thanh Tam",
           "honorific": "M.Arch",
           "title": "Directeur adjoint",
@@ -1351,12 +1480,15 @@
             "développement spatial",
             "liaison provinciale",
             "conception résidentielle"
-          ]
+          ],
+          "avatar": "/media/tam-avatar-96.webp",
+          "avatar2x": "/media/tam-avatar-144.webp",
+          "originalPhoto": "/media/tam.png"
         },
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdoorgstructure_prev.png",
+          "photo": "/media/longdoorgstructure_prev-profile.webp",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "Chef de projet",
@@ -1366,12 +1498,15 @@
             "gestion des contrats",
             "design",
             "résolution créative de problèmes"
-          ]
+          ],
+          "avatar": "/media/longdoorgstructure_prev-avatar-96.webp",
+          "avatar2x": "/media/longdoorgstructure_prev-avatar-144.webp",
+          "originalPhoto": "/media/longdoorgstructure_prev.png"
         },
         {
           "id": "nguyen-thi-ly",
           "group": "core",
-          "photo": "/media/lyly.png",
+          "photo": "/media/lyly-profile.webp",
           "name": "Nguyen Thi Ly",
           "honorific": "",
           "title": "Chargée de recherche",
@@ -1380,12 +1515,15 @@
             "urbanisme",
             "développement durable",
             "espace public"
-          ]
+          ],
+          "avatar": "/media/lyly-avatar-96.webp",
+          "avatar2x": "/media/lyly-avatar-144.webp",
+          "originalPhoto": "/media/lyly.png"
         },
         {
           "id": "dinh-tung-duong",
           "group": "core",
-          "photo": "/media/duong.png",
+          "photo": "/media/duong-profile.webp",
           "name": "Dinh Tung Duong",
           "honorific": "",
           "title": "Chargé de recherche",
@@ -1395,12 +1533,15 @@
             "meilleur diplômé",
             "planification spatiale",
             "durabilité"
-          ]
+          ],
+          "avatar": "/media/duong-avatar-96.webp",
+          "avatar2x": "/media/duong-avatar-144.webp",
+          "originalPhoto": "/media/duong.png"
         },
         {
           "id": "trinh-thi-tinh",
           "group": "core",
-          "photo": "/media/tinh.png",
+          "photo": "/media/tinh-profile.webp",
           "name": "Trinh Thi Tinh",
           "honorific": "",
           "title": "Agente administrative",
@@ -1409,12 +1550,15 @@
             "administration des affaires",
             "responsabilité",
             "travail d'équipe"
-          ]
+          ],
+          "avatar": "/media/tinh-avatar-96.webp",
+          "avatar2x": "/media/tinh-avatar-144.webp",
+          "originalPhoto": "/media/tinh.png"
         },
         {
           "id": "nguyen-quynh-ly",
           "group": "core",
-          "photo": "/media/nguyenquynhly.png",
+          "photo": "/media/nguyenquynhly-profile.webp",
           "name": "Nguyen Quynh Ly",
           "honorific": "",
           "title": "Chargée de recherche",
@@ -1423,7 +1567,10 @@
             "Université nationale d'économie",
             "appels d'offres",
             "urbanisme"
-          ]
+          ],
+          "avatar": "/media/nguyenquynhly-avatar-96.webp",
+          "avatar2x": "/media/nguyenquynhly-avatar-144.webp",
+          "originalPhoto": "/media/nguyenquynhly.png"
         }
       ],
       "valuesGallery": {
@@ -1442,7 +1589,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
               "label": "Forum Urbain Du Vietnam 2025",
-              "alt": "La séance plénière du Forum urbain du Vietnam 2025 – Développement intelligent, durable et inclusif, 8 novembre 2025"
+              "alt": "La séance plénière du Forum urbain du Vietnam 2025 – Développement intelligent, durable et inclusif, 8 novembre 2025",
+              "fullImage": "/media/conference_nov5_2025.webp"
             },
             {
               "image": "/media/dubai_2025_2.webp",
@@ -1450,7 +1598,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
               "label": "Scène Du Congrès, EAU 2025",
-              "alt": "La scène plénière avec des images de paysages au Congrès mondial de la nature de l'UICN, Abu Dhabi, 2025"
+              "alt": "La scène plénière avec des images de paysages au Congrès mondial de la nature de l'UICN, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_2.webp"
             },
             {
               "image": "/media/dubai_2025_3.webp",
@@ -1458,7 +1607,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
               "label": "Salle Plénière, 2025",
-              "alt": "La salle plénière du Congrès mondial de la nature de l'UICN Abu Dhabi 2025"
+              "alt": "La salle plénière du Congrès mondial de la nature de l'UICN Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_3.webp"
             },
             {
               "image": "/media/dubai_2025_4.webp",
@@ -1466,69 +1616,78 @@
               "height": 540,
               "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
               "label": "Photo De Groupe ICUE, 2025",
-              "alt": "Photographie de groupe de la délégation ICUE au Congrès mondial de la nature de l'UICN Abu Dhabi 2025"
+              "alt": "Photographie de groupe de la délégation ICUE au Congrès mondial de la nature de l'UICN Abu Dhabi 2025",
+              "fullImage": "/media/dubai_2025_4.webp"
             }
           ],
           [
             {
-              "image": "/media/people-play-together.jpg",
+              "image": "/media/people-play-together-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Le plaisir de jouer ensemble",
-              "alt": "Des enfants jouent ensemble autour d’un arbre et d’une structure en pneus."
+              "alt": "Des enfants jouent ensemble autour d’un arbre et d’une structure en pneus.",
+              "fullImage": "/media/people-play-together.jpg"
             },
             {
-              "image": "/media/people-room-to-play.jpg",
+              "image": "/media/people-room-to-play-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Un espace pour jouer et explorer",
-              "alt": "Des enfants grimpent sur une structure de jeu en pneus près d’un grand arbre."
+              "alt": "Des enfants grimpent sur une structure de jeu en pneus près d’un grand arbre.",
+              "fullImage": "/media/people-room-to-play.jpg"
             },
             {
-              "image": "/media/people-community-childhood.jpg",
+              "image": "/media/people-community-childhood-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "L’enfance au cœur du quartier",
-              "alt": "Des enfants sourient et jouent dans un espace herbeux du quartier."
+              "alt": "Des enfants sourient et jouent dans un espace herbeux du quartier.",
+              "fullImage": "/media/people-community-childhood.jpg"
             }
           ],
           [
             {
-              "image": "/media/connected-anniversary.jpg",
+              "image": "/media/connected-anniversary-preview.webp",
               "width": 1276,
               "height": 956,
               "label": "Célébrer les dix ans d’ICUE",
-              "alt": "Des délégués reçoivent un drapeau commémoratif lors du dixième anniversaire d’ICUE."
+              "alt": "Des délégués reçoivent un drapeau commémoratif lors du dixième anniversaire d’ICUE.",
+              "fullImage": "/media/connected-anniversary.jpg"
             },
             {
-              "image": "/media/connected-urban-economy.jpg",
+              "image": "/media/connected-urban-economy-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Économie urbaine et développement durable",
-              "alt": "Photo de groupe lors d’un événement sur l’économie urbaine, l’aménagement, la construction et le développement durable à Hanoï."
+              "alt": "Photo de groupe lors d’un événement sur l’économie urbaine, l’aménagement, la construction et le développement durable à Hanoï.",
+              "fullImage": "/media/connected-urban-economy.jpg"
             },
             {
-              "image": "/media/connected-international-partners.jpg",
+              "image": "/media/connected-international-partners-preview.webp",
               "width": 1280,
               "height": 720,
               "label": "Échanger avec nos partenaires internationaux",
-              "alt": "Des délégués internationaux posent ensemble sur les marches devant un bâtiment."
+              "alt": "Des délégués internationaux posent ensemble sur les marches devant un bâtiment.",
+              "fullImage": "/media/connected-international-partners.jpg"
             }
           ],
           [
             {
-              "image": "/media/outlook-office-exchange.jpg",
+              "image": "/media/outlook-office-exchange-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "Partager des idées chez ICUE",
-              "alt": "Trois personnes réunies au bureau d’ICUE."
+              "alt": "Trois personnes réunies au bureau d’ICUE.",
+              "fullImage": "/media/outlook-office-exchange.jpg"
             },
             {
-              "image": "/media/outlook-industry-visit.jpg",
+              "image": "/media/outlook-industry-visit-preview.webp",
               "width": 1280,
               "height": 719,
               "label": "Apprendre des pratiques industrielles",
-              "alt": "Trois personnes portant des casques de sécurité lors d’une visite d’usine."
+              "alt": "Trois personnes portant des casques de sécurité lors d’une visite d’usine.",
+              "fullImage": "/media/outlook-industry-visit.jpg"
             },
             {
               "image": "/media/dubai_2025_1.webp",
@@ -1536,7 +1695,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
               "label": "Délégation ICUE À Dubaï, 2025",
-              "alt": "Des collaborateurs d'ICUE lors d'une séance de travail au Congrès mondial de la nature de l'UICN, Abu Dhabi, 2025"
+              "alt": "Des collaborateurs d'ICUE lors d'une séance de travail au Congrès mondial de la nature de l'UICN, Abu Dhabi, 2025",
+              "fullImage": "/media/dubai_2025_1.webp"
             }
           ]
         ]
@@ -1693,7 +1853,7 @@
         {
           "id": "nguyen-hong-hanh",
           "group": "experts",
-          "photo": "/media/hanhnguyen__nobg.png",
+          "photo": "/media/hanhnguyen__nobg-profile.webp",
           "name": "Nguyen Hong Hanh",
           "honorific": "PhD",
           "title": "베트남건설협회 건설경제·도시연구소 소장",
@@ -1703,12 +1863,15 @@
             "녹색 도시 개발",
             "기후 변화",
             "정책"
-          ]
+          ],
+          "avatar": "/media/hanhnguyen__nobg-avatar-96.webp",
+          "avatar2x": "/media/hanhnguyen__nobg-avatar-144.webp",
+          "originalPhoto": "/media/hanhnguyen__nobg.png"
         },
         {
           "id": "tran-thi-lan-anh",
           "group": "experts",
-          "photo": "/media/tranthilananh__nobg.png",
+          "photo": "/media/tranthilananh__nobg-profile.webp",
           "name": "Tran Thi Lan Anh",
           "honorific": "PhD, M.Arch",
           "title": "부소장",
@@ -1718,12 +1881,15 @@
             "지속 가능성",
             "정책",
             "기후 변화"
-          ]
+          ],
+          "avatar": "/media/tranthilananh__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranthilananh__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranthilananh__nobg.png"
         },
         {
           "id": "tran-quoc-toan",
           "group": "experts",
-          "photo": "/media/tranquoctoan__nobg.png",
+          "photo": "/media/tranquoctoan__nobg-profile.webp",
           "name": "Tran Quoc Toan",
           "honorific": "Eng.",
           "title": "부소장",
@@ -1732,12 +1898,15 @@
             "교통 인프라",
             "스마트 계획",
             "녹색 성장"
-          ]
+          ],
+          "avatar": "/media/tranquoctoan__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranquoctoan__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranquoctoan__nobg.png"
         },
         {
           "id": "nguyen-thanh-tam",
           "group": "experts",
-          "photo": "/media/tam.png",
+          "photo": "/media/tam-profile.webp",
           "name": "Nguyen Thanh Tam",
           "honorific": "M.Arch",
           "title": "부소장",
@@ -1748,12 +1917,15 @@
             "공간 개발",
             "지방 협력",
             "주거 설계"
-          ]
+          ],
+          "avatar": "/media/tam-avatar-96.webp",
+          "avatar2x": "/media/tam-avatar-144.webp",
+          "originalPhoto": "/media/tam.png"
         },
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdoorgstructure_prev.png",
+          "photo": "/media/longdoorgstructure_prev-profile.webp",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "프로젝트 매니저",
@@ -1763,12 +1935,15 @@
             "계약 관리",
             "디자인",
             "창의적 문제 해결"
-          ]
+          ],
+          "avatar": "/media/longdoorgstructure_prev-avatar-96.webp",
+          "avatar2x": "/media/longdoorgstructure_prev-avatar-144.webp",
+          "originalPhoto": "/media/longdoorgstructure_prev.png"
         },
         {
           "id": "nguyen-thi-ly",
           "group": "core",
-          "photo": "/media/lyly.png",
+          "photo": "/media/lyly-profile.webp",
           "name": "Nguyen Thi Ly",
           "honorific": "",
           "title": "연구원",
@@ -1777,12 +1952,15 @@
             "도시 계획",
             "지속 가능한 개발",
             "공공 공간"
-          ]
+          ],
+          "avatar": "/media/lyly-avatar-96.webp",
+          "avatar2x": "/media/lyly-avatar-144.webp",
+          "originalPhoto": "/media/lyly.png"
         },
         {
           "id": "dinh-tung-duong",
           "group": "core",
-          "photo": "/media/duong.png",
+          "photo": "/media/duong-profile.webp",
           "name": "Dinh Tung Duong",
           "honorific": "",
           "title": "연구원",
@@ -1792,12 +1970,15 @@
             "수석 졸업",
             "공간 계획",
             "지속 가능성"
-          ]
+          ],
+          "avatar": "/media/duong-avatar-96.webp",
+          "avatar2x": "/media/duong-avatar-144.webp",
+          "originalPhoto": "/media/duong.png"
         },
         {
           "id": "trinh-thi-tinh",
           "group": "core",
-          "photo": "/media/tinh.png",
+          "photo": "/media/tinh-profile.webp",
           "name": "Trinh Thi Tinh",
           "honorific": "",
           "title": "행정 담당",
@@ -1806,12 +1987,15 @@
             "경영학",
             "책임감",
             "팀워크"
-          ]
+          ],
+          "avatar": "/media/tinh-avatar-96.webp",
+          "avatar2x": "/media/tinh-avatar-144.webp",
+          "originalPhoto": "/media/tinh.png"
         },
         {
           "id": "nguyen-quynh-ly",
           "group": "core",
-          "photo": "/media/nguyenquynhly.png",
+          "photo": "/media/nguyenquynhly-profile.webp",
           "name": "Nguyen Quynh Ly",
           "honorific": "",
           "title": "연구원",
@@ -1820,7 +2004,10 @@
             "국립경제대학교",
             "입찰",
             "도시 계획"
-          ]
+          ],
+          "avatar": "/media/nguyenquynhly-avatar-96.webp",
+          "avatar2x": "/media/nguyenquynhly-avatar-144.webp",
+          "originalPhoto": "/media/nguyenquynhly.png"
         }
       ],
       "valuesGallery": {
@@ -1839,7 +2026,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
               "label": "베트남 도시 포럼 2025",
-              "alt": "베트남 도시 포럼 2025 – 스마트하고 지속가능하며 포용적인 발전 전체 회의, 2025년 11월 8일"
+              "alt": "베트남 도시 포럼 2025 – 스마트하고 지속가능하며 포용적인 발전 전체 회의, 2025년 11월 8일",
+              "fullImage": "/media/conference_nov5_2025.webp"
             },
             {
               "image": "/media/dubai_2025_2.webp",
@@ -1847,7 +2035,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
               "label": "대회 무대, UAE 2025",
-              "alt": "IUCN 세계자연보호대회(아부다비, 2025)의 풍경 영상이 비치는 전체 무대"
+              "alt": "IUCN 세계자연보호대회(아부다비, 2025)의 풍경 영상이 비치는 전체 무대",
+              "fullImage": "/media/dubai_2025_2.webp"
             },
             {
               "image": "/media/dubai_2025_3.webp",
@@ -1855,7 +2044,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
               "label": "전체 회의장, 2025",
-              "alt": "IUCN World Conservation Congress Abu Dhabi 2025 전체 회의장"
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025 전체 회의장",
+              "fullImage": "/media/dubai_2025_3.webp"
             },
             {
               "image": "/media/dubai_2025_4.webp",
@@ -1863,69 +2053,78 @@
               "height": 540,
               "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
               "label": "ICUE 단체 사진, 2025",
-              "alt": "IUCN World Conservation Congress Abu Dhabi 2025에서 ICUE 대표단 단체 사진"
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025에서 ICUE 대표단 단체 사진",
+              "fullImage": "/media/dubai_2025_4.webp"
             }
           ],
           [
             {
-              "image": "/media/people-play-together.jpg",
+              "image": "/media/people-play-together-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "함께 노는 즐거움",
-              "alt": "나무와 타이어 놀이 구조물 주변에서 함께 노는 아이들."
+              "alt": "나무와 타이어 놀이 구조물 주변에서 함께 노는 아이들.",
+              "fullImage": "/media/people-play-together.jpg"
             },
             {
-              "image": "/media/people-room-to-play.jpg",
+              "image": "/media/people-room-to-play-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "놀고 탐험할 수 있는 공간",
-              "alt": "큰 나무 옆 타이어 놀이 구조물에 오르는 아이들."
+              "alt": "큰 나무 옆 타이어 놀이 구조물에 오르는 아이들.",
+              "fullImage": "/media/people-room-to-play.jpg"
             },
             {
-              "image": "/media/people-community-childhood.jpg",
+              "image": "/media/people-community-childhood-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "지역사회 속 어린 시절",
-              "alt": "동네의 풀밭에서 웃으며 노는 아이들."
+              "alt": "동네의 풀밭에서 웃으며 노는 아이들.",
+              "fullImage": "/media/people-community-childhood.jpg"
             }
           ],
           [
             {
-              "image": "/media/connected-anniversary.jpg",
+              "image": "/media/connected-anniversary-preview.webp",
               "width": 1276,
               "height": 956,
               "label": "ICUE 창립 10주년 기념",
-              "alt": "ICUE 창립 10주년 행사에서 기념 깃발을 받는 참석자들."
+              "alt": "ICUE 창립 10주년 행사에서 기념 깃발을 받는 참석자들.",
+              "fullImage": "/media/connected-anniversary.jpg"
             },
             {
-              "image": "/media/connected-urban-economy.jpg",
+              "image": "/media/connected-urban-economy-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "도시 경제와 지속가능한 발전",
-              "alt": "하노이의 도시 경제, 계획, 건설 및 지속가능한 발전 행사에서 촬영한 단체 사진."
+              "alt": "하노이의 도시 경제, 계획, 건설 및 지속가능한 발전 행사에서 촬영한 단체 사진.",
+              "fullImage": "/media/connected-urban-economy.jpg"
             },
             {
-              "image": "/media/connected-international-partners.jpg",
+              "image": "/media/connected-international-partners-preview.webp",
               "width": 1280,
               "height": 720,
               "label": "국제 파트너와의 교류",
-              "alt": "건물 앞 계단에서 함께 기념 촬영을 하는 국제 대표단."
+              "alt": "건물 앞 계단에서 함께 기념 촬영을 하는 국제 대표단.",
+              "fullImage": "/media/connected-international-partners.jpg"
             }
           ],
           [
             {
-              "image": "/media/outlook-office-exchange.jpg",
+              "image": "/media/outlook-office-exchange-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "ICUE에서 나누는 아이디어",
-              "alt": "ICUE 사무실에서 만난 세 명의 참석자."
+              "alt": "ICUE 사무실에서 만난 세 명의 참석자.",
+              "fullImage": "/media/outlook-office-exchange.jpg"
             },
             {
-              "image": "/media/outlook-industry-visit.jpg",
+              "image": "/media/outlook-industry-visit-preview.webp",
               "width": 1280,
               "height": 719,
               "label": "산업 현장에서 배우다",
-              "alt": "공장 방문 중 안전모를 쓴 세 사람."
+              "alt": "공장 방문 중 안전모를 쓴 세 사람.",
+              "fullImage": "/media/outlook-industry-visit.jpg"
             },
             {
               "image": "/media/dubai_2025_1.webp",
@@ -1933,7 +2132,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
               "label": "두바이 ICUE 대표단, 2025",
-              "alt": "IUCN 세계자연보호대회(아부다비, 2025)에서 ICUE 직원들의 실무 세션"
+              "alt": "IUCN 세계자연보호대회(아부다비, 2025)에서 ICUE 직원들의 실무 세션",
+              "fullImage": "/media/dubai_2025_1.webp"
             }
           ]
         ]
@@ -2090,7 +2290,7 @@
         {
           "id": "nguyen-hong-hanh",
           "group": "experts",
-          "photo": "/media/hanhnguyen__nobg.png",
+          "photo": "/media/hanhnguyen__nobg-profile.webp",
           "name": "Nguyen Hong Hanh",
           "honorific": "PhD",
           "title": "ベトナム建設協会 建設経済・都市研究所 所長",
@@ -2100,12 +2300,15 @@
             "グリーン都市開発",
             "気候変動",
             "政策"
-          ]
+          ],
+          "avatar": "/media/hanhnguyen__nobg-avatar-96.webp",
+          "avatar2x": "/media/hanhnguyen__nobg-avatar-144.webp",
+          "originalPhoto": "/media/hanhnguyen__nobg.png"
         },
         {
           "id": "tran-thi-lan-anh",
           "group": "experts",
-          "photo": "/media/tranthilananh__nobg.png",
+          "photo": "/media/tranthilananh__nobg-profile.webp",
           "name": "Tran Thi Lan Anh",
           "honorific": "PhD, M.Arch",
           "title": "副所長",
@@ -2115,12 +2318,15 @@
             "持続可能性",
             "政策",
             "気候変動"
-          ]
+          ],
+          "avatar": "/media/tranthilananh__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranthilananh__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranthilananh__nobg.png"
         },
         {
           "id": "tran-quoc-toan",
           "group": "experts",
-          "photo": "/media/tranquoctoan__nobg.png",
+          "photo": "/media/tranquoctoan__nobg-profile.webp",
           "name": "Tran Quoc Toan",
           "honorific": "Eng.",
           "title": "副所長",
@@ -2129,12 +2335,15 @@
             "交通インフラ",
             "スマート計画",
             "グリーン成長"
-          ]
+          ],
+          "avatar": "/media/tranquoctoan__nobg-avatar-96.webp",
+          "avatar2x": "/media/tranquoctoan__nobg-avatar-144.webp",
+          "originalPhoto": "/media/tranquoctoan__nobg.png"
         },
         {
           "id": "nguyen-thanh-tam",
           "group": "experts",
-          "photo": "/media/tam.png",
+          "photo": "/media/tam-profile.webp",
           "name": "Nguyen Thanh Tam",
           "honorific": "M.Arch",
           "title": "副所長",
@@ -2145,12 +2354,15 @@
             "空間開発",
             "地方連携",
             "住宅設計"
-          ]
+          ],
+          "avatar": "/media/tam-avatar-96.webp",
+          "avatar2x": "/media/tam-avatar-144.webp",
+          "originalPhoto": "/media/tam.png"
         },
         {
           "id": "do-bao-long",
           "group": "experts",
-          "photo": "/media/longdoorgstructure_prev.png",
+          "photo": "/media/longdoorgstructure_prev-profile.webp",
           "name": "Do Bao Long",
           "honorific": "",
           "title": "プロジェクトマネージャー",
@@ -2160,12 +2372,15 @@
             "契約管理",
             "デザイン",
             "創造的問題解決"
-          ]
+          ],
+          "avatar": "/media/longdoorgstructure_prev-avatar-96.webp",
+          "avatar2x": "/media/longdoorgstructure_prev-avatar-144.webp",
+          "originalPhoto": "/media/longdoorgstructure_prev.png"
         },
         {
           "id": "nguyen-thi-ly",
           "group": "core",
-          "photo": "/media/lyly.png",
+          "photo": "/media/lyly-profile.webp",
           "name": "Nguyen Thi Ly",
           "honorific": "",
           "title": "研究員",
@@ -2174,12 +2389,15 @@
             "都市計画",
             "持続可能な開発",
             "公共空間"
-          ]
+          ],
+          "avatar": "/media/lyly-avatar-96.webp",
+          "avatar2x": "/media/lyly-avatar-144.webp",
+          "originalPhoto": "/media/lyly.png"
         },
         {
           "id": "dinh-tung-duong",
           "group": "core",
-          "photo": "/media/duong.png",
+          "photo": "/media/duong-profile.webp",
           "name": "Dinh Tung Duong",
           "honorific": "",
           "title": "研究員",
@@ -2189,12 +2407,15 @@
             "首席卒業",
             "空間計画",
             "持続可能性"
-          ]
+          ],
+          "avatar": "/media/duong-avatar-96.webp",
+          "avatar2x": "/media/duong-avatar-144.webp",
+          "originalPhoto": "/media/duong.png"
         },
         {
           "id": "trinh-thi-tinh",
           "group": "core",
-          "photo": "/media/tinh.png",
+          "photo": "/media/tinh-profile.webp",
           "name": "Trinh Thi Tinh",
           "honorific": "",
           "title": "事務担当",
@@ -2203,12 +2424,15 @@
             "経営学",
             "責任感",
             "チームワーク"
-          ]
+          ],
+          "avatar": "/media/tinh-avatar-96.webp",
+          "avatar2x": "/media/tinh-avatar-144.webp",
+          "originalPhoto": "/media/tinh.png"
         },
         {
           "id": "nguyen-quynh-ly",
           "group": "core",
-          "photo": "/media/nguyenquynhly.png",
+          "photo": "/media/nguyenquynhly-profile.webp",
           "name": "Nguyen Quynh Ly",
           "honorific": "",
           "title": "研究員",
@@ -2217,7 +2441,10 @@
             "国立経済大学",
             "入札",
             "都市計画"
-          ]
+          ],
+          "avatar": "/media/nguyenquynhly-avatar-96.webp",
+          "avatar2x": "/media/nguyenquynhly-avatar-144.webp",
+          "originalPhoto": "/media/nguyenquynhly.png"
         }
       ],
       "valuesGallery": {
@@ -2236,7 +2463,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAAAwBQCdASoYABIAPt1kqE+opSOiKAqpEBuJYwC+Sy4Io2bjjRLJG5XnJ8AQGt9Nqk6yUADyfKEIdKOF5ehNF+XQ6j6TXUYmL0pEnB+Duko4zje0+ksjHKOM50GDXWUBVTRr2Nn84ZF8GlfUyPIG3AXjaqs+4zNe5cH7BoJ5ot3fUv4GsJ+mrpQdwnpExT96hnP+7PPNU9qS/MBeUaQ0U4rZnCAKif/W1bSoZzI2fkKus+SYTezhVNgAAAA=",
               "label": "ベトナム都市フォーラム2025",
-              "alt": "ベトナム都市フォーラム2025「スマート・持続可能・包摂的な発展」の全体会合、2025年11月8日"
+              "alt": "ベトナム都市フォーラム2025「スマート・持続可能・包摂的な発展」の全体会合、2025年11月8日",
+              "fullImage": "/media/conference_nov5_2025.webp"
             },
             {
               "image": "/media/dubai_2025_2.webp",
@@ -2244,7 +2472,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADwBACdASoYABIAPt1iqU+opSOiKAqpEBuJQBTmpsAr0YYb/9iH1/v0VQKbcjoaydAA/bKKdx1vRIdPOQnyjvS+pHdudGJ0mrMO4gLKkexfTYunYbW/BI2fYi2Kl8AJWxkZi+Dah572T+d33ouaNJEQsmm4uD2yAoJpD61aR05c9miv6EEVZ/rnGOAoGZcFO4Gkx184Q3gUiacXiGkPznFFeKomlXoVKB/SVo8AAAA=",
               "label": "総会ステージ、UAE 2025年",
-              "alt": "IUCN世界自然保護連合総会（アブダビ、2025年）の全体ステージと風景映像"
+              "alt": "IUCN世界自然保護連合総会（アブダビ、2025年）の全体ステージと風景映像",
+              "fullImage": "/media/dubai_2025_2.webp"
             },
             {
               "image": "/media/dubai_2025_3.webp",
@@ -2252,7 +2481,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBQCdASoYABIAPt1iqk8opSOiKAqpEBuJZQCsIYtBhNZGW+ePzuSTCyEUff/VjtGxIGEAAP7o+6Xcr8YozWHqGe9/0DibU4ETmO9JVJ7QzHH9DVzEcm2ur90Me9BYP4/XV+T5lLcCnuF9Wdpb1w5J0iyAayKLOV4hKVC6nZq6k6nGOjjtif7qlUG+y5aS92QaOd78yucnwQnsmLAO5YHKRxEBtrzoPhxE5Jm4XgAAAA==",
               "label": "全体ホール、2025年",
-              "alt": "IUCN World Conservation Congress Abu Dhabi 2025の全体ホール"
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025の全体ホール",
+              "fullImage": "/media/dubai_2025_3.webp"
             },
             {
               "image": "/media/dubai_2025_4.webp",
@@ -2260,69 +2490,78 @@
               "height": 540,
               "blur": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASoYAA0APt1apkyopSOiMAgBEBuJQBajUABfjVoaf4ggdQcsHUQKAADOPi3S6Z89tZ7hpuS6VefgC2K4e+PYZl+ona/R0Rmg8nyE1M0OLFKmubI00TSo6/QZ/V7V7vrb3w1aw1WTr+IQwjd9tk4jfqPXybfB5GyM4V6SEYsKxRiDdvAlcvAAAA==",
               "label": "ICUE集合写真、2025年",
-              "alt": "IUCN World Conservation Congress Abu Dhabi 2025でのICUE代表団の集合写真"
+              "alt": "IUCN World Conservation Congress Abu Dhabi 2025でのICUE代表団の集合写真",
+              "fullImage": "/media/dubai_2025_4.webp"
             }
           ],
           [
             {
-              "image": "/media/people-play-together.jpg",
+              "image": "/media/people-play-together-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "一緒に遊ぶ喜び",
-              "alt": "木とタイヤでできた遊具の周りで一緒に遊ぶ子どもたち。"
+              "alt": "木とタイヤでできた遊具の周りで一緒に遊ぶ子どもたち。",
+              "fullImage": "/media/people-play-together.jpg"
             },
             {
-              "image": "/media/people-room-to-play.jpg",
+              "image": "/media/people-room-to-play-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "遊び、探求するための空間",
-              "alt": "大きな木のそばにあるタイヤの遊具に登る子どもたち。"
+              "alt": "大きな木のそばにあるタイヤの遊具に登る子どもたち。",
+              "fullImage": "/media/people-room-to-play.jpg"
             },
             {
-              "image": "/media/people-community-childhood.jpg",
+              "image": "/media/people-community-childhood-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "地域で育む子ども時代",
-              "alt": "地域の草地で笑顔を見せながら遊ぶ子どもたち。"
+              "alt": "地域の草地で笑顔を見せながら遊ぶ子どもたち。",
+              "fullImage": "/media/people-community-childhood.jpg"
             }
           ],
           [
             {
-              "image": "/media/connected-anniversary.jpg",
+              "image": "/media/connected-anniversary-preview.webp",
               "width": 1276,
               "height": 956,
               "label": "ICUE設立10周年を祝う",
-              "alt": "ICUE設立10周年の式典で記念旗を受け取る出席者たち。"
+              "alt": "ICUE設立10周年の式典で記念旗を受け取る出席者たち。",
+              "fullImage": "/media/connected-anniversary.jpg"
             },
             {
-              "image": "/media/connected-urban-economy.jpg",
+              "image": "/media/connected-urban-economy-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "都市経済と持続可能な発展",
-              "alt": "ハノイで開催された都市経済、計画、建設、持続可能な発展に関する催しでの集合写真。"
+              "alt": "ハノイで開催された都市経済、計画、建設、持続可能な発展に関する催しでの集合写真。",
+              "fullImage": "/media/connected-urban-economy.jpg"
             },
             {
-              "image": "/media/connected-international-partners.jpg",
+              "image": "/media/connected-international-partners-preview.webp",
               "width": 1280,
               "height": 720,
               "label": "国際的なパートナーとの交流",
-              "alt": "建物の前の階段で記念撮影をする各国の代表者たち。"
+              "alt": "建物の前の階段で記念撮影をする各国の代表者たち。",
+              "fullImage": "/media/connected-international-partners.jpg"
             }
           ],
           [
             {
-              "image": "/media/outlook-office-exchange.jpg",
+              "image": "/media/outlook-office-exchange-preview.webp",
               "width": 1280,
               "height": 960,
               "label": "ICUEでアイデアを交わす",
-              "alt": "ICUEのオフィスで交流する3人の出席者。"
+              "alt": "ICUEのオフィスで交流する3人の出席者。",
+              "fullImage": "/media/outlook-office-exchange.jpg"
             },
             {
-              "image": "/media/outlook-industry-visit.jpg",
+              "image": "/media/outlook-industry-visit-preview.webp",
               "width": 1280,
               "height": 719,
               "label": "産業の現場から学ぶ",
-              "alt": "工場訪問中に安全ヘルメットを着用した3人。"
+              "alt": "工場訪問中に安全ヘルメットを着用した3人。",
+              "fullImage": "/media/outlook-industry-visit.jpg"
             },
             {
               "image": "/media/dubai_2025_1.webp",
@@ -2330,7 +2569,8 @@
               "height": 720,
               "blur": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAABQBACdASoYABIAPt1iqk+opSOiKAqpEBuJZQDDNYzuRSkK2CwOWPeTQlzAAMxVIeOycNo1o+gLJXDHSqxVuFNQIqgCR6NGnIbAH29dZmqkj2l7jvQacBKysqHr1X2wuiB5XPSQQLIZ8orW3PZHJG6PLo+ox3JttOLUd9rJVWQr5X2YXI4Q5x+ohEIiCJqI+TmKR6ZWlRswRzChdlIt7ezgFUT0lN1L8AA=",
               "label": "ドバイのICUE代表団、2025年",
-              "alt": "IUCN世界自然保護連合総会（アブダビ、2025年）でのICUE職員の実務セッション"
+              "alt": "IUCN世界自然保護連合総会（アブダビ、2025年）でのICUE職員の実務セッション",
+              "fullImage": "/media/dubai_2025_1.webp"
             }
           ]
         ]

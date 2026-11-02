@@ -1,22 +1,26 @@
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { Fragment, Suspense, useEffect, useRef, useState } from 'react'
 import {
   ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, ChevronLeft, ChevronRight,
-  Compass, FlaskConical, Languages, Leaf, Mail, Moon, Network, Phone, Plus, Sun, Users, X,
+  Compass, FlaskConical, Leaf, Network, Plus, Users, X,
 } from 'lucide-react'
-import { LANGUAGES, LocaleProvider, useLocale } from './i18n/LocaleProvider.jsx'
-import StaggeredMenu from './components/StaggeredMenu.jsx'
-import MenuToggleIcon from './components/MenuToggleIcon.jsx'
+import { LocaleProvider, useLocale } from './i18n/LocaleProvider.jsx'
 import HeroImageComparison from './components/HeroImageComparison.jsx'
-import ValueGallery from './components/ValueGallery.jsx'
 import PlatformVideo from './components/PlatformVideo.jsx'
-import StarBorder from './components/StarBorder.jsx'
-import RailScrollCue from './components/RailScrollCue.jsx'
-import Founder from './components/Founder.jsx'
 import InstitutionLeadership, { LeadershipProfileNote, presentPerson } from './components/InstitutionLeadership.jsx'
-import founderContent from './data/founderContent.js'
-import './components/NavigationRail.css'
 
-const navigationTargets = ['/', '#services', '#projects', '#people', '/newsroom']
+import NavigationRail from './components/NavigationRail.jsx'
+import LocaleControls from './components/LocaleControls.jsx'
+import { DeferredBoundary, useDeferredImport, useNearViewport } from './components/DeferredContent.jsx'
+import DeferredFounder from './components/DeferredFounder.jsx'
+import './components/ValueGallery.css'
+import './components/DeferredContent.css'
+// Keep the small section styles available even when a deferred module request
+// needs a retry; only the interaction implementations load on demand.
+import './components/AccordionGallery.css'
+import './components/StaggeredMenu.css'
+import './components/Stepper.css'
+
+const loadValueGallery = () => import('./components/ValueGallery.jsx')
 const valueIcons = [FlaskConical, Users, Network, Leaf]
 const platformMedia = ['/media/park-city.jpg', '/media/office.webp', '/media/service-2.webp']
 const format = (text, key, value) => text.replace(`{${key}}`, value)
@@ -33,15 +37,6 @@ function Eyebrow({ children, number, light = false }) {
 function RoundArrow({ direction = 'up' }) {
   const Icon = direction === 'down' ? ArrowDown : direction === 'right' ? ArrowRight : ArrowUpRight
   return <span className="round-arrow"><Icon size={23} strokeWidth={1.5} aria-hidden="true" /></span>
-}
-
-function LocaleControls({ className = '' }) {
-  const { copy, locale, setLocale, theme, toggleTheme } = useLocale()
-  const ThemeIcon = theme === 'dark' ? Sun : Moon
-  return <div className={`locale-controls ${className}`}>
-    <label className="language-control"><Languages size={16} aria-hidden="true" /><span className="sr-only">{copy.ui.language}</span><select value={locale} onChange={(e) => setLocale(e.target.value)} aria-label={copy.ui.language}>{LANGUAGES.map((l) => <option key={l.code} value={l.code} lang={l.code}>{l.label}</option>)}</select></label>
-    <button type="button" className="theme-toggle" onClick={toggleTheme} aria-label={theme === 'dark' ? copy.ui.lightTheme : copy.ui.darkTheme}><ThemeIcon size={17} strokeWidth={1.5} /></button>
-  </div>
 }
 
 function OrbitStamp() {
@@ -99,6 +94,17 @@ function People({ onSelect }) {
   </section>
 }
 
+function DeferredGallery({ index }) {
+  const { content, copy } = useLocale()
+  const [ref, ready] = useNearViewport()
+  const [ValueGallery, retry, version] = useDeferredImport(loadValueGallery)
+  const compactHeight = 260 + (Math.min(content.valuesGallery.groups[index].length, 4) - 1) * 92
+  const placeholder = <div className="deferred-placeholder" aria-hidden="true" />
+  return <div ref={ref} className="value-gallery deferred-gallery" style={{ '--value-gallery-compact-height': `${compactHeight}px` }}>
+    {ready ? <DeferredBoundary key={version} fallback={placeholder} retryLabel={copy.ui.retry} onRetry={retry}><Suspense fallback={placeholder}><ValueGallery key={index} index={index} /></Suspense></DeferredBoundary> : placeholder}
+  </div>
+}
+
 function Values() {
   const { copy, site } = useLocale()
   const [active, setActive] = useState(0)
@@ -106,7 +112,7 @@ function Values() {
     const Icon = valueIcons[i]
     const open = active === i
     return <article className={`value${open ? ' is-open' : ''}`} key={i}><h3><button aria-expanded={open} aria-controls={`value-${i}`} onClick={() => setActive(i)}><Icon size={30} strokeWidth={1.4} /><span>{value.title}</span><Plus size={17} strokeWidth={1.5} className="value-plus" /></button></h3><div className="accordion-panel" id={`value-${i}`} aria-hidden={!open} inert={!open}><div className="accordion-panel-inner"><p>{value.text}</p></div></div></article>
-  })}<a className="text-link values-careers" href={site('/structure/')}>{copy.links.structure}<ArrowUpRight size={18} /></a></div><ValueGallery key={active} index={active} /></div></section>
+  })}<a className="text-link values-careers" href={site('/structure/')}>{copy.links.structure}<ArrowUpRight size={18} /></a></div><DeferredGallery index={active} /></div></section>
 }
 
 function Faq() {
@@ -119,71 +125,42 @@ function Platforms() {
   const { copy, content, site, locale, navigationHref } = useLocale()
   const apps = content.platforms.apps.map((app) => ({ ...app, href: app.id === 'website' ? site('/') : navigationHref(app.href) }))
   const videoLocale = locale === 'vi' ? 'vi' : 'en'
-  const videoFiles = videoLocale === 'vi' ? ['icue-vn.mp4', 'hr_vn.mp4', 'contract_vi.mp4'] : ['icue-en.mp4', 'hr_en.mp4', 'contract_en.mp4']
+  const videoFiles = videoLocale === 'vi' ? ['icue-vn.preview.mp4', 'hr_vn.preview.mp4', 'contract_vi.preview.mp4'] : ['icue-en.preview.mp4', 'hr_en.preview.mp4', 'contract_en.preview.mp4']
   return <section id="platforms" className="platforms-section"><div className="section-heading"><div><Eyebrow number="07">{copy.platforms.eyebrow}</Eyebrow><h2><Lines lines={copy.platforms.title} /></h2></div><div className="platform-section-links"><p className="section-lead">{copy.platforms.lead}</p><a className="text-link" href={site('/newsroom')}>{copy.nav[4]}<ArrowUpRight size={18} /></a></div></div><div className="platform-grid">{apps.map((app, i) => <article className={`platform-card platform-card-${app.id}`} key={app.id}>
     <img src={platformMedia[i]} alt="" loading="lazy" width="700" height="800" /><PlatformVideo key={videoLocale} src={`/videos/${videoLocale}/${videoFiles[i]}`} poster={platformMedia[i]} label={app.label} labels={copy.platforms} /><div className="platform-overlay" /><span className="platform-index">ICUE / 0{i + 1}<ArrowUpRight size={19} /></span><div className="platform-copy"><span className="platform-label">{app.label}</span><h3>{copy.platforms.brands[i]}</h3><p>{app.description}</p><span className="platform-button">{copy.platforms.open}<ArrowUpRight size={16} /></span></div><span className="platform-domain">{new URL(app.href).hostname}</span><a className="platform-card-link" href={app.href} target="_blank" rel="noopener noreferrer" aria-label={`${app.label} · ${content.platforms.newTab}`} />
   </article>)}</div></section>
 }
 
 function LandingPage() {
-  const { copy, content, contact, site, theme, locale } = useLocale()
+  const { copy, content, contact, site, leadership } = useLocale()
   const personDialog = useRef(null)
-  const menuTrigger = useRef(null)
   const [personId, setPersonId] = useState(null)
-  const [currentSection, setCurrentSection] = useState('home')
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [brandHidden, setBrandHidden] = useState(true)
-  const person = presentPerson(content.people.find((p) => p.id === personId), locale)
-  const heroPortraits = content.people.filter((expert) => expert.group === 'experts').slice(0, 5).map((expert) => expert.id === 'do-bao-long' ? { ...expert, photo: '/media/longdoorgstructure_prev.png' } : expert)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => { for (const entry of entries) if (entry.isIntersecting) setCurrentSection(entry.target.id) }, { rootMargin: '-15% 0px -60% 0px', threshold: 0 })
-    document.querySelectorAll('section[id], footer[id]').forEach((section) => observer.observe(section))
-    return () => observer.disconnect()
-  }, [])
+  const person = presentPerson(content.people.find((person) => person.id === personId), leadership)
+  const heroPortraits = content.people.filter((expert) => expert.group === 'experts').slice(0, 5)
   useEffect(() => { if (personId && !personDialog.current.open) personDialog.current.showModal() }, [personId])
   useEffect(() => {
-    const visibility = new Map()
-    const logos = [...document.querySelectorAll('.wordmark img, .footer-brand img')]
-    const sync = () => setBrandHidden(logos.some((logo) => {
-      const style = getComputedStyle(logo)
-      return visibility.get(logo) && style.visibility !== 'hidden' && style.display !== 'none'
-    }))
-    const observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) visibility.set(entry.target, entry.isIntersecting)
-      sync()
-    }, { threshold: 0 })
-    logos.forEach((logo) => observer.observe(logo))
-    window.addEventListener('resize', sync)
-    return () => { observer.disconnect(); window.removeEventListener('resize', sync) }
+    // The locale chunk resolves after the browser's initial anchor lookup.
+    // Scroll to the stable section shell once the initial page has mounted.
+    const id = window.location.hash.slice(1)
+    if (id && !id.startsWith('/')) document.getElementById(id)?.scrollIntoView({ behavior: 'instant', block: 'start' })
   }, [])
-  const sectionIndex = { home: '00', about: '01', services: '02', projects: '03', people: '04', approach: '05', faq: '06', platforms: '07', founder: '08', contact: '09' }[currentSection] || '00'
   const mark = '/media/original-logo.png'
-  const menuItems = navigationTargets.map((target, i) => ({ label: copy.nav[i], link: target.startsWith('#') ? target : site(target) }))
-  menuItems.push({ label: founderContent[locale].navLabel, link: '#founder' })
 
   return <>
     <a className="skip-link" href="#main-content">{copy.ui.skip}</a>
-    <StarBorder as="aside" className="side-rail" aria-label={copy.ui.quickNav} radius={18} duration={9} thickness={1.3} stars={2} trailLength={.18} glow={.55} hover="brighten" clickPulse={false} theme="dark" color={theme === 'dark' ? '#99d8ce' : '#61d2c0'} trailColor="#2b9dce" backgroundColor="var(--rail-bg)" textColor="var(--rail-ink)" borderColor="var(--rail-border)">
-      <button ref={menuTrigger} className="menu-button" aria-label={menuOpen ? copy.ui.closeMenu : copy.ui.openMenu} aria-haspopup="dialog" aria-expanded={menuOpen} aria-controls="staggered-menu-panel" onClick={() => setMenuOpen((value) => !value)}><MenuToggleIcon open={menuOpen} /></button>
-      <a className={`rail-brand${brandHidden ? ' is-suppressed' : ''}`} href={site('/')} aria-label={copy.ui.home} aria-hidden={brandHidden} inert={brandHidden}><img src={mark} alt="" width="38" height="38" /><span>ICUE VIETNAM</span></a>
-      <RailScrollCue visible={brandHidden} />
-      <LocaleControls className="rail-controls" />
-      <div className="rail-links"><a href={contact.facebook} aria-label={copy.ui.facebook}><span className="facebook-glyph" aria-hidden="true">f</span></a><a href={`mailto:${contact.email}`} aria-label={copy.ui.email}><Mail size={18} strokeWidth={1.5} /></a><a href={`tel:${contact.tel}`} aria-label={copy.ui.call}><Phone size={17} strokeWidth={1.5} /></a><span className="rail-section">{sectionIndex}</span></div>
-    </StarBorder>
+    <NavigationRail />
     <div className="page-wrap"><header className="site-header"><a href={site("/")} className="wordmark" aria-label={copy.ui.home}><img src={mark} alt="" width="43" height="43" /><span>ICUE</span></a><span className="header-institute">{content.institute}</span><nav className="header-nav" aria-label={copy.ui.primaryNav}><a href={site("/past-projects")}>{copy.header.projects}</a><a href={site("/contact")} className="header-contact"><span />{copy.header.contact}<ArrowUpRight size={17} /></a></nav><LocaleControls className="header-controls" /></header>
-      <main id="main-content"><section id="home" className="hero" aria-labelledby="hero-title"><div className="hero-visual"><HeroImageComparison /><div className="hero-image-tag"><span />{copy.hero.tag}</div><OrbitStamp /><div className="hero-image-caption"><span>{copy.hero.comparison.caption}</span><p><Lines lines={copy.hero.caption} /></p></div></div><div className="hero-copy"><p className="hero-kicker"><span />{copy.hero.kicker}</p><h1 id="hero-title"><Lines lines={copy.hero.title} /><span className="accent">.</span></h1><p className="hero-description">{copy.hero.description}</p><a className="hero-cta" href={site("/past-projects")}>{copy.hero.projectCta}<RoundArrow direction="right" /></a><a className="team-teaser" href={site("/people/experts")} aria-label={`${copy.hero.teamBefore} ${copy.hero.teamAfter}`}><span className="avatar-stack">{heroPortraits.map((person) => <span className="avatar" key={person.id}><img src={person.photo} alt="" width="48" height="48" /><span className="avatar-tooltip" aria-hidden="true"><strong>{person.name}</strong><span>{personRole(person, copy)}</span></span></span>)}</span><span>{copy.hero.teamBefore}<br /><strong>{copy.hero.teamAfter}<ArrowUpRight size={15} /></strong></span></a></div></section>
+      <main id="main-content"><section id="home" className="hero" aria-labelledby="hero-title"><div className="hero-visual"><HeroImageComparison /><div className="hero-image-tag"><span />{copy.hero.tag}</div><OrbitStamp /><div className="hero-image-caption"><span>{copy.hero.comparison.caption}</span><p><Lines lines={copy.hero.caption} /></p></div></div><div className="hero-copy"><p className="hero-kicker"><span />{copy.hero.kicker}</p><h1 id="hero-title"><Lines lines={copy.hero.title} /><span className="accent">.</span></h1><p className="hero-description">{copy.hero.description}</p><a className="hero-cta" href={site("/past-projects")}>{copy.hero.projectCta}<RoundArrow direction="right" /></a><a className="team-teaser" href={site("/people/experts")} aria-label={`${copy.hero.teamBefore} ${copy.hero.teamAfter}`}><span className="avatar-stack">{heroPortraits.map((person) => <span className="avatar" key={person.id}><img src={person.avatar || person.photo} srcSet={person.avatar2x ? `${person.avatar} 96w, ${person.avatar2x} 144w` : undefined} sizes="48px" alt="" width="48" height="48" decoding="async" /><span className="avatar-tooltip" aria-hidden="true"><strong>{person.name}</strong><span>{personRole(person, copy)}</span></span></span>)}</span><span>{copy.hero.teamBefore}<br /><strong>{copy.hero.teamAfter}<ArrowUpRight size={15} /></strong></span></a></div></section>
         <div className="hero-bottom"><a href="#about"><ArrowDown size={14} />{copy.hero.scroll}</a><span>{copy.hero.fields.map((field, i) => <Fragment key={i}>{i > 0 && <i>/</i>}{field}</Fragment>)}</span><span>{copy.hero.location}</span></div>
         <section id="about" className="about section-shell"><Eyebrow number="01">{copy.about.eyebrow}</Eyebrow><div className="about-layout"><h2>{copy.about.title[0]}<br /><span>{copy.about.title[1]}</span></h2><div className="about-copy"><p>{copy.about.lead}</p><p>{copy.about.body}</p><a href={site('/about-us')} className="text-link">{copy.about.link}<ArrowUpRight size={18} /></a></div></div><div className="about-facts"><div><strong>2013<span>↗</span></strong><span>{copy.about.facts[0]}</span></div><div><strong>20<span>+</span></strong><span>{copy.about.facts[1]}</span></div><div><strong>04<span>↗</span></strong><span>{copy.about.facts[2]}</span></div><div className="about-compass"><Compass size={68} strokeWidth={0.8} /><span><Lines lines={copy.about.compass} /></span></div></div></section>
-        <Services /><Projects /><People onSelect={setPersonId} /><Values /><Faq /><Platforms /><Founder />
+        <Services /><Projects /><People onSelect={setPersonId} /><Values /><Faq /><Platforms /><DeferredFounder />
       </main>
       <footer id="contact" className="footer-wrap"><div className="footer-contact-grid"><a href={`mailto:${contact.email}`} className="footer-email"><span>{copy.footer.contactLabel}</span><strong>{contact.email}<ArrowUpRight size={23} /></strong></a><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.address)}`} target="_blank" rel="noreferrer"><span>{copy.footer.addressLabel}</span><p>{contact.address}</p></a><a href={`tel:${contact.tel}`}><span>{copy.footer.phoneLabel}</span><p>{contact.phone}</p></a></div><div className="site-footer"><a href="#home" className="footer-brand" aria-label={copy.ui.home}><img src={mark} alt="" width="29" height="29" />ICUE</a><span>© {new Date().getFullYear()} {copy.footer.rights}</span><nav aria-label={copy.ui.legalNav}><a href={site('/news-archive')}>{copy.links.archive}</a><a href={site('/legal/privacy')}>{copy.footer.privacy}</a><a href={site('/recruitment')}>{copy.footer.careers}<ArrowUpRight size={13} /></a><a href={site('/contact')}>{copy.footer.contactCta}<ArrowUpRight size={13} /></a></nav><a href="#home" className="back-to-top" aria-label={copy.ui.backTop}><ArrowUp size={18} /></a></div></footer>
     </div>
-    <StaggeredMenu open={menuOpen} onClose={() => setMenuOpen(false)} triggerRef={menuTrigger} homeHref={site('/')} labels={{ title: copy.ui.menuTitle, close: copy.ui.closeMenu, eyebrow: copy.menu.eyebrow, lead: copy.menu.lead, socials: copy.menu.socials, place: copy.menu.place }} items={menuItems} socialItems={[{ label: contact.email, link: `mailto:${contact.email}` }, { label: 'Facebook', link: contact.facebook }]} controls={<LocaleControls />} />
     <dialog ref={personDialog} className="person-dialog" onClose={() => setPersonId(null)} onClick={(e) => { if (e.target === e.currentTarget) personDialog.current.close() }} aria-labelledby={person ? 'person-dialog-name' : undefined}>{person && <div className="person-dialog-content"><button className="dialog-close" aria-label={copy.ui.closeProfile} onClick={() => personDialog.current.close()} autoFocus><X size={24} strokeWidth={1.3} /></button><div className="person-dialog-image"><img src={person.photo} alt={person.name} width="400" height="500" /></div><div className="person-dialog-copy"><Eyebrow>{copy.people.eyebrow}</Eyebrow><span className="person-honorific">{person.honorific}</span><h2 id="person-dialog-name">{person.name}</h2><p className="person-dialog-role">{person.title}</p><p className="person-bio">{person.bio}</p><LeadershipProfileNote personId={person.id} /><div className="person-tags">{person.highlights.map((h) => <span key={h}>{h}</span>)}</div><a className="text-link" href={site(person.group === 'experts' ? '/people/experts' : '/people/core-team')}>{copy.people.all}<ArrowUpRight size={17} /></a></div></div>}</dialog>
   </>
 }
 
-export default function App({ initialLocale, initialTheme }) {
-  return <LocaleProvider initialLocale={initialLocale} initialTheme={initialTheme}><LandingPage /></LocaleProvider>
+export default function App({ initialLocale, initialTheme, initialData }) {
+  return <LocaleProvider initialLocale={initialLocale} initialTheme={initialTheme} initialData={initialData}><LandingPage /></LocaleProvider>
 }

@@ -533,6 +533,7 @@ const AccordionGallery = ({
     (animate) => {
       const panels = panelRefs.current
       if (!panels.length) return
+      const selected = activeRef.current
 
       const r = Math.min(Math.max(ratio, 0.2), 0.9)
       const grow = count > 1 ? (r * (count - 1)) / (1 - r) : 1
@@ -544,18 +545,18 @@ const AccordionGallery = ({
 
       panels.forEach((panel, i) => {
         if (!panel) return
-        const isActive = i === active
+        const isActive = i === selected
         const media = mediaRefs.current[i]
         const bar = barRefs.current[i]
         const text = textRefs.current[i]
 
-        const rot = isActive ? 0 : i < active ? tilt : -tilt
+        const rot = isActive ? 0 : i < selected ? tilt : -tilt
         const rotProp = stacked ? { rotateX: -rot } : { rotateY: rot }
 
         tl.to(panel, { flexGrow: isActive ? grow : 1, '--ag-dim': isActive ? 0 : .35, ...rotProp, duration: dur, ease }, 0)
 
         if (media) {
-          const drift = Math.max(-1.5, Math.min(1.5, active - i))
+          const drift = Math.max(-1.5, Math.min(1.5, selected - i))
           const shift = drift * parallax * mediaSize * 0.06
           // Draining the colour out of every panel but one says "this is the
           // one you are on".
@@ -597,7 +598,6 @@ const AccordionGallery = ({
       tlRef.current = tl
     },
     [
-      active,
       count,
       ratio,
       duration,
@@ -611,12 +611,14 @@ const AccordionGallery = ({
       prefersReduced,
     ],
   )
+  const applyLayoutRef = useRef(applyLayout)
+  applyLayoutRef.current = applyLayout
 
   useEffect(() => {
     const el = rootRef.current
     if (!el) return undefined
 
-    const measure = () => {
+    const measure = (animate) => {
       const rect = el.getBoundingClientRect()
       let size
 
@@ -633,21 +635,24 @@ const AccordionGallery = ({
         size = Math.max(140, usable * Math.min(Math.max(ratio, 0.2), 0.9) * 1.22)
       }
 
+      if (!firstRunRef.current && Math.abs(mediaSizeRef.current - size) < 0.5) return
       mediaSizeRef.current = size
       el.style.setProperty('--ag-media-size', `${size}px`)
-      applyLayout(!firstRunRef.current)
+      if (animate) applyLayoutRef.current(!firstRunRef.current)
     }
 
-    measure()
-    const ro = new ResizeObserver(measure)
+    // Initial/configuration layout is applied by the effect below after the
+    // size is ready. Resize callbacks animate only an actual size change.
+    measure(false)
+    const ro = new ResizeObserver(() => measure(true))
     ro.observe(el)
     return () => ro.disconnect()
-  }, [applyLayout, gap, count, ratio, vertical, compact])
+  }, [gap, count, ratio, vertical, compact])
 
   useEffect(() => {
     applyLayout(!firstRunRef.current)
     firstRunRef.current = false
-  }, [applyLayout])
+  }, [active, applyLayout, gap, compact, vertical])
 
   useEffect(
     () => () => {

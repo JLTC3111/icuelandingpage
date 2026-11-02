@@ -78,7 +78,10 @@ export default function Stepper({
         </Heading>
         <div className="stepper-panel" id={`${id}-panel-${number}`} role="region" aria-labelledby={`${id}-trigger-${number}`} aria-hidden={!isActive} inert={!isActive}>
           <div className="stepper-panel-clip"><div className="stepper-panel-body">
-            {cloneElement(child, { isActive })}
+            {/* Unopened chapters need only their heading. Retain visited
+                bodies for the closing transition and keep isActive accurate
+                so chapter-specific photo controls still reset on exit. */}
+            {visited.has(number) && cloneElement(child, { isActive })}
             {isActive && <div className="stepper-footer">
               <button type="button" className="stepper-back" disabled={current === 1} onClick={() => select(current - 1, true)}><ArrowLeft size={15} aria-hidden="true" />{backButtonText}</button>
               <span className="stepper-counter" aria-hidden="true">{counter}</span>

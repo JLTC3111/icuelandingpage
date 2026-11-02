@@ -13,6 +13,7 @@ const BLEED = 48
 const LAP = 0.9
 const TAU = Math.PI * 2
 const WHITE = [255, 255, 255]
+const FRAME_INTERVAL = 1000 / 30
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 const wrap = (value, total) => ((value % total) + total) % total
 const ease = t => (t < 0.5 ? 4 * t * t * t : 1 - (2 - 2 * t) ** 3 / 2)
@@ -150,7 +151,10 @@ export default function StarBorder({
     const colors = { key: '', head: WHITE, tail: WHITE }
     let raf = 0
     let last = performance.now()
+    let lastDraw = -Infinity
     let alive = true
+    let cachedShape
+    let shapeWidth, shapeHeight, shapeThickness, shapeRadius
 
     const measure = () => {
       state.width = root.offsetWidth
@@ -167,10 +171,17 @@ export default function StarBorder({
       const scaleY = rect.height ? state.height / rect.height : 1
       return [(event.clientX - rect.left) * scaleX, (event.clientY - rect.top) * scaleY]
     }
-    const shapeFor = s => outline(
-      Math.max(1, state.width - s.thickness), Math.max(1, state.height - s.thickness),
-      s.radius - s.thickness / 2,
-    )
+    const shapeFor = s => {
+      if (!cachedShape || shapeWidth !== state.width || shapeHeight !== state.height
+        || shapeThickness !== s.thickness || shapeRadius !== s.radius) {
+        shapeWidth = state.width
+        shapeHeight = state.height
+        shapeThickness = s.thickness
+        shapeRadius = s.radius
+        cachedShape = outline(Math.max(1, state.width - s.thickness), Math.max(1, state.height - s.thickness), s.radius - s.thickness / 2)
+      }
+      return cachedShape
+    }
     const stroke = (x1, y1, x2, y2, width, style) => {
       ctx.lineWidth = width
       ctx.strokeStyle = style
@@ -181,7 +192,9 @@ export default function StarBorder({
     }
     const drawTrail = (s, shape, head, length, sign, intensity, tip = true) => {
       if (length < 0.5 || intensity <= 0) return
-      const steps = clamp(Math.ceil(length / 2), 2, 90)
+      // Four-pixel samples retain a continuous thin trail while cutting the
+      // number of strokes; geometry between samples remains a straight line.
+      const steps = clamp(Math.ceil(length / 4), 2, 48)
       pointAt(shape, head, point)
       let px = point.x
       let py = point.y
@@ -314,6 +327,15 @@ export default function StarBorder({
     const frame = now => {
       raf = 0
       if (!alive || !state.visible || document.hidden) return
+      // Keep the slow decorative orbit at 30 fps on 60/120 Hz displays. Anchor
+      // the next interval to the actual draw: modulo alignment combined with
+      // the fractional-timestamp tolerance can otherwise draw on both frames.
+      const elapsed = now - lastDraw
+      if (!reduce && elapsed < FRAME_INTERVAL - 0.5) {
+        raf = requestAnimationFrame(frame)
+        return
+      }
+      lastDraw = now
       const s = settingsRef.current
       const dt = Math.min(0.05, Math.max(0.001, (now - last) / 1000))
       last = now
@@ -377,6 +399,7 @@ export default function StarBorder({
     const wake = () => {
       if (raf || !alive || !state.visible || document.hidden) return
       last = performance.now()
+      lastDraw = -Infinity
       raf = requestAnimationFrame(frame)
     }
     wakeRef.current = wake

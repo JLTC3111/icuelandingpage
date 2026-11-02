@@ -1,6 +1,5 @@
-import { createContext, useContext, useEffect, useState } from 'react'
-import siteContent from '../data/siteContent.json'
-import messages from './messages.js'
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react'
+import { getLocaleData, loadLocaleData } from './localeData.js'
 import { MAIN_SITE_ORIGIN, normalizeTheme, withNavigationPreferences } from '../lib/navigationPreferences.js'
 
 export const LANGUAGES = [
@@ -39,12 +38,45 @@ function detectTheme() {
   return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 }
 
-export function LocaleProvider({ children, initialLocale, initialTheme }) {
-  const [locale, updateLocale] = useState(() => normalizeLocale(initialLocale) || detectLocale())
+export function LocaleProvider({ children, initialLocale, initialTheme, initialData }) {
+  const [selection, updateSelection] = useState(() => {
+    const locale = normalizeLocale(initialLocale) || detectLocale()
+    return { locale, data: initialData || getLocaleData(locale) }
+  })
+  const { locale, data } = selection
+  const [pendingLocale, setPendingLocale] = useState(null)
+  const [loadFailed, setLoadFailed] = useState(null)
+  const requestRef = useRef(0)
   const [theme, updateTheme] = useState(() => normalizeTheme(initialTheme) || detectTheme())
-  const copy = messages[locale]
+  const copy = data?.copy
+
+  const selectLocale = useCallback((next, reflectUrl = true) => {
+    const request = ++requestRef.current
+    setPendingLocale(next)
+    setLoadFailed(null)
+    return loadLocaleData(next).then(nextData => {
+      if (request !== requestRef.current) return false
+      updateSelection({ locale: next, data: nextData })
+      setPendingLocale(null)
+      if (reflectUrl) {
+        const url = new URL(window.location.href)
+        url.searchParams.delete('site')
+        url.searchParams.set('lang', next)
+        window.history.replaceState(window.history.state, '', url)
+      }
+      return true
+    }).catch(() => {
+      if (request === requestRef.current) { setPendingLocale(null); setLoadFailed(next) }
+      return false
+    })
+  }, [])
 
   useEffect(() => {
+    if (!data) selectLocale(locale, false)
+  }, [data, locale, selectLocale])
+
+  useEffect(() => {
+    if (!copy) return
     document.documentElement.lang = locale
     document.title = copy.metaTitle
     document.querySelector('meta[name="description"]')?.setAttribute('content', copy.metaDescription)
@@ -59,23 +91,19 @@ export function LocaleProvider({ children, initialLocale, initialTheme }) {
   }, [theme])
 
   useEffect(() => {
-    const restore = () => { updateLocale(detectLocale()); updateTheme(detectTheme()) }
+    const restore = () => { selectLocale(detectLocale(), false); updateTheme(detectTheme()) }
     const syncStorage = (event) => {
       if (event.key === THEME_KEY && normalizeTheme(event.newValue)) updateTheme(event.newValue)
     }
     window.addEventListener('popstate', restore)
     window.addEventListener('storage', syncStorage)
     return () => { window.removeEventListener('popstate', restore); window.removeEventListener('storage', syncStorage) }
-  }, [])
+  }, [selectLocale])
 
   const setLocale = (value) => {
     const next = normalizeLocale(value)
     if (!next) return
-    updateLocale(next)
-    const url = new URL(window.location.href)
-    url.searchParams.delete('site')
-    url.searchParams.set('lang', next)
-    window.history.replaceState(window.history.state, '', url)
+    selectLocale(next)
   }
   const navigationHref = (href) => withNavigationPreferences(href, { locale, theme })
   const site = (path) => navigationHref(new URL(path, MAIN_SITE_ORIGIN).href)
@@ -89,7 +117,8 @@ export function LocaleProvider({ children, initialLocale, initialTheme }) {
     }
   }
 
-  return <LocaleContext.Provider value={{ locale, setLocale, theme, toggleTheme, copy, content: siteContent.locales[locale], contact: siteContent.contact, site, navigationHref }}>{children}</LocaleContext.Provider>
+  if (!data) return <div className="startup-status" role="status">ICUE{loadFailed && <button type="button" onClick={() => selectLocale(locale, false)} aria-label="Retry">↻</button>}</div>
+  return <LocaleContext.Provider value={{ locale, pendingLocale, setLocale, theme, toggleTheme, copy, content: data.content, contact: data.contact, founder: data.founder, leadership: data.leadership, leadershipSources: data.leadershipSources, site, navigationHref }}>{children}{loadFailed && <button className="locale-retry" type="button" onClick={() => selectLocale(loadFailed)} aria-label={copy.ui.retry}>↻</button>}</LocaleContext.Provider>
 }
 
 export function useLocale() {

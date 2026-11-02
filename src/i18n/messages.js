@@ -2,7 +2,7 @@ const messages = {
   vi: {
     metaTitle: 'ICUE — Kiến tạo tương lai đô thị',
     metaDescription: 'Kết nối nghiên cứu, quy hoạch và cộng đồng để kiến tạo tương lai đô thị bền vững cùng ICUE.',
-    ui: { skip: 'Tới nội dung chính', quickNav: 'Điều hướng nhanh', openMenu: 'Mở menu điều hướng', closeMenu: 'Đóng menu', menuTitle: 'Điều hướng ICUE', primaryNav: 'Điều hướng chính', allNav: 'Khám phá ICUE', language: 'Ngôn ngữ', lightTheme: 'Chuyển sang giao diện sáng', darkTheme: 'Chuyển sang giao diện tối', home: 'ICUE — Trang chủ', facebook: 'ICUE trên Facebook', email: 'Gửi email cho ICUE', call: 'Gọi điện cho ICUE', backTop: 'Về đầu trang', legalNav: 'Thông tin pháp lý', closeProfile: 'Đóng hồ sơ', viewProfile: 'Xem hồ sơ {name}' },
+    ui: { retry: 'Thử lại', skip: 'Tới nội dung chính', quickNav: 'Điều hướng nhanh', openMenu: 'Mở menu điều hướng', closeMenu: 'Đóng menu', menuTitle: 'Điều hướng ICUE', primaryNav: 'Điều hướng chính', allNav: 'Khám phá ICUE', language: 'Ngôn ngữ', lightTheme: 'Chuyển sang giao diện sáng', darkTheme: 'Chuyển sang giao diện tối', home: 'ICUE — Trang chủ', facebook: 'ICUE trên Facebook', email: 'Gửi email cho ICUE', call: 'Gọi điện cho ICUE', backTop: 'Về đầu trang', legalNav: 'Thông tin pháp lý', closeProfile: 'Đóng hồ sơ', viewProfile: 'Xem hồ sơ {name}' },
     nav: ['KHÁM PHÁ', 'Năng lực', 'Dự án', 'Đội Ngũ', 'Tin tức'],
     links: { structure: 'Cơ cấu & tổ chức', archive: 'Kho tin tức' },
     menu: { eyebrow: 'KHÁM PHÁ ICUE', lead: 'Cùng kiến tạo những điều có ý nghĩa.', socials: 'GIỮ KẾT NỐI', place: 'HÀ NỘI, VIỆT NAM' },
@@ -25,7 +25,7 @@ const messages = {
   en: {
     metaTitle: 'ICUE — Shaping urban futures',
     metaDescription: 'Connecting research, planning and communities to shape sustainable urban futures with ICUE.',
-    ui: { skip: 'Skip to main content', quickNav: 'Quick navigation', openMenu: 'Open navigation menu', closeMenu: 'Close menu', menuTitle: 'ICUE navigation', primaryNav: 'Main navigation', allNav: 'Explore ICUE', language: 'Language', lightTheme: 'Switch to light theme', darkTheme: 'Switch to dark theme', home: 'ICUE — Home', facebook: 'ICUE on Facebook', email: 'Email ICUE', call: 'Call ICUE', backTop: 'Back to top', legalNav: 'Legal information', closeProfile: 'Close profile', viewProfile: 'View {name}’s profile' },
+    ui: { retry: 'Try again', skip: 'Skip to main content', quickNav: 'Quick navigation', openMenu: 'Open navigation menu', closeMenu: 'Close menu', menuTitle: 'ICUE navigation', primaryNav: 'Main navigation', allNav: 'Explore ICUE', language: 'Language', lightTheme: 'Switch to light theme', darkTheme: 'Switch to dark theme', home: 'ICUE — Home', facebook: 'ICUE on Facebook', email: 'Email ICUE', call: 'Call ICUE', backTop: 'Back to top', legalNav: 'Legal information', closeProfile: 'Close profile', viewProfile: 'View {name}’s profile' },
     nav: ['DISCOVER', 'Expertise', 'Projects', 'Our people', 'Newsroom'],
     links: { structure: 'Structure & organization', archive: 'News archive' },
     menu: { eyebrow: 'EXPLORE ICUE', lead: 'Creating things that matter, together.', socials: 'STAY CONNECTED', place: 'HANOI, VIETNAM' },
@@ -48,7 +48,7 @@ const messages = {
   de: {
     metaTitle: 'ICUE — Urbane Zukunft gestalten',
     metaDescription: 'ICUE verbindet Forschung, Stadtplanung und Gemeinschaften für eine nachhaltige urbane Zukunft.',
-    ui: { skip: 'Zum Hauptinhalt', quickNav: 'Schnellnavigation', openMenu: 'Navigationsmenü öffnen', closeMenu: 'Menü schließen', menuTitle: 'ICUE-Navigation', primaryNav: 'Hauptnavigation', allNav: 'ICUE entdecken', language: 'Sprache', lightTheme: 'Zum hellen Design wechseln', darkTheme: 'Zum dunklen Design wechseln', home: 'ICUE — Startseite', facebook: 'ICUE auf Facebook', email: 'E-Mail an ICUE', call: 'ICUE anrufen', backTop: 'Nach oben', legalNav: 'Rechtliche Informationen', closeProfile: 'Profil schließen', viewProfile: 'Profil von {name} ansehen' },
+    ui: { retry: 'Erneut versuchen', skip: 'Zum Hauptinhalt', quickNav: 'Schnellnavigation', openMenu: 'Navigationsmenü öffnen', closeMenu: 'Menü schließen', menuTitle: 'ICUE-Navigation', primaryNav: 'Hauptnavigation', allNav: 'ICUE entdecken', language: 'Sprache', lightTheme: 'Zum hellen Design wechseln', darkTheme: 'Zum dunklen Design wechseln', home: 'ICUE — Startseite', facebook: 'ICUE auf Facebook', email: 'E-Mail an ICUE', call: 'ICUE anrufen', backTop: 'Nach oben', legalNav: 'Rechtliche Informationen', closeProfile: 'Profil schließen', viewProfile: 'Profil von {name} ansehen' },
     nav: ['ENTDECKEN', 'Kompetenzen', 'Projekte', 'Unser Team', 'Aktuelles'],
     links: { structure: 'Struktur & Organisation', archive: 'Nachrichtenarchiv' },
     menu: { eyebrow: 'ICUE ENTDECKEN', lead: 'Gemeinsam schaffen wir, was zählt.', socials: 'IN VERBINDUNG BLEIBEN', place: 'HANOI, VIETNAM' },
@@ -71,7 +71,7 @@ const messages = {
   fr: {
     metaTitle: 'ICUE — Dessiner l’avenir urbain',
     metaDescription: 'ICUE relie recherche, urbanisme et communautés pour construire un avenir urbain durable.',
-    ui: { skip: 'Aller au contenu principal', quickNav: 'Navigation rapide', openMenu: 'Ouvrir le menu de navigation', closeMenu: 'Fermer le menu', menuTitle: 'Navigation ICUE', primaryNav: 'Navigation principale', allNav: 'Découvrir ICUE', language: 'Langue', lightTheme: 'Passer au thème clair', darkTheme: 'Passer au thème sombre', home: 'ICUE — Accueil', facebook: 'ICUE sur Facebook', email: 'Écrire à ICUE', call: 'Appeler ICUE', backTop: 'Retour en haut', legalNav: 'Informations légales', closeProfile: 'Fermer le profil', viewProfile: 'Voir le profil de {name}' },
+    ui: { retry: 'Réessayer', skip: 'Aller au contenu principal', quickNav: 'Navigation rapide', openMenu: 'Ouvrir le menu de navigation', closeMenu: 'Fermer le menu', menuTitle: 'Navigation ICUE', primaryNav: 'Navigation principale', allNav: 'Découvrir ICUE', language: 'Langue', lightTheme: 'Passer au thème clair', darkTheme: 'Passer au thème sombre', home: 'ICUE — Accueil', facebook: 'ICUE sur Facebook', email: 'Écrire à ICUE', call: 'Appeler ICUE', backTop: 'Retour en haut', legalNav: 'Informations légales', closeProfile: 'Fermer le profil', viewProfile: 'Voir le profil de {name}' },
     nav: ['DÉCOUVRIR', 'Expertises', 'Projets', 'Notre équipe', 'Actualités'],
     links: { structure: 'Structure & organisation', archive: 'Archives des actualités' },
     menu: { eyebrow: 'DÉCOUVRIR ICUE', lead: 'Créer ensemble ce qui compte.', socials: 'RESTONS EN LIEN', place: 'HANOÏ, VIETNAM' },
@@ -94,7 +94,7 @@ const messages = {
   ko: {
     metaTitle: 'ICUE — 도시의 미래를 만듭니다',
     metaDescription: 'ICUE는 연구, 도시계획, 지역사회를 연결하여 지속 가능한 도시의 미래를 만듭니다.',
-    ui: { skip: '본문으로 바로가기', quickNav: '빠른 탐색', openMenu: '탐색 메뉴 열기', closeMenu: '메뉴 닫기', menuTitle: 'ICUE 탐색 메뉴', primaryNav: '주요 탐색', allNav: 'ICUE 둘러보기', language: '언어', lightTheme: '라이트 테마로 전환', darkTheme: '다크 테마로 전환', home: 'ICUE — 홈', facebook: 'ICUE 페이스북', email: 'ICUE에 이메일 보내기', call: 'ICUE에 전화하기', backTop: '맨 위로', legalNav: '법적 정보', closeProfile: '프로필 닫기', viewProfile: '{name} 프로필 보기' },
+    ui: { retry: '다시 시도', skip: '본문으로 바로가기', quickNav: '빠른 탐색', openMenu: '탐색 메뉴 열기', closeMenu: '메뉴 닫기', menuTitle: 'ICUE 탐색 메뉴', primaryNav: '주요 탐색', allNav: 'ICUE 둘러보기', language: '언어', lightTheme: '라이트 테마로 전환', darkTheme: '다크 테마로 전환', home: 'ICUE — 홈', facebook: 'ICUE 페이스북', email: 'ICUE에 이메일 보내기', call: 'ICUE에 전화하기', backTop: '맨 위로', legalNav: '법적 정보', closeProfile: '프로필 닫기', viewProfile: '{name} 프로필 보기' },
     nav: ['둘러보기', '전문 분야', '프로젝트', '구성원', '뉴스룸'],
     links: { structure: '조직 및 구성', archive: '뉴스 아카이브' },
     menu: { eyebrow: 'ICUE 둘러보기', lead: '함께, 의미 있는 변화를 만듭니다.', socials: '연결하기', place: '베트남 하노이' },
@@ -117,7 +117,7 @@ const messages = {
   ja: {
     metaTitle: 'ICUE — 都市の未来をつくる',
     metaDescription: 'ICUEは研究、都市計画、地域社会をつなぎ、持続可能な都市の未来をつくります。',
-    ui: { skip: '本文へ移動', quickNav: 'クイックナビゲーション', openMenu: 'ナビゲーションメニューを開く', closeMenu: 'メニューを閉じる', menuTitle: 'ICUE ナビゲーション', primaryNav: 'メインナビゲーション', allNav: 'ICUEを知る', language: '言語', lightTheme: 'ライトテーマに切り替え', darkTheme: 'ダークテーマに切り替え', home: 'ICUE — ホーム', facebook: 'ICUEのFacebook', email: 'ICUEにメールする', call: 'ICUEに電話する', backTop: 'ページの先頭へ', legalNav: '法的情報', closeProfile: 'プロフィールを閉じる', viewProfile: '{name}のプロフィールを見る' },
+    ui: { retry: '再試行', skip: '本文へ移動', quickNav: 'クイックナビゲーション', openMenu: 'ナビゲーションメニューを開く', closeMenu: 'メニューを閉じる', menuTitle: 'ICUE ナビゲーション', primaryNav: 'メインナビゲーション', allNav: 'ICUEを知る', language: '言語', lightTheme: 'ライトテーマに切り替え', darkTheme: 'ダークテーマに切り替え', home: 'ICUE — ホーム', facebook: 'ICUEのFacebook', email: 'ICUEにメールする', call: 'ICUEに電話する', backTop: 'ページの先頭へ', legalNav: '法的情報', closeProfile: 'プロフィールを閉じる', viewProfile: '{name}のプロフィールを見る' },
     nav: ['ICUEを知る', '専門分野', 'プロジェクト', 'メンバー', 'ニュース'],
     links: { structure: '組織・体制', archive: 'ニュースアーカイブ' },
     menu: { eyebrow: 'ICUEを知る', lead: 'ともに、意義ある変化を。', socials: 'つながる', place: 'ベトナム・ハノイ' },

@@ -74,7 +74,19 @@ The three adjacent platform panels follow the additional reference design and li
 
 Each platform card plays its supplied local MP4 preview, muted, looping and inline. Vietnamese uses `public/videos/vi`; English, German, French, Korean and Japanese use `public/videos/en`. The play/pause button appears on hover or keyboard focus, and remains available on touch devices. Playback pauses offscreen or in a background tab and remembers an explicit pause until the reader resumes it. The video control and platform link are separate elements.
 
+The cards use generated 720p `.preview.mp4` copies with fast-start metadata. Sources and video posters are attached only within 300px of the viewport; playback starts when visible. The supplied recordings remain alongside those copies. Run `npm run videos:optimize` with FFmpeg installed to regenerate changed recordings, or append `-- --force` to rebuild every preview.
+
 The navigation rail reuses the mainsite's canvas-based Star Border, including its reduced-motion and background-tab handling. An IntersectionObserver fades and hides the rail logo and text whenever either the header or footer logo is visible; the rail brand returns between those two positions. The hidden branding is replaced by a localized scroll cue with a circular reading-progress indicator. At the footer it becomes a back-to-top link; on compact screens it uses a horizontal layout.
 
 Sites configuration publishes the separate private review copy. It does not replace the current `icue.vn` deployment.
+
+## Performance and validation
+
+Development and production builds regenerate independently loadable locale packs from the canonical content files. Only the chosen language loads initially; founder biographies load with the reader. The gallery and animated menu load on approach or interaction. Stable section anchors preserve direct links, and failed deferred requests have a localized retry action.
+
+Hero avatars use 96px/144px thumbnails, directory and dialog photos use larger WebPs, and gallery previews retain separate full-size originals. Page-specific Japanese and Korean font subsets preserve variable weights, with the original font faces available for additional glyphs. Generated assets and locale packs are checked in, so ordinary builds require only Node dependencies.
+
+Run `npm run assets:optimize` after changing source media or translations to regenerate images and CJK subsets, then locale packs. This regeneration command requires Python with Pillow, fontTools and Brotli (`python3 -m pip install Pillow fonttools brotli`). `npm run sync:content` also performs those steps. Original portrait paths are retained as `originalPhoto`, and gallery originals as `fullImage`.
+
+`npm test` checks navigation and the generated locale content. `npm run test:performance` builds the site and checks startup download budgets, deferred videos, all six languages and both themes, language-switch races, menus, galleries, founder chapters, and touch/keyboard comparison controls in Chrome. It writes screenshots and resource measurements to a temporary directory printed at completion. Chrome must be installed; use `CHROME_PATH` for a custom executable or `PLAYWRIGHT_CHANNEL` for another installed Playwright browser channel.
 # icuelandingpage

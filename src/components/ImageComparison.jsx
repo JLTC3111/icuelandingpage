@@ -1,7 +1,7 @@
 /* Adapted from ICUE-mainsite-vn/news-app/src/components/motion-primitives/ImageComparison.jsx.
  * Landing-page additions: keyboard slider controls, image attributes and localized accessibility.
  */
-import { createContext, useContext, useRef, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import {
   motion,
   useMotionValue,
@@ -40,33 +40,63 @@ export function ImageComparison({
   const motionSliderPosition = (enableHover || hoverOnly || useDirectMotion)
     ? motionValue
     : springPosition
-  const [sliderPosition, setSliderPosition] = useState(50)
+  const boundsRef = useRef(null)
+  const pointerFrameRef = useRef(0)
+  const pendingPointerRef = useRef(null)
   const dragMovedRef = useRef(false)
   const pointerActiveRef = useRef(false)
   const suppressClickRef = useRef(false)
 
-  const setLocked = (locked) => {
+  const setLocked = useCallback((locked) => {
     isLockedRef.current = locked
     setIsLocked(locked)
-  }
+  }, [])
 
-  const setPosition = (value) => {
+  const setPosition = useCallback((value) => {
     const percentage = Math.min(Math.max(value, 0), 100)
     motionValue.jump(percentage)
-    setSliderPosition(percentage)
+  }, [motionValue])
+
+  const flushPointer = useCallback(() => {
+    pointerFrameRef.current = 0
+    const container = containerRef.current
+    const clientX = pendingPointerRef.current
+    pendingPointerRef.current = null
+    if (!container || clientX === null) return
+    const containerRect = boundsRef.current ?? container.getBoundingClientRect()
+    boundsRef.current = containerRect
+    const x = clientX - containerRect.left
+    const width = Math.max(containerRect.width, 1)
+    setPosition((x / width) * 100)
+  }, [setPosition])
+
+  const updatePosition = (event, immediate = false) => {
+    pendingPointerRef.current = event.clientX
+    if (immediate) {
+      cancelAnimationFrame(pointerFrameRef.current)
+      flushPointer()
+    } else if (!pointerFrameRef.current) {
+      pointerFrameRef.current = requestAnimationFrame(flushPointer)
+    }
   }
 
-  const updatePosition = (event) => {
-    const container = containerRef.current
-    if (!container) return
-    const containerRect = container.getBoundingClientRect()
-    const x = event.clientX - containerRect.left
-    const width = Math.max(containerRect.width, 1)
-    const percentage = Math.min(Math.max((x / width) * 100, 0), 100)
-    setPosition(percentage)
-  }
+  useEffect(() => {
+    const invalidateBounds = () => { boundsRef.current = null }
+    const observer = new ResizeObserver(invalidateBounds)
+    observer.observe(containerRef.current)
+    window.addEventListener('resize', invalidateBounds)
+    window.addEventListener('scroll', invalidateBounds, { passive: true, capture: true })
+    return () => {
+      cancelAnimationFrame(pointerFrameRef.current)
+      observer.disconnect()
+      window.removeEventListener('resize', invalidateBounds)
+      window.removeEventListener('scroll', invalidateBounds, true)
+    }
+  }, [])
 
   const finishPointer = (event, { lockAfterDrag = false } = {}) => {
+    cancelAnimationFrame(pointerFrameRef.current)
+    flushPointer()
     isDraggingRef.current = false
     setIsDragging(false)
     setUseDirectMotion(false)
@@ -114,14 +144,16 @@ export function ImageComparison({
     updatePosition(event)
   }
 
-  const lockInteraction = () => {
+  const lockInteraction = useCallback(() => {
+    cancelAnimationFrame(pointerFrameRef.current)
+    flushPointer()
     setLocked(true)
     isDraggingRef.current = false
     setIsDragging(false)
     setUseDirectMotion(false)
     pointerActiveRef.current = false
     dragMovedRef.current = false
-  }
+  }, [flushPointer, setLocked])
 
   const unlockInteraction = () => {
     setLocked(false)
@@ -133,6 +165,7 @@ export function ImageComparison({
   const handlePointerDown = (event) => {
     if (event.button > 0) return
     if (isLockedRef.current && !hoverOnly && event.pointerType === 'mouse') return
+    boundsRef.current = containerRef.current?.getBoundingClientRect() ?? null
 
     isTouchPointerRef.current = event.pointerType === 'touch'
     pointerActiveRef.current = true
@@ -142,10 +175,10 @@ export function ImageComparison({
     dragMovedRef.current = false
 
     if (hoverOnly && !enableHover) {
-      updatePosition(event)
+      updatePosition(event, true)
     } else if (!enableHover || event.pointerType === 'touch') {
       event.currentTarget.setPointerCapture?.(event.pointerId)
-      updatePosition(event)
+      updatePosition(event, true)
     }
   }
 
@@ -161,20 +194,23 @@ export function ImageComparison({
   }
 
   const handleMouseEnter = (event) => {
+    boundsRef.current = containerRef.current?.getBoundingClientRect() ?? null
     if (hoverOnly) {
       unlockInteraction()
-      if (enableHover) updatePosition(event)
+      if (enableHover) updatePosition(event, true)
       return
     }
 
     if (isLockedRef.current) unlockInteraction()
-    if (enableHover) updatePosition(event)
+    if (enableHover) updatePosition(event, true)
   }
 
   const handleMouseLeave = () => {
     if (hoverOnly) {
-      motionValue.jump(50)
-      setSliderPosition(50)
+      cancelAnimationFrame(pointerFrameRef.current)
+      pointerFrameRef.current = 0
+      pendingPointerRef.current = null
+      setPosition(50)
       pointerActiveRef.current = false
       isDraggingRef.current = false
       setIsDragging(false)
@@ -204,9 +240,13 @@ export function ImageComparison({
     }
   }
 
+  const context = useMemo(() => ({
+    position: motionValue, setPosition, motionSliderPosition, isLocked, lockInteraction,
+  }), [motionValue, setPosition, motionSliderPosition, isLocked, lockInteraction])
+
   return (
     <ImageComparisonContext.Provider
-      value={{ sliderPosition, setPosition, motionSliderPosition, isLocked, lockInteraction }}
+      value={context}
     >
       <div
         ref={containerRef}
@@ -264,18 +304,23 @@ export function ImageComparisonSlider({ className, children, label, valueText, d
   const ctx = useContext(ImageComparisonContext)
   if (!ctx) throw new Error('ImageComparisonSlider must be used within ImageComparison')
 
-  const { motionSliderPosition, sliderPosition, setPosition, lockInteraction } = ctx
+  const { motionSliderPosition, position, setPosition, lockInteraction } = ctx
+  // Only the accessible control needs React state. Images and labels continue
+  // to follow MotionValues without rerendering for every pointer coordinate.
+  const [sliderPosition, setSliderPosition] = useState(() => Math.round(position.get()))
+  useEffect(() => position.on('change', value => setSliderPosition(Math.round(value))), [position])
   const left = useTransform(motionSliderPosition, (value) => `${value}%`)
 
   const handleKeyDown = (event) => {
+    const current = position.get()
     const amount = event.shiftKey ? 10 : 1
     const positions = {
-      ArrowLeft: sliderPosition - amount,
-      ArrowDown: sliderPosition - amount,
-      ArrowRight: sliderPosition + amount,
-      ArrowUp: sliderPosition + amount,
-      PageDown: sliderPosition - 10,
-      PageUp: sliderPosition + 10,
+      ArrowLeft: current - amount,
+      ArrowDown: current - amount,
+      ArrowRight: current + amount,
+      ArrowUp: current + amount,
+      PageDown: current - 10,
+      PageUp: current + 10,
       Home: 0,
       End: 100,
     }
